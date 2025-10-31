@@ -93,9 +93,9 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background: rgba(255, 255, 255, 0.3); /* transparent glass look */
-  backdrop-filter: blur(20px); /* blur background page */
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.6); /* ⬆️ more visible background */
+  backdrop-filter: blur(8px); /* ⬇️ reduced blur for clearer view */
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
   justify-content: center;
