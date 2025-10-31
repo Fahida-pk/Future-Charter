@@ -7,12 +7,11 @@ const MainBanner = () => {
     <section className="hero-section d-flex align-items-center justify-content-start">
       <div className="container">
         <div className="hero-content p-4 rounded">
-          
           {/* 🌀 Animated Heading */}
           <motion.h1
             className="fw-bold mb-3 cursive-text"
-            initial={{ opacity: 0, y: 100 }}      // start below
-            whileInView={{ opacity: 1, y: 0 }}    // animate when visible
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{
               type: "spring",
               stiffness: 80,

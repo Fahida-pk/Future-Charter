@@ -1,21 +1,22 @@
 /* 🌆 Banner background image setup */
 .hero-section {
   width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url("/public/image/banner.png");
+  background-image: url("/image/banner.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 90vh;
   position: relative;
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
-/* 🟡 Add dark overlay for better text readability */
+/* 🟡 Dark overlay */
 .hero-section::before {
   content: "";
   position: absolute;
@@ -24,24 +25,35 @@
   z-index: 0;
 }
 
-/* ✅ Content styling */
+/* 🚫 Remove Bootstrap container limits */
+.hero-section .container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ✅ Hero content */
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 600px;
   color: #fff;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
+  margin-left: 5%;
+  max-width: 650px;
+  text-align: left;
+  background: none;
 }
 
+/* ✨ Heading */
 .hero-content h1 {
   font-size: 2.8rem;
   line-height: 1.2;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
-/* ✨ Cursive main heading */
+/* 🖋️ Cursive part */
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-
 .cursive-text {
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
@@ -51,24 +63,15 @@
   margin-top: 8px;
 }
 
-/* 📖 Paragraph styling */
+/* 📖 Paragraph */
 .hero-content p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-top: 10px;
-}
-
-/* ✨ Subtext style */
-.banner-subtext {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
   color: #f5f5f5;
-  max-width: 600px;
-  line-height: 1.6;
-  margin-bottom: 20px;
 }
 
-/* 🎨 Button styling */
+/* 🎨 Button */
 .btn-light {
   background-color: #ffeb99;
   border: none;
@@ -78,86 +81,76 @@
   font-weight: 500;
   border-radius: 8px;
 }
-
 .btn-light:hover {
   background-color: #ffd54f;
   color: #000;
 }
 
-/* 📱 Tablet view adjustments (<=992px) */
+/* 📱 MOBILE — identical desktop layout on all devices */
 @media (max-width: 992px) {
-  .hero-section {
-    min-height: 80vh;
-    background-position: center top;
+  html, body {
+    zoom: 1 !important;
+    -webkit-text-size-adjust: none !important;
+    touch-action: manipulation !important;
+    overflow-x: hidden !important;
   }
-}
 
-/* 📱 Mobile view adjustments (<=768px) */
-@media (max-width: 768px) {
   .hero-section {
-    width: 100vw;
-    min-height: 70vh;
-    background-size: cover;
-    background-position: center center;
-    text-align: center;
-    justify-content: center;
-    overflow: hidden;
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .hero-section .container {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .hero-content {
-    max-width: 90%;
-    background: rgba(0, 0, 0, 0.55);
-    padding: 1.2rem;
-    border-radius: 10px;
-    margin: 0 auto;
-  }
-
-  /* ✏️ Replace cursive with clean font on phones */
-  .cursive-text {
-    font-family: "Poppins", sans-serif !important;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-shadow: none;
+    margin-left: 5%;
+    padding: 1.5rem 2rem;
+    max-width: 650px;
   }
 
   .hero-content h1 {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    letter-spacing: 0.5px;
+    font-size: 2.8rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .cursive-text {
+    font-size: 3rem !important;
   }
 
   .banner-subtext {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-top: 10px;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
   }
 
   .btn-light {
-    background-color: #ffeb99;
-    color: #333;
-    padding: 10px 26px;
-    font-size: 0.95rem;
-    border-radius: 6px;
+    padding: 12px 30px !important;
+    font-size: 1rem !important;
   }
 }
 
-/* 📱 Extra small devices (<=480px) */
-@media (max-width: 480px) {
-  .hero-section {
-    min-height: 60vh;
-    background-position: top;
-  }
-
-  .hero-content h1 {
-    font-size: 1.6rem;
-  }
-
-  .banner-subtext {
-    font-size: 0.9rem;
-  }
-
-  .btn-light {
-    font-size: 0.85rem;
-    padding: 8px 20px;
-  }
+/* 🚀 Global spacing reset */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+.hero-section,
+.hero-section .container,
+.hero-section .row {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.hero-section {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
 }

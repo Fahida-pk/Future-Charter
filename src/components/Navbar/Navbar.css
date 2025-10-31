@@ -1,15 +1,18 @@
 /* 🌟 Elegant minimal beige navbar */
 .navbar {
-  background-color: #f3f1ea !important; /* soft warm beige */
+  background-color: #f3f1ea !important;
   backdrop-filter: blur(10px);
   transition: top 0.35s ease-in-out, opacity 0.35s ease-in-out;
   padding: 5px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: fixed !important;
+  width: 100%;
+  z-index: 9999;
 }
 
 /* ✅ Smooth show/hide only */
 .navbar.nav-hide {
-  top: -100px;
+  top: -80px; /* hides smoothly */
   opacity: 0;
 }
 
@@ -18,7 +21,7 @@
   opacity: 1;
 }
 
-/* ✅ Logo styles (no resize now) */
+/* ✅ Logo styles */
 .nav-logo {
   height: 60px;
   transition: transform 0.3s ease;
@@ -28,21 +31,19 @@
   transform: scale(1.05);
 }
 
-/* ✅ Link styles */
+/* ✅ Links */
 .nav-link {
   color: #2d2d2d !important;
   font-weight: 700;
   font-size: 20px;
-  display: inline;
-  
   transition: color 0.25s ease;
   text-decoration: none;
-  padding: 0 25px; /* balanced spacing */
+  padding: 0 25px;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #a07c12 !important; /* muted gold accent */
+  color: #a07c12 !important;
 }
 
 /* ✅ Subtle shadow */
@@ -50,7 +51,7 @@
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
 }
 
-/* 🌐 Desktop layout — perfectly centered */
+/* 🌐 Desktop layout */
 @media (min-width: 992px) {
   .navbar .container {
     display: flex;
@@ -60,27 +61,15 @@
 
   .navbar-nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px; /* even gap between menu items */
+    gap: 60px;
     margin: 0 auto;
-  }
-
-  .navbar .navbar-brand {
-    margin-right: 0;
   }
 }
 
-/* 📱 MOBILE VIEW */
+/* 📱 Mobile */
 @media (max-width: 991px) {
-  /* Hide all except Home & About */
   .navbar-nav .nav-item:nth-child(n + 3) {
     display: none !important;
-  }
-
-  /* Collapse behavior */
-  .navbar-collapse:not(.show) .nav-item {
-    display: none;
   }
 
   .nav-logo {
@@ -91,7 +80,6 @@
     padding: 8px 0;
   }
 
-  /* Center menu when open */
   .navbar-collapse.show .navbar-nav {
     text-align: center;
     width: 100%;
