@@ -86,12 +86,13 @@
   color: #000;
 }
 
-/* 📱 MOBILE VIEW IMPROVEMENT */
+/* 📱 MOBILE — identical desktop layout on all devices */
+/* 📱 MOBILE VIEW FIX */
 @media (max-width: 992px) {
   .hero-section {
-    width: 100vw !important;
-    height: 75vh !important; /* ⬅️ Reduced height */
-    background-size: cover !important;
+    width: 100vh !important;
+    height: 100% !important;
+    background-size: 100% 100% !important; /* ✅ full image stretch */
     background-position: center center !important;
     display: flex;
     align-items: center;
@@ -100,30 +101,45 @@
 
   .hero-content {
     margin-left: 5%;
-    padding: 1rem 1.2rem;
-    max-width: 600px;
+    padding: 1.5rem 1.5rem;
+    max-width: 650px;
   }
 
-  /* Reduce heading and paragraph spacing */
+  /* ✅ same as desktop */
   .hero-content h1 {
-    font-size: 1.8rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 0.6rem !important;
+    font-size: 1.5rem !important;
+    line-height: 1.1 !important;
   }
 
   .sub-heading {
-    font-size: 1.1rem !important;
-    margin-bottom: 0.6rem !important;
+    font-size: 1rem !important;
   }
 
   .hero-content p {
     font-size: 1rem !important;
-    line-height: 1.5 !important;
-    margin-bottom: 1rem !important;
+    line-height: 1.1 !important;
   }
 
   .btn-light {
-    padding: 10px 25px !important;
-    font-size: 0.95rem !important;
+    padding: 12px 30px !important;
+    font-size: 1rem !important;
   }
+}
+
+/* 🚀 Reset spacing */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+.hero-section,
+.hero-section .container,
+.hero-section .row {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.hero-section {
+  background-repeat: no-repeat !important;
 }
