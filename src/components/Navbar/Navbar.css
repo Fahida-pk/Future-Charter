@@ -93,19 +93,31 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background: rgba(255, 255, 255, 0.3); /* transparent glass look */
-  backdrop-filter: blur(20px); /* blur background page */
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.6); /* ⬆️ more visible background */
+  backdrop-filter: blur(8px); /* ⬇️ reduced blur for clearer view */
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 18px; /* ⬇️ reduced spacing between items */
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
   transition: all 0.4s ease;
   z-index: 99999;
+}
+
+/* 📱 Adjust font and button size */
+.mobile-menu a {
+  font-size: 1.3rem; /* smaller text */
+  font-weight: 600;
+}
+
+.mobile-menu .btn {
+  font-size: 0.95rem;
+  padding: 10px 24px;
+  border-radius: 30px;
 }
 
 /* when active */
@@ -128,33 +140,10 @@
 }
 
 /* overlay links */
-.mobile-menu a {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #2d2d2d;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+
 
 .mobile-menu a:hover {
   color: #a07c12;
 }
 
 /* button */
-.get-started {
-  margin-top: 20px;
-  background: #a07c12;
-  color: #fff;
-  border: none;
-  padding: 14px 38px;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.get-started:hover {
-  background: #8d6d0e;
-  transform: translateY(-2px);
-}

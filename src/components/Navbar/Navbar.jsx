@@ -93,7 +93,7 @@ const Navbar = () => {
         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
           CONTACT
         </NavLink>
-        <button className="get-started">Get Started</button>
+       
       </div>
     </>
   );

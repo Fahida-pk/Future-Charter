@@ -101,21 +101,6 @@
 }
 
 /* ✅ Responsive */
-@media (max-width: 991px) {
-  .about-book {
-    flex-direction: column;
-  }
-  .book-fold {
-    display: none;
-  }
-  .about-right {
-    padding: 25px;
-  }
-  .about-photo {
-    height: 300px;
-  }
-}
-
 /* ✅ Small screens (mobile) */
 @media (max-width: 600px) {
   .about-section {
@@ -137,5 +122,10 @@
 
   .about-photo {
     height: 250px;
+  }
+
+  /* ✅ Hide extra paragraphs on mobile */
+  .about-text p:nth-of-type(n+3) {
+    display: none;
   }
 }
