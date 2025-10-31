@@ -1,0 +1,44 @@
+body {
+ 
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;   /* Only one vertical scroll */
+  overflow-x: hidden;
+  background-color:rgb(255, 255, 255);
+  /* Scrollbar track (background) */
+
+
+  
+}
+
+.app {
+  padding: 0px;
+}
+/* Clean Scrollbar - No arrows, no blue thumb */
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;   /* light background only */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* no blue color */
+}
+
+/* Remove up/down arrows */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent white;
+}

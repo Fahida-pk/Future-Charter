@@ -1,0 +1,59 @@
+/* 🌆 Elegant background with angled bottom */
+.whychooseus-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.whychooseus-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65); /* overlay for text clarity */
+  z-index: 0;
+}
+
+.whychooseus-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 💎 Feature boxes */
+.why-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.why-box:hover {
+  background: rgba(249, 201, 45, 0.1);
+  transform: translateY(-5px);
+}
+
+/* 🪶 Responsive layout */
+@media (max-width: 768px) {
+  .whychooseus-section {
+    text-align: center;
+    background-attachment: scroll;
+    padding: 60px 15px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  }
+
+  .whychooseus-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .whychooseus-section p {
+    font-size: 0.95rem;
+  }
+
+  .why-box {
+    padding: 1.2rem;
+  }
+}

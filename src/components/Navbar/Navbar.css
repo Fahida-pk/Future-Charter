@@ -1,0 +1,99 @@
+/* 🌟 Elegant minimal beige navbar */
+.navbar {
+  background-color: #f3f1ea !important; /* soft warm beige */
+  backdrop-filter: blur(10px);
+  transition: top 0.35s ease-in-out, opacity 0.35s ease-in-out;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ Smooth show/hide only */
+.navbar.nav-hide {
+  top: -100px;
+  opacity: 0;
+}
+
+.navbar.nav-show {
+  top: 0;
+  opacity: 1;
+}
+
+/* ✅ Logo styles (no resize now) */
+.nav-logo {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Link styles */
+.nav-link {
+  color: #2d2d2d !important;
+  font-weight: 700;
+  font-size: 20px;
+  display: inline;
+  
+  transition: color 0.25s ease;
+  text-decoration: none;
+  padding: 0 25px; /* balanced spacing */
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #a07c12 !important; /* muted gold accent */
+}
+
+/* ✅ Subtle shadow */
+.navbar.shadow-sm {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* 🌐 Desktop layout — perfectly centered */
+@media (min-width: 992px) {
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* even gap between menu items */
+    margin: 0 auto;
+  }
+
+  .navbar .navbar-brand {
+    margin-right: 0;
+  }
+}
+
+/* 📱 MOBILE VIEW */
+@media (max-width: 991px) {
+  /* Hide all except Home & About */
+  .navbar-nav .nav-item:nth-child(n + 3) {
+    display: none !important;
+  }
+
+  /* Collapse behavior */
+  .navbar-collapse:not(.show) .nav-item {
+    display: none;
+  }
+
+  .nav-logo {
+    height: 50px;
+  }
+
+  .navbar {
+    padding: 8px 0;
+  }
+
+  /* Center menu when open */
+  .navbar-collapse.show .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+}

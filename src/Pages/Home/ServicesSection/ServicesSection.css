@@ -1,0 +1,143 @@
+/* 🌼 Section background */
+.services-section {
+  background: whitesmoke; /* soft yellow tone */
+  backdrop-filter: blur(25px);
+  padding: 70px 0;
+  border-radius: 20px;
+}
+
+/* 🌟 Stylish heading */
+.section-heading {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  transition: transform 0.6s ease;
+  animation: floatHeading 5s ease-in-out infinite;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, #ffe56f, #f9c92d);
+  border-radius: 10px;
+}
+
+@keyframes floatHeading {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* 🎴 Cards */
+.service-card {
+  position: relative;
+  height: 340px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  background:  #eed251; /* light soft yellow */
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(202, 164, 39, 0.3);
+}
+
+/* 🖼️ Image layer */
+.service-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  z-index: 1;
+}
+
+/* ✨ Hover overlay */
+.service-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 227, 104, 0.96);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.6s ease;
+}
+
+.service-card:hover .service-image {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.service-card:hover .service-content {
+  opacity: 1;
+}
+
+/* 🧭 Text inside card */
+.service-content h5 {
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.service-content p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 992px) {
+  .service-card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.8rem;
+  }
+  .service-card {
+    height: 280px;
+  }
+  .service-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 1.6rem;
+  }
+  .service-card {
+    height: 250px;
+  }
+  .service-content h5 {
+    font-size: 1rem;
+  }
+  .service-content p {
+    font-size: 13px;
+  }
+}
