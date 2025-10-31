@@ -42,7 +42,7 @@
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-  background:  #eed251; /* light soft yellow */
+  background:  #e1cf7c; /* light soft yellow */
   transition: all 0.5s ease;
   cursor: pointer;
 }
