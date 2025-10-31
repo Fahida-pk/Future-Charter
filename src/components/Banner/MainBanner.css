@@ -91,7 +91,7 @@
 @media (max-width: 992px) {
   .hero-section {
     width: 100vh !important;
-    height: 85vh !important; /* balanced height */
+    height: 65vh !important; /* balanced height */
     background-size: 100% 100% !important; /* ✅ full image stretch */
     background-position: center center !important;
     display: flex;
@@ -99,10 +99,30 @@
     justify-content: flex-start;
   }
 
-  
+  .hero-content {
+    margin-left: 5%;
+    padding: 1.5rem 1.5rem;
+    max-width: 650px;
+  }
+
+  /* ✅ same as desktop */
+  .hero-content h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .sub-heading {
+    font-size: .2rem !important;
+  }
+
+  .hero-content p {
+    font-size: 1rem !important;
+    line-height: 1.1 !important;
+  }
+
   .btn-light {
     padding: 12px 30px !important;
-    font-size: 1rem !important;
+    font-size: .5rem !important;
   }
 }
 
