@@ -87,26 +87,16 @@
 }
 
 /* 📱 MOBILE — identical desktop layout on all devices */
+/* 📱 MOBILE VIEW FIX */
 @media (max-width: 992px) {
-  html, body {
-    zoom: 1 !important;
-    -webkit-text-size-adjust: none !important;
-    touch-action: manipulation !important;
-    overflow-x: hidden !important;
-  }
-
   .hero-section {
+    width: 100vw !important;
     height: 100vh !important;
-    background-size: cover !important;
+    background-size: 100% 100% !important; /* ✅ full image stretch */
     background-position: center center !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  }
-
-  .hero-section .container {
-    padding: 0 !important;
-    margin: 0 !important;
   }
 
   .hero-content {
@@ -115,16 +105,17 @@
     max-width: 650px;
   }
 
+  /* ✅ same as desktop */
   .hero-content h1 {
-    font-size: 2.8rem !important;
+    font-size: 2.0rem !important;
     line-height: 1.2 !important;
   }
 
-  .cursive-text {
-    font-size: 3rem !important;
+  .sub-heading {
+    font-size: 1.2rem !important;
   }
 
-  .banner-subtext {
+  .hero-content p {
     font-size: 1.1rem !important;
     line-height: 1.6 !important;
   }
@@ -135,7 +126,7 @@
   }
 }
 
-/* 🚀 Global spacing reset */
+/* 🚀 Reset spacing */
 html, body {
   margin: 0 !important;
   padding: 0 !important;
@@ -150,7 +141,5 @@ html, body {
   padding: 0 !important;
 }
 .hero-section {
-  background-size: cover !important;
-  background-position: center center !important;
   background-repeat: no-repeat !important;
 }
