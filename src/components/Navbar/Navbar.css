@@ -1,23 +1,25 @@
-/* 🌟 Elegant fixed navbar */
 .navbar {
   background-color: #f3f1ea !important;
-  padding: 10px 0;
-  min-width: 50px;
+  padding: 2px 0;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: top 0.35s ease-in-out, opacity 0.35s ease-in-out;
   z-index: 9999;
   position: fixed;
   width: 100%;
+  min-height: 120px;
+  top: 0;
 }
 
-.navbar.nav-hide {
-  top: -100px;
-  opacity: 0;
-}
-.navbar.nav-show {
+/* ✨ Show / Hide navbar animation */
+.nav-show {
   top: 0;
   opacity: 1;
+}
+
+.nav-hide {
+  top: -130px; /* move up and hide */
+  opacity: 0;
 }
 
 /* ✅ Container setup */
@@ -25,16 +27,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
 }
 
-/* ✅ Logo */
+/* ✅ Logo sizing */
 .nav-logo {
-  height: 110px;
+  height: 100px;
   width: auto;
   object-fit: contain;
+  margin-left: 20px;
   transition: transform 0.3s ease;
-  margin-left: 15px;
 }
 .nav-logo:hover {
   transform: scale(1.05);
@@ -43,13 +44,13 @@
 /* ✅ Navigation links */
 .navbar-nav {
   display: flex;
-  gap: 85px; 
+  gap: 95px;
   justify-content: center;
-  text-align: center;/* ⬅️ Adjust this number for more or less space between links */
+  text-align: center;
 }
 
 .nav-link {
-  color: #2d2d2d !important;
+  color: #0f0f0f !important;
   font-weight: 600;
   font-size: 20px;
   text-decoration: none;
@@ -60,51 +61,24 @@
   color: #0067b3 !important;
 }
 
-/* ✅ Shadow on scroll */
-.navbar.shadow-sm {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
-}
-
-/* ✅ Body padding so navbar doesn’t hide content */
+/* ✅ Body padding to avoid overlap */
 body {
-  padding-top: 130px; /* Match navbar height */
+  padding-top: 135px;
 }
 
-/* 📱 Mobile responsive styles */
-@media (max-width: 991px) {
-  .navbar-nav {
-    display: none;
-  }
-
-  .navbar-toggler {
-    display: block;
-    border: none;
-    background: none;
-    font-size: 30px;
-    color: #0067b3;
-  }
-
-  .nav-logo {
-    height: 80px;
-  }
-
-  body {
-    padding-top: 100px;
-  }
-}
-
-/* 🌐 Fullscreen mobile menu */
+/* ✅ Mobile menu styles */
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #f5f9fc;
+  backdrop-filter: blur(12px);
+  background: rgba(243, 241, 234, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -118,33 +92,35 @@ body {
   transform: translateY(0);
 }
 
-/* ❌ Close button */
-.mobile-close {
-  position: absolute;
-  top: 30px;
-  right: 35px;
-  font-size: 45px;
-  color: #f37335;
-  cursor: pointer;
-}
-
-/* ✅ Mobile logo */
 .mobile-logo {
-  margin-top: 60px;
-  margin-bottom: 25px;
+  margin: 40px 0 25px 30px;
 }
 .mobile-logo-img {
   width: 160px;
   height: auto;
 }
 
-/* ✅ Mobile links */
+.mobile-close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: 45px;
+  color: #000;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+.mobile-close:hover {
+  transform: rotate(90deg);
+}
+
 .mobile-menu a {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #003366;
+  color: #002244;
   text-decoration: none;
-  margin: 12px 0;
+  margin: 14px 0;
+  margin-left: 40px;
   transition: color 0.3s ease;
 }
 .mobile-menu a:hover {
