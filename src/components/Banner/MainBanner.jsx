@@ -20,7 +20,7 @@ const MainBanner = () => {
             }}
             viewport={{ once: false, amount: 0.4 }}
           >
-            Welcome To <br /> Future Charter Trading Co. Ltd
+            Welcome To <br /> Company Afdal Itqan Wujudah
           </motion.h1>
 
           {/* 📝 Animated Subtext */}
