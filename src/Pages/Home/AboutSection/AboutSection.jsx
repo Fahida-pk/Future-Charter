@@ -18,7 +18,7 @@ export default function AboutSection() {
         {/* 🔹 Heading */}
         <div className="text-center mb-5" data-aos="fade-up">
           <h2 className="fw-bold text-dark about-heading">
-            ABOUT <span className="highlight">FUTURE CHARTER</span>
+            ABOUT <span className="highlight">Afdal Itqan Wujudah</span>
           </h2>
           <h6 className="text-secondary">
             Empowering Industries Across Saudi Arabia
@@ -46,7 +46,7 @@ export default function AboutSection() {
           >
             <div>
               <p>
-                <strong>Future Charter Trading Company</strong> is a dynamic and
+                <strong>Afdal Itqan Wujudah</strong> is a dynamic and
                 diversified enterprise based in Jeddah & Riyadh, Saudi Arabia.
                 Since our inception, we have been committed to providing
                 high-quality, tailored solutions across various sectors to
@@ -66,7 +66,7 @@ export default function AboutSection() {
               </p>
 
               <p>
-                At Future Charter, we align our operations and services with{" "}
+                At Afdal Itqan Wujudah, we align our operations and services with{" "}
                 <strong>Saudi Arabia’s Vision 2030</strong>, supporting the
                 Kingdom’s transformation toward a diversified and
                 knowledge-based economy. Driven by our mission to deliver

@@ -66,7 +66,7 @@ body {
   padding-top: 135px;
 }
 
-/* ✅ Mobile Menu Styles */
+/* ✅ Mobile Menu Overlay */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -78,46 +78,45 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
-  transition: all 0.4s ease, background-color 0.3s ease;
-  z-index: 99999;
+  transition: all 0.4s ease;
+  z-index: 9999;
 }
 
-/* ✅ When Active */
+/* ✅ Active State */
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  background: rgba(243, 241, 234, 0.8);
-  backdrop-filter: blur(12px);
+}
+
+/* 🌟 Top Row in Menu (Logo + Close Button Opposite) */
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* 🌟 Logo inside menu */
+.mobile-menu-header img {
+  width: 140px;
+  height: auto;
 }
 
 /* 🌟 Close Button */
 .mobile-close {
-  position: absolute;
-  top: 30px;
-  right: 35px;
-  font-size: 45px;
-  color: #0067b3 !important;
+  font-size: 42px;
+  color: #0067b3;
   cursor: pointer;
-  z-index: 2;
   transition: transform 0.3s ease;
 }
-
 .mobile-close:hover {
   transform: rotate(90deg);
-}
-
-/* 🌟 Mobile Logo */
-.mobile-logo {
-  margin: 60px 0 25px 30px;
-}
-.mobile-logo-img {
-  width: 160px;
-  height: auto;
 }
 
 /* 🌟 Menu Links */
@@ -126,8 +125,7 @@ body {
   font-weight: 700;
   color: #002244;
   text-decoration: none;
-  margin: 14px 0;
-  margin-left: 40px;
+  margin: 20px 0;
   transition: color 0.3s ease;
 }
 .mobile-menu a:hover {
