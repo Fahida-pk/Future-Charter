@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [menuOpen, setMenuOpen] = useState(false); // ✅ menu toggle
+  const [menuOpen, setMenuOpen] = useState(false);
 
   // ✅ Hide on scroll down, show on scroll up
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setShow(false);
-      } else {
-        setShow(true);
-      }
+      if (window.scrollY > lastScrollY) setShow(false);
+      else setShow(true);
       setLastScrollY(window.scrollY);
     };
     window.addEventListener("scroll", handleScroll);
@@ -38,14 +36,13 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* ✅ Mobile toggle button */}
-          <button
-            className="navbar-toggler d-lg-none"
-            type="button"
-            onClick={() => setMenuOpen(true)}
+          {/* ✅ Mobile toggle button (hamburger / close) */}
+          <div
+            className="mobile-hamburger d-lg-none"
+            onClick={() => setMenuOpen(!menuOpen)}
           >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </div>
 
           {/* ✅ Desktop Menu */}
           <div
@@ -77,35 +74,36 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-{/* ✅ Mobile Overlay Menu */}
-<div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
 
-  {/* ✅ Header Row (Logo Right + 3 Lines Left) */}
-  <div className="mobile-menu-header">
-    {/* 3 Lines on Left */}
-    <div className="mobile-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-      ☰
-    </div>
+      {/* ✅ Mobile Overlay Menu */}
+      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+        {/* ✅ Header Row (logo right + close on left) */}
+        <div className="mobile-menu-header">
+          <div className="mobile-hamburger" onClick={() => setMenuOpen(false)}>
+            <FaTimes />
+          </div>
 
-    {/* Logo on Right */}
-    <Link to="/" onClick={() => setMenuOpen(false)}>
-      <img
-        src="/image/log.png"
-        alt="Future Charter Trading Co. Ltd"
-      />
-    </Link>
-  </div>
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            <img src="/image/log.png" alt="Future Charter Trading Co. Ltd" />
+          </Link>
+        </div>
 
-  {/* ✅ Menu Links (overlay links) */}
-  <div className="mobile-links">
-    <NavLink to="/" onClick={() => setMenuOpen(false)}>HOME</NavLink>
-    <NavLink to="/about" onClick={() => setMenuOpen(false)}>ABOUT</NavLink>
-    <NavLink to="/services" onClick={() => setMenuOpen(false)}>SERVICES</NavLink>
-    <NavLink to="/contact" onClick={() => setMenuOpen(false)}>CONTACT</NavLink>
-  </div>
-</div>
-
-
+        {/* ✅ Menu Links */}
+        <div className="mobile-links">
+          <NavLink to="/" onClick={() => setMenuOpen(false)}>
+            HOME
+          </NavLink>
+          <NavLink to="/about" onClick={() => setMenuOpen(false)}>
+            ABOUT
+          </NavLink>
+          <NavLink to="/services" onClick={() => setMenuOpen(false)}>
+            SERVICES
+          </NavLink>
+          <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
+            CONTACT
+          </NavLink>
+        </div>
+      </div>
     </>
   );
 };
