@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: flex;
+  width: 200%; /* ensures continuous scrolling */
+  animation: scroll-left 15s linear infinite;
+}
+
+.marquee-content img {
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

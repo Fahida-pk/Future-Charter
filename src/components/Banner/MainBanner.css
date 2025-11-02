@@ -75,16 +75,15 @@
 .btn-light {
   background: linear-gradient(270deg, #0070C0, #339DFF, #0070C0);
   background-size: 400% 400%;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.4); /* 🌟 Light border */
   color: #fff;
   transition: all 0.3s ease;
   padding: 12px 30px;
-  font-weight: 600;
-  border-radius: 5px;
+  font-weight: 500;
+  border-radius: 8px;
   animation: blueFlow 6s ease infinite;
-  box-shadow: 0 0 12px rgba(0, 112, 192, 0.5), 0 0 20px rgba(51, 157, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 112, 192, 0.35);
 }
-
 
 
 /* 🌊 Moving gradient animation */
@@ -111,7 +110,7 @@
 @media (max-width: 992px) {
   .hero-section {
     width: 100vh !important;
-    height: 45vh !important; /* balanced height */
+    height: 65vh !important; /* balanced height */
     background-size: 100% 100% !important; /* ✅ full image stretch */
     background-position: center center !important;
     display: flex;
@@ -121,22 +120,22 @@
 
   .hero-content {
     margin-left: 5%;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
     max-width: 650px;
   }
 
   /* ✅ same as desktop */
   .hero-content h1 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     line-height: 1.1 !important;
   }
 
   .sub-heading {
-    font-size: .1rem !important;
+    font-size: .2rem !important;
   }
 
   .hero-content p {
-    font-size: .5rem !important;
+    font-size: 1rem !important;
     line-height: 1.1 !important;
   }
 

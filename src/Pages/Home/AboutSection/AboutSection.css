@@ -121,23 +121,23 @@
 /* ✅ Small screens (mobile) */
 @media (max-width: 600px) {
   .about-section {
-    padding: 50px 15px; /* little more breathing space */
+    padding: 30px 15px; /* little more breathing space */
   }
 
   .about-heading {
-    font-size: 1rem;
+    font-size: 1.7rem;
     margin-bottom: 15px; /* add gap below heading */
   }
 
   .about-photo {
-    height: 250px;
+    height: 150px;
     width: auto;
-    margin: 20px 0 25px 0; /* top + bottom spacing between heading & paragraph */
-    border-radius: 10px;
+    margin: 15px 0 20px 0; /* top + bottom spacing between heading & paragraph */
+    border-radius: 8px;
   }
 
   .about-text p {
-    font-size: 0.95rem;
+    font-size: .5rem;
     line-height: 1.6;
     margin-bottom: 12px; /* small gap between paragraphs */
   }
