@@ -5,9 +5,9 @@ import "./Navbar.css";
 const Navbar = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [menuOpen, setMenuOpen] = useState(false); // ✅ added this!
+  const [menuOpen, setMenuOpen] = useState(false); // ✅ menu toggle
 
-  // ✅ Show navbar on scroll up, hide on scroll down
+  // ✅ Hide on scroll down, show on scroll up
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
@@ -32,23 +32,26 @@ const Navbar = () => {
           {/* ✅ Logo */}
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <img
-              src="https://futurecharter-ksa.com/wp-content/uploads/2024/12/Future-Charter-Trading-Company-Saudi-Arabia-Logo.png"
+              src="/image/log.png"
               alt="Future Charter Trading Co. Ltd"
               className="me-2 nav-logo"
             />
           </Link>
 
-          {/* ✅ Mobile 3 lines */}
+          {/* ✅ Mobile toggle button */}
           <button
             className="navbar-toggler d-lg-none"
             type="button"
-            onClick={() => setMenuOpen(true)} // open overlay
+            onClick={() => setMenuOpen(true)}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* ✅ Menu items */}
-          <div className="collapse navbar-collapse justify-content-end" id="navMenu">
+          {/* ✅ Desktop Menu */}
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navMenu"
+          >
             <ul className="navbar-nav align-items-lg-center">
               <li className="nav-item">
                 <NavLink to="/" className="nav-link">
@@ -60,7 +63,6 @@ const Navbar = () => {
                   ABOUT
                 </NavLink>
               </li>
-              {/* These only show on desktop */}
               <li className="nav-item d-none d-lg-block">
                 <NavLink to="/services" className="nav-link">
                   SERVICES
@@ -81,6 +83,18 @@ const Navbar = () => {
         <div className="mobile-close" onClick={() => setMenuOpen(false)}>
           ×
         </div>
+
+        {/* ✅ Mobile logo */}
+        <div className="mobile-logo">
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            <img
+              src="/image/log.png"
+              alt="Future Charter Trading Co. Ltd"
+              className="mobile-logo-img"
+            />
+          </Link>
+        </div>
+
         <NavLink to="/" onClick={() => setMenuOpen(false)}>
           HOME
         </NavLink>
@@ -93,7 +107,6 @@ const Navbar = () => {
         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
           CONTACT
         </NavLink>
-       
       </div>
     </>
   );

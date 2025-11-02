@@ -1,18 +1,49 @@
-/* 🌟 Elegant minimal beige navbar */
+/* 🌟 Elegant fixed navbar */
 .navbar {
-  background-color: #f3f1ea !important;
+  background-color:white;
+  padding: 5px 0;
+  min-height: 120px; /* enough room for larger logo */
+  align-items: center;
   backdrop-filter: blur(10px);
   transition: top 0.35s ease-in-out, opacity 0.35s ease-in-out;
-  padding: 5px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   position: fixed !important;
   width: 100%;
   z-index: 9999;
 }
 
-/* ✅ Smooth show/hide only */
+/* ✅ Center content inside navbar */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.nav-brand{
+  height: 70px;
+  width: 150vh;
+  
+}
+/* ✅ Logo styles */
+.nav-logo {
+  height: 100px;
+  width: 30vh;
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+.logo img {
+   background-color: #f3f1ea !important;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Smooth show/hide animation */
 .navbar.nav-hide {
-  top: -80px; /* hides smoothly */
+  top: -80px;
   opacity: 0;
 }
 
@@ -21,17 +52,7 @@
   opacity: 1;
 }
 
-/* ✅ Logo styles */
-.nav-logo {
-  height: 60px;
-  transition: transform 0.3s ease;
-}
-
-.nav-logo:hover {
-  transform: scale(1.05);
-}
-
-/* ✅ Links */
+/* ✅ Nav links */
 .nav-link {
   color: #2d2d2d !important;
   font-weight: 700;
@@ -43,22 +64,16 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: #a07c12 !important;
+  color: #607cc3 !important;
 }
 
-/* ✅ Subtle shadow */
+/* ✅ Subtle shadow when scrolling */
 .navbar.shadow-sm {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
 }
 
 /* 🌐 Desktop layout */
 @media (min-width: 992px) {
-  .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .navbar-nav {
     display: flex;
     gap: 60px;
@@ -66,7 +81,7 @@
   }
 }
 
-/* 📱 Mobile layout (default Bootstrap collapse hidden) */
+/* 📱 Mobile layout */
 @media (max-width: 991px) {
   .navbar-nav .nav-item:nth-child(n + 3) {
     display: none !important;
@@ -93,8 +108,8 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background: rgba(255, 255, 255, 0.6); /* ⬆️ more visible background */
-  backdrop-filter: blur(8px); /* ⬇️ reduced blur for clearer view */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
@@ -108,14 +123,14 @@
   z-index: 99999;
 }
 
-/* when active */
+/* Active overlay menu */
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* close button */
+/* Close button */
 .mobile-close {
   position: absolute;
   top: 30px;
@@ -127,7 +142,7 @@
   line-height: 1;
 }
 
-/* overlay links */
+/* Overlay links */
 .mobile-menu a {
   font-size: 1.8rem;
   font-weight: 700;
@@ -137,24 +152,56 @@
 }
 
 .mobile-menu a:hover {
-  color: #a07c12;
+  color: #4e7dba;
 }
 
-/* button */
-.get-started {
-  margin-top: 20px;
-  background: #a07c12;
-  color: #fff;
-  border: none;
-  padding: 14px 38px;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+
+
+
+/* ✅ Prevent content from hiding behind fixed navbar */
+body {
+  padding-top: 130px; /* same or slightly more than navbar height */
 }
 
-.get-started:hover {
-  background: #8d6d0e;
-  transform: translateY(-2px);
+@media (max-width: 768px) {
+  body {
+    padding-top: 90px;
+  }
+}
+/* ✅ Mobile overlay logo section */
+.mobile-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.mobile-logo-img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  transition: transform 0.3s ease;
+}
+
+.mobile-logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Optional: add slight fade for menu open */
+.mobile-menu.active {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
