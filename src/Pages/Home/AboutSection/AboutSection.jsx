@@ -70,8 +70,7 @@ export default function AboutSection() {
                 <strong>Saudi Arabia’s Vision 2030</strong>, supporting the
                 Kingdom’s transformation toward a diversified and
                 knowledge-based economy. Driven by our mission to deliver
-                reliable, efficient, and customer-centric solutions, Future
-                Charter continues to set new benchmarks in service standards
+                reliable, efficient, and customer-centric solutions, Afdal Itqan Wujudah  continues to set new benchmarks in service standards
                 across the Kingdom. From manpower to machinery, we aim to be
                 your trusted partner in building a stronger and more sustainable
                 future for Saudi Arabia.

@@ -80,21 +80,20 @@ const Navbar = () => {
 {/* ✅ Mobile Overlay Menu */}
 <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
 
-  {/* ✅ Header Row (Logo + Menu Icon Same Side) */}
+  {/* ✅ Header Row (Logo Right + 3 Lines Left) */}
   <div className="mobile-menu-header">
-    <div className="menu-left">
-      <Link to="/" onClick={() => setMenuOpen(false)}>
-        <img
-          src="/image/log.png"
-          alt="Future Charter Trading Co. Ltd"
-        />
-      </Link>
-
-      {/* ✅ 3 Lines (Hamburger Icon) */}
-      <div className="mobile-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
-      </div>
+    {/* 3 Lines on Left */}
+    <div className="mobile-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+      ☰
     </div>
+
+    {/* Logo on Right */}
+    <Link to="/" onClick={() => setMenuOpen(false)}>
+      <img
+        src="/image/log.png"
+        alt="Future Charter Trading Co. Ltd"
+      />
+    </Link>
   </div>
 
   {/* ✅ Menu Links (overlay links) */}
