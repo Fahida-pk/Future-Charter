@@ -66,14 +66,15 @@ body {
   padding-top: 135px;
 }
 
+/* 🌟 Overlay Menu (transparent background like home view) */
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  backdrop-filter: blur(12px);
-  background-color: #f3f1ea !important;
+  background: rgba(243, 241, 234, 0.2); /* semi-transparent */
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -91,41 +92,53 @@ body {
   transform: translateY(0);
 }
 
-/* 🌟 Logo + Close button row */
+/* 🌟 Header row: logo + 3 lines same side */
 .mobile-menu-header {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 20px auto 40px auto;
+  justify-content: flex-start;
+  padding: 15px 25px;
 }
 
-/* 🌟 Logo inside header */
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 🌟 Logo */
 .mobile-menu-header img {
-  width: 140px;
+  width: 130px;
   height: auto;
 }
 
-/* 🌟 Close button */
-.mobile-close {
-  font-size: 42px;
+/* 🌟 3 Lines (hamburger icon) */
+.mobile-hamburger {
+  font-size: 34px;
   color: #0067b3;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.mobile-close:hover {
-  transform: rotate(90deg);
+.mobile-hamburger:hover {
+  transform: scale(1.1);
 }
 
-/* 🌟 Menu links */
-.mobile-menu a {
-  font-size: 1.4rem;
+/* 🌟 Links (centered overlay) */
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.mobile-links a {
+  font-size: 1.5rem;
   font-weight: 700;
   color: #002244;
   text-decoration: none;
-  margin: 20px 0;
+  margin: 18px 0;
   transition: color 0.3s ease;
 }
-.mobile-menu a:hover {
+.mobile-links a:hover {
   color: #0067b3;
 }

@@ -79,32 +79,31 @@ const Navbar = () => {
       </nav>
 {/* ✅ Mobile Overlay Menu */}
 <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-  {/* ✅ Header Row (Logo + Close Button) */}
+
+  {/* ✅ Header Row (Logo + Menu Icon Same Side) */}
   <div className="mobile-menu-header">
-    <Link to="/" onClick={() => setMenuOpen(false)}>
-      <img
-        src="/image/log.png"
-        alt="Future Charter Trading Co. Ltd"
-      />
-    </Link>
-    <div className="mobile-close" onClick={() => setMenuOpen(false)}>
-      ×
+    <div className="menu-left">
+      <Link to="/" onClick={() => setMenuOpen(false)}>
+        <img
+          src="/image/log.png"
+          alt="Future Charter Trading Co. Ltd"
+        />
+      </Link>
+
+      {/* ✅ 3 Lines (Hamburger Icon) */}
+      <div className="mobile-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
     </div>
   </div>
 
-  {/* ✅ Menu links */}
-  <NavLink to="/" onClick={() => setMenuOpen(false)}>
-    HOME
-  </NavLink>
-  <NavLink to="/about" onClick={() => setMenuOpen(false)}>
-    ABOUT
-  </NavLink>
-  <NavLink to="/services" onClick={() => setMenuOpen(false)}>
-    SERVICES
-  </NavLink>
-  <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
-    CONTACT
-  </NavLink>
+  {/* ✅ Menu Links (overlay links) */}
+  <div className="mobile-links">
+    <NavLink to="/" onClick={() => setMenuOpen(false)}>HOME</NavLink>
+    <NavLink to="/about" onClick={() => setMenuOpen(false)}>ABOUT</NavLink>
+    <NavLink to="/services" onClick={() => setMenuOpen(false)}>SERVICES</NavLink>
+    <NavLink to="/contact" onClick={() => setMenuOpen(false)}>CONTACT</NavLink>
+  </div>
 </div>
 
 

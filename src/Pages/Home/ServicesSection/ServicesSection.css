@@ -42,14 +42,28 @@
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-  background:  #e1cf7c; /* light soft yellow */
+  background: linear-gradient(120deg, #c9e9ff, #a2d5ff, #d1ecff, #a2d5ff, #c9e9ff);
+  background-size: 300% 300%;
+  animation: lightBlueFlow 6s ease-in-out infinite;
   transition: all 0.5s ease;
   cursor: pointer;
 }
 
+@keyframes lightBlueFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .service-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 10px 30px rgba(202, 164, 39, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.4);
 }
 
 /* 🖼️ Image layer */
@@ -72,7 +86,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 227, 104, 0.96);
+  background: linear-gradient(120deg, #1e2e99, #a2d5ff, #2a89f5, #a2d5ff, #130db9);
+  background-size: 300% 300%;
+  animation: lightBlueFlow 6s ease-in-out infinite;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,6 +98,20 @@
   opacity: 0;
   z-index: 2;
   transition: opacity 0.6s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+@keyframes lightBlueFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .service-card:hover .service-image {
