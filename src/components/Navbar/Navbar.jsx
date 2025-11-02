@@ -79,20 +79,17 @@ const Navbar = () => {
       </nav>
 {/* ✅ Mobile Overlay Menu */}
 <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-  {/* Close button */}
-  <div className="mobile-close" onClick={() => setMenuOpen(false)}>
-    ×
-  </div>
-
-  {/* ✅ Logo at the top */}
-  <div className="mobile-logo">
+  {/* ✅ Header Row (Logo + Close Button) */}
+  <div className="mobile-menu-header">
     <Link to="/" onClick={() => setMenuOpen(false)}>
       <img
         src="/image/log.png"
         alt="Future Charter Trading Co. Ltd"
-        className="mobile-logo-img"
       />
     </Link>
+    <div className="mobile-close" onClick={() => setMenuOpen(false)}>
+      ×
+    </div>
   </div>
 
   {/* ✅ Menu links */}
@@ -109,6 +106,7 @@ const Navbar = () => {
     CONTACT
   </NavLink>
 </div>
+
 
     </>
   );

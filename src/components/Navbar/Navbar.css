@@ -66,7 +66,6 @@ body {
   padding-top: 135px;
 }
 
-/* ✅ Mobile Menu Overlay */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -86,29 +85,28 @@ body {
   z-index: 9999;
 }
 
-/* ✅ Active State */
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* 🌟 Top Row in Menu (Logo + Close Button Opposite) */
+/* 🌟 Logo + Close button row */
 .mobile-menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 20px auto;
+  margin: 20px auto 40px auto;
 }
 
-/* 🌟 Logo inside menu */
+/* 🌟 Logo inside header */
 .mobile-menu-header img {
   width: 140px;
   height: auto;
 }
 
-/* 🌟 Close Button */
+/* 🌟 Close button */
 .mobile-close {
   font-size: 42px;
   color: #0067b3;
@@ -119,7 +117,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* 🌟 Menu Links */
+/* 🌟 Menu links */
 .mobile-menu a {
   font-size: 1.4rem;
   font-weight: 700;
@@ -130,11 +128,4 @@ body {
 }
 .mobile-menu a:hover {
   color: #0067b3;
-}
-
-/* ✅ Hide toggler on desktop */
-@media (min-width: 992px) {
-  .navbar-toggler {
-    display: none;
-  }
 }
