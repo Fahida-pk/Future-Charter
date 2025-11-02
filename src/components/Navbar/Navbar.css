@@ -73,6 +73,33 @@ body {
   left: 0;
   height: 100vh;
   width: 100%;
+  background-color: #f3f1ea !important;
+  backdrop-filter: blur(12px); /* see home page through */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 🌟 Header Row: logo right + close left */
+/* ✅ Fix Header Row - Always stays same position */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
   background-color: rgba(243, 241, 234, 0.7); /* 70% opacity */
   backdrop-filter: blur(8px);
   display: flex;
@@ -86,14 +113,6 @@ body {
   z-index: 9999;
 }
 
-
-.mobile-menu.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-/* 🌟 Header Row - logo left, close right */
 .mobile-menu-header {
   width: 100%;
   display: flex;
@@ -108,60 +127,45 @@ body {
   -webkit-backdrop-filter: blur(8px);
   z-index: 10000;
 }
+/* ✅ Optional: equal spacing look */
+.mobile-menu-header img {
+  order: 2; /* ✅ Logo right */
+}
 
-/* Button styles */
-.mobile-lines,
-.mobile-close {
+.mobile-hamburger {
+  order: 1; /* ✅ Close button left */
+}
+
+
+.mobile-menu-header img {
+  width: 120px;
+  height: auto;
+}
+
+.mobile-hamburger {
   font-size: 34px;
   color: #0067b3;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.mobile-lines:hover,
-.mobile-close:hover {
+.mobile-hamburger:hover {
   transform: scale(1.1);
 }
 
-/* Logo styling */
-.mobile-menu-header img {
-  width: 110px;
-  height: auto;
-}
-
-
-/* 🌟 Logo styling */
-.mobile-menu-header img {
-  width: 110px;
-  height: auto;
-}
-
-/* 🌟 Close Button styling */
-.mobile-close {
-  font-size: 34px;
-  color: #0067b3;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.mobile-close:hover {
-  transform: scale(1.1);
-}
-
-/* 🌟 Menu Links */
+/* 🌟 Centered Menu Links */
 .mobile-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px; /* avoid overlapping header */
 }
 
 .mobile-links a {
-  font-size: 1.2rem; /* smaller font */
+  font-size: 1.6rem;
   font-weight: 600;
   color: #002244;
   text-decoration: none;
-  margin: 14px 0;
+  margin: 18px 0;
   transition: color 0.3s ease;
 }
 
