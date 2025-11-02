@@ -1,121 +1,110 @@
 /* 🌟 Elegant fixed navbar */
 .navbar {
-  background-color:white;
-  padding: 5px 0;
-  min-height: 120px; /* enough room for larger logo */
+  background-color: #f3f1ea !important;
+  padding: 10px 0;
+  min-width: 50px;
   align-items: center;
-  backdrop-filter: blur(10px);
-  transition: top 0.35s ease-in-out, opacity 0.35s ease-in-out;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  position: fixed !important;
-  width: 100%;
+  transition: top 0.35s ease-in-out, opacity 0.35s ease-in-out;
   z-index: 9999;
+  position: fixed;
+  width: 100%;
 }
 
-/* ✅ Center content inside navbar */
+.navbar.nav-hide {
+  top: -100px;
+  opacity: 0;
+}
+.navbar.nav-show {
+  top: 0;
+  opacity: 1;
+}
+
+/* ✅ Container setup */
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-.nav-brand{
-  height: 70px;
-  width: 150vh;
-  
-}
-/* ✅ Logo styles */
+
+/* ✅ Logo */
 .nav-logo {
-  height: 100px;
-  width: 30vh;
+  height: 110px;
+  width: auto;
   object-fit: contain;
-
   transition: transform 0.3s ease;
-  margin-left: 10px;
+  margin-left: 15px;
 }
-.logo img {
-   background-color: #f3f1ea !important;
-}
-
 .nav-logo:hover {
   transform: scale(1.05);
 }
 
-/* ✅ Smooth show/hide animation */
-.navbar.nav-hide {
-  top: -80px;
-  opacity: 0;
+/* ✅ Navigation links */
+.navbar-nav {
+  display: flex;
+  gap: 85px; 
+  justify-content: center;
+  text-align: center;/* ⬅️ Adjust this number for more or less space between links */
 }
 
-.navbar.nav-show {
-  top: 0;
-  opacity: 1;
-}
-
-/* ✅ Nav links */
 .nav-link {
   color: #2d2d2d !important;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
-  transition: color 0.25s ease;
   text-decoration: none;
-  padding: 0 25px;
+  transition: color 0.3s ease;
 }
-
 .nav-link:hover,
 .nav-link.active {
-  color: #607cc3 !important;
+  color: #0067b3 !important;
 }
 
-/* ✅ Subtle shadow when scrolling */
+/* ✅ Shadow on scroll */
 .navbar.shadow-sm {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
 }
 
-/* 🌐 Desktop layout */
-@media (min-width: 992px) {
-  .navbar-nav {
-    display: flex;
-    gap: 60px;
-    margin: 0 auto;
-  }
+/* ✅ Body padding so navbar doesn’t hide content */
+body {
+  padding-top: 130px; /* Match navbar height */
 }
 
-/* 📱 Mobile layout */
+/* 📱 Mobile responsive styles */
 @media (max-width: 991px) {
-  .navbar-nav .nav-item:nth-child(n + 3) {
-    display: none !important;
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #0067b3;
   }
 
   .nav-logo {
-    height: 50px;
+    height: 80px;
   }
 
-  .navbar {
-    padding: 8px 0;
-  }
-
-  .navbar-collapse.show .navbar-nav {
-    text-align: center;
-    width: 100%;
+  body {
+    padding-top: 100px;
   }
 }
 
-/* 🧭 Custom Fullscreen Overlay Menu */
+/* 🌐 Fullscreen mobile menu */
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: #f5f9fc;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 25px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -123,85 +112,41 @@
   z-index: 99999;
 }
 
-/* Active overlay menu */
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* Close button */
+/* ❌ Close button */
 .mobile-close {
   position: absolute;
   top: 30px;
   right: 35px;
   font-size: 45px;
-  color: #000;
+  color: #f37335;
   cursor: pointer;
-  font-weight: 400;
-  line-height: 1;
 }
 
-/* Overlay links */
+/* ✅ Mobile logo */
+.mobile-logo {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+.mobile-logo-img {
+  width: 160px;
+  height: auto;
+}
+
+/* ✅ Mobile links */
 .mobile-menu a {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: #2d2d2d;
+  color: #003366;
   text-decoration: none;
+  margin: 12px 0;
   transition: color 0.3s ease;
 }
-
 .mobile-menu a:hover {
-  color: #4e7dba;
-}
-
-
-
-
-
-/* ✅ Prevent content from hiding behind fixed navbar */
-body {
-  padding-top: 130px; /* same or slightly more than navbar height */
-}
-
-@media (max-width: 768px) {
-  body {
-    padding-top: 90px;
-  }
-}
-/* ✅ Mobile overlay logo section */
-.mobile-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-
-.mobile-logo-img {
-  width: 150px;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-  transition: transform 0.3s ease;
-}
-
-.mobile-logo-img:hover {
-  transform: scale(1.05);
-}
-
-/* ✅ Optional: add slight fade for menu open */
-.mobile-menu.active {
-  animation: fadeIn 0.4s ease forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  color: #0067b3;
 }
