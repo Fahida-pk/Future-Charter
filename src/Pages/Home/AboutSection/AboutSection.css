@@ -125,20 +125,21 @@
   }
 
   .about-heading {
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin-bottom: 15px; /* add gap below heading */
   }
 
   .about-photo {
     height: 250px;
+    width: auto;
     margin: 20px 0 25px 0; /* top + bottom spacing between heading & paragraph */
     border-radius: 10px;
   }
 
   .about-text p {
     font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 15px; /* small gap between paragraphs */
+    line-height: 1.6;
+    margin-bottom: 12px; /* small gap between paragraphs */
   }
 
   .about-right {
@@ -146,7 +147,7 @@
   }
 
   /* ✅ Optional: show only first 3 paragraphs on mobile */
-  .about-text p:nth-of-type(n+4) {
+  .about-text p:nth-of-type(n+3) {
     display: none;
   }
 }
