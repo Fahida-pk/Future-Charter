@@ -73,8 +73,8 @@ body {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #f3f1ea !important;
-  backdrop-filter: blur(12px); /* see home page through */
+  background-color: rgba(243, 241, 234, 0.7); /* 70% opacity */
+  backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,54 +86,82 @@ body {
   z-index: 9999;
 }
 
+
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* 🌟 Header Row: logo right + close left */
+/* 🌟 Header Row - logo left, close right */
 .mobile-menu-header {
   width: 100%;
   display: flex;
-  justify-content: space-between; /* opposite sides */
+  justify-content: space-between; /* left = button, right = logo */
   align-items: center;
   padding: 12px 25px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  background: transparent;
+  background-color: rgba(243, 241, 234, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 10000;
 }
 
-.mobile-menu-header img {
-  width: 120px;
-  height: auto;
-}
-
-.mobile-hamburger {
+/* Button styles */
+.mobile-lines,
+.mobile-close {
   font-size: 34px;
   color: #0067b3;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.mobile-hamburger:hover {
+.mobile-lines:hover,
+.mobile-close:hover {
   transform: scale(1.1);
 }
 
-/* 🌟 Centered Menu Links */
+/* Logo styling */
+.mobile-menu-header img {
+  width: 110px;
+  height: auto;
+}
+
+
+/* 🌟 Logo styling */
+.mobile-menu-header img {
+  width: 110px;
+  height: auto;
+}
+
+/* 🌟 Close Button styling */
+.mobile-close {
+  font-size: 34px;
+  color: #0067b3;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mobile-close:hover {
+  transform: scale(1.1);
+}
+
+/* 🌟 Menu Links */
 .mobile-links {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 80px; /* avoid overlapping header */
 }
 
 .mobile-links a {
-  font-size: 1.6rem;
+  font-size: 1.2rem; /* smaller font */
   font-weight: 600;
   color: #002244;
   text-decoration: none;
-  margin: 18px 0;
+  margin: 14px 0;
   transition: color 0.3s ease;
 }
 
