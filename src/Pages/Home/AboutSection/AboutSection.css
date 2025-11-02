@@ -72,10 +72,14 @@
 }
 
 /* Left Page (Image) */
+
 .about-left {
   flex: 1;
   overflow: hidden;
+  margin-top: -10px; /* Move image upward */
+  margin-bottom: 20px; /* Add space below */
 }
+
 .about-photo {
   width: 100%;
   height: 100%;
@@ -138,8 +142,15 @@
   }
 
   .about-photo {
-    height: 250px;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-top: -15px; /* ⬆ Moves image slightly upward */
+  margin-bottom: 20px; /* ⬇ Adds space below image */
+  border-radius: 10px; /* optional – makes edges smooth */
+}
+
 
   /* ✅ Hide extra paragraphs on mobile */
   .about-text p:nth-of-type(n+3) {
