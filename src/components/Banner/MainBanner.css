@@ -105,14 +105,14 @@
   box-shadow: 0 6px 15px rgba(0, 112, 192, 0.5);
 }
 
-/* 📱 MOBILE — identical desktop layout on all devices */
-/* 📱 MOBILE VIEW FIX */
 @media (max-width: 992px) {
   .hero-section {
     width: 100vh !important;
-    height: 65vh !important; /* balanced height */
-    background-size: 100% 100% !important; /* ✅ full image stretch */
+    height: 50vh !important; /* balanced height */
+    background-image: url("/image/banner.png") !important; /* ✅ new image for mobile */
+    background-size: cover !important;
     background-position: center center !important;
+    background-repeat: no-repeat !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -124,41 +124,27 @@
     max-width: 650px;
   }
 
-  /* ✅ same as desktop */
   .hero-content h1 {
     font-size: 1.5rem !important;
     line-height: 1.1 !important;
   }
 
-  .sub-heading {
-    font-size: .2rem !important;
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.sub-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem; /* mobile madhi aakan adjust cheyyam */
+  color: #ffffff;
+}
 
   .hero-content p {
-    font-size: .7rem !important;
+    font-size: 0.7rem !important;
     line-height: 1.1 !important;
   }
 
   .btn-light {
     padding: 12px 30px !important;
-    font-size: .5rem !important;
+    font-size: 0.5rem !important;
   }
-}
-
-/* 🚀 Reset spacing */
-html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow-x: hidden !important;
-}
-.hero-section,
-.hero-section .container,
-.hero-section .row {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.hero-section {
-  background-repeat: no-repeat !important;
 }
