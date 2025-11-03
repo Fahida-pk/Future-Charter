@@ -1,6 +1,6 @@
 /* 🌆 Banner background image setup */
 .hero-section {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -107,7 +107,7 @@
 
 @media (max-width: 992px) {
   .hero-section {
-    width: 50vh !important; 
+    width:auto; 
     height: 50vh !important; /* balanced height */
     background-image: url("/image/banner.png") !important; /* ✅ new image for mobile */
     background-size: cover !important;
