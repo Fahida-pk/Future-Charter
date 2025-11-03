@@ -18,7 +18,7 @@ export default function AboutSection() {
         {/* 🔹 Heading */}
         <div className="text-center mb-5" data-aos="fade-up">
           <h2 className="fw-bold text-dark about-heading">
-            ABOUT <span className="highlight">Afdal Itqan Wujudah</span>
+            ABOUT <span className="highlight">AFDAL ITQAN WUJUDAH</span>
           </h2>
           <h6 className="text-secondary">
             Empowering Industries Across Saudi Arabia

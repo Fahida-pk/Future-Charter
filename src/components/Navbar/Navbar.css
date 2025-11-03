@@ -32,19 +32,19 @@
 /* ✅ Logo sizing */
 .nav-logo {
   height: 100px;
-  width:auto;
-  font-weight: 500px;
-  
+  width: auto;
   object-fit: contain;
   margin-left: 20px;
-  
+  transition: transform 0.3s ease;
 }
-
+.nav-logo:hover {
+  transform: scale(1.05);
+}
 
 /* ✅ Navigation links */
 .navbar-nav {
   display: flex;
-  gap: 100px;
+  gap: 95px;
   justify-content: center;
   text-align: center;
 }
@@ -72,16 +72,14 @@ body {
 /* 🌟 Header Row: logo right + close left */
 /* ✅ Fix Header Row - Always stays same position */
 
-/* 🌟 Mobile Menu Overlay */
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
-  height: 60vh; /* 🔹 Reduced height — only partial overlay */
+  height: 100vh;
   width: 100%;
-  background-color: rgba(243, 241, 234, 0.6); /* lighter background */
-  backdrop-filter: blur(14px); /* 🔹 stronger blur to see homepage */
-  -webkit-backdrop-filter: blur(14px);
+ background-color: #f3f1ea !important;
+  backdrop-filter: blur(12px); /* see home page through */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,72 +90,73 @@ body {
   transition: all 0.4s ease;
   z-index: 9999;
 }
-
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* 🌟 Blur effect for homepage when menu open */
+/* 🌟 Blur effect only for mobile screens */
 @media (max-width: 768px) {
   body.menu-open .home-page {
-    filter: blur(8px);
+    filter: blur(6px);
     transition: filter 0.4s ease;
   }
 }
 
-/* 🌟 Mobile Header (top row) */
 .mobile-menu-header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* left = button, right = logo */
   align-items: center;
-  padding: 10px 22px;
+  padding: 12px 25px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #e8e4da; /* 🔹 New navbar color */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(243, 241, 234, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 10000;
 }
-
-/* 🌟 Header Logo + Button */
+/* ✅ Optional: equal spacing look */
 .mobile-menu-header img {
-  width: 110px;
-  height: auto;
-  order: 2;
+  order: 2; /* ✅ Logo right */
 }
 
 .mobile-hamburger {
-  order: 1;
-  font-size: 32px;
-  color: #005d99; /* 🔹 blue tone for icon */
+  order: 1; /* ✅ Close button left */
+}
+
+
+.mobile-menu-header img {
+  width: 120px;
+  height: auto;
+}
+
+.mobile-hamburger {
+  font-size: 34px;
+  color: #0067b3;
   cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .mobile-hamburger:hover {
   transform: scale(1.1);
-  color: #007acc;
 }
 
-/* 🌟 Centered Links */
+/* 🌟 Centered Menu Links */
 .mobile-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px; /* little gap below header */
 }
 
 .mobile-links a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #002244;
   text-decoration: none;
-  margin: 14px 0;
+  margin: 18px 0;
   transition: color 0.3s ease;
 }
 

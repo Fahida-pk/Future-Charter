@@ -27,25 +27,24 @@
 }
 
 /* Heading */
-.about-heading {
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  line-height: 1.2;
+@font-face {
+  font-family: "PoppinsCustom";
+  src: url("https://collectcdn.com/fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-.highlight {
-  color: #0067b3 !important;
-}.about-heading {
-  font-family: "Poppins", sans-serif;
+
+.about-heading {
+  
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.5px;
 }
 
 .highlight {
-  color: #0067b3 !important; /* your brand blue */
+  color: #0067b3 !important;
   font-weight: 700 !important;
-  letter-spacing: 0.5px;
-  position: relative;
 }
 
 /* Optional — subtle underline effect */
