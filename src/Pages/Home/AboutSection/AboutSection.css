@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 /* Reset */
 * {
   margin: 0;
@@ -33,7 +34,23 @@
 }
 .highlight {
   color: #0067b3 !important;
+}.about-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
 }
+
+.highlight {
+  color: #0067b3 !important; /* your brand blue */
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+/* Optional — subtle underline effect */
+
+
 .heading-line {
   width: 180px;
   height: 5px;
