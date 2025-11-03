@@ -1,5 +1,4 @@
 /* 🌆 Banner background image setup */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 .hero-section {
   width: 100vw;
   height: 100vh;
@@ -64,24 +63,12 @@
   margin-top: 8px;
 }
 
-/* 🧩 Custom Poppins font (direct from your link) */
-@font-face {
-  font-family: "PoppinsStandard";
-  src: url("https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrLPTucHtA.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* 📖 Standard Subheading */
+/* 📖 Paragraph */
 .hero-content p {
-  font-family: "PoppinsStandard", "Poppins", sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  font-weight: 400;
-  color: #f2f2f2;
-  letter-spacing: 0.3px;
-  margin-top: 12px;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.35);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #f5f5f5;
 }
 
 /* 🎨 Button - matches logo blue */
@@ -97,6 +84,7 @@
   animation: blueFlow 6s ease infinite;
   box-shadow: 0 4px 12px rgba(0, 112, 192, 0.35);
 }
+
 
 /* 🌊 Moving gradient animation */
 @keyframes blueFlow {
@@ -117,73 +105,60 @@
   box-shadow: 0 6px 15px rgba(0, 112, 192, 0.5);
 }
 
-/* 📱 Mobile Styles */
+/* 📱 MOBILE — identical desktop layout on all devices */
+/* 📱 MOBILE VIEW FIX */
 @media (max-width: 992px) {
   .hero-section {
-    position: relative;
-    background-image: url("/image/banner.png") !important;
-    background-size: cover !important;
+    width: 100vh !important;
+    height: 65vh !important; /* balanced height */
+    background-size: 100% 100% !important; /* ✅ full image stretch */
     background-position: center center !important;
-    background-repeat: no-repeat !important;
-    height: 70vh !important;
     display: flex;
     align-items: center;
-    justify-content: center; /* center text */
-    padding: 0;
-  }
-
-  /* 🔹 Overlay layer */
-  .hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45); /* same overlay as desktop */
-    z-index: 1;
+    justify-content: flex-start;
   }
 
   .hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "PoppinsStandard", "Poppins", sans-serif;
-    max-width: 90%;
-    color: #ffffff;
-    padding: 1rem;
+    margin-left: 5%;
+    padding: 1.5rem 1.5rem;
+    max-width: 650px;
   }
 
-  /* ✨ same as desktop */
+  /* ✅ same as desktop */
   .hero-content h1 {
-    font-size: 2.8rem !important;
-    line-height: 1.2 !important;
-    font-weight: 700 !important;
-    margin-bottom: 10px !important;
+    font-size: 1.5rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .sub-heading {
+    font-size: .2rem !important;
   }
 
   .hero-content p {
-    font-size: 1.05rem !important;
-    line-height: 1.65 !important;
-    font-weight: 600 !important;
-    color: #f2f2f2 !important;
-    letter-spacing: 0.3px !important;
-    margin-top: 12px !important;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.35) !important;
+    font-size: .7rem !important;
+    line-height: 1.1 !important;
   }
 
   .btn-light {
-    background: linear-gradient(270deg, #0070C0, #339DFF, #0070C0) !important;
-    background-size: 400% 400% !important;
-    border: 2px solid rgba(255, 255, 255, 0.4) !important;
-    color: #fff !important;
-    transition: all 0.3s ease !important;
     padding: 12px 30px !important;
-    font-weight: 500 !important;
-    border-radius: 8px !important;
-    animation: blueFlow 6s ease infinite !important;
-    box-shadow: 0 4px 12px rgba(0, 112, 192, 0.35) !important;
-    margin-top: 10px !important;
+    font-size: .5rem !important;
   }
+}
+
+/* 🚀 Reset spacing */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+.hero-section,
+.hero-section .container,
+.hero-section .row {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.hero-section {
+  background-repeat: no-repeat !important;
 }
