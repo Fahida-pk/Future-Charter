@@ -48,11 +48,11 @@
 .heading-line {
   width: 180px;
   height: 5px;
-  background: linear-gradient(90deg, #160eaf, #00BFFF, #2714f8);
+  background: linear-gradient(90deg,#160eaf,#3a8be9, #00BFFF, #2714f8);
   background-size: 200% 200%;
   border-radius: 3px;
   margin-top: 10px;
-  animation: lineFlow 4s ease infinite; /* 🌊 continuous light movement */
+  animation: lineFlow 10s ease infinite; /* 🌊 continuous light movement */
   box-shadow: 0 0 8px rgba(12, 57, 179, 0.4); /* optional soft glow */
 }
 
