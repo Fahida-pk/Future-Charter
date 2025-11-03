@@ -120,7 +120,7 @@
 /* 📱 Mobile Styles */
 @media (max-width: 992px) {
   .hero-section {
-    background-image: url("/image/024cede4-e7c3-4473-9248-a6d3b0865530.png") !important; /* your uploaded image */
+    background-image: url("/image/banner.jpeg") !important; /* your uploaded image */
     background-size: cover !important;
     background-position: center right !important;
     background-repeat: no-repeat !important;
@@ -128,13 +128,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 5%;
+    padding-right: 8%;
   }
 
   .hero-content {
     text-align: right !important;
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
+    display: flex;
+    flex-direction: column;
     font-family: "Poppins", sans-serif;
-    max-width: 90%;
+    max-width: 85%;
     color: #ffffff;
   }
 
@@ -158,6 +162,7 @@
     padding: 10px 25px !important;
     font-size: 0.75rem !important;
     border-radius: 8px;
+    align-self: flex-end !important;
   }
 }
 
