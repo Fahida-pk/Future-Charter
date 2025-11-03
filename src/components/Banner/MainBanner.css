@@ -112,7 +112,7 @@
     width: 100vh !important;
     height: 65vh !important; /* balanced height */
     background-size: 100% 100% !important; /* ✅ full image stretch */
-     background-image: url("/image/banner.png") !important; /* ✅ new image for mobile */
+     background-image: url("/image/banner.jpeg") !important; /* ✅ new image for mobile */
     background-size: cover !important;
    
     background-repeat: no-repeat !important;
