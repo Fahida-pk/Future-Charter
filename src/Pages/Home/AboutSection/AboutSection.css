@@ -31,9 +31,20 @@
   letter-spacing: 1px;
   line-height: 1.2;
 }
+/* ✨ Highlight effect for AFDAL ITQAN WUJUDAH */
 .highlight {
-  color: #0067b3 !important;
+  background: linear-gradient(90deg, #0070C0, #00BFFF, #0070C0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 12px rgba(0, 112, 192, 0.4);
+  animation: textFlow 6s ease infinite;
 }
+
+/* Gradient animation */
+
+
 .heading-line {
   width: 180px;
   height: 5px;

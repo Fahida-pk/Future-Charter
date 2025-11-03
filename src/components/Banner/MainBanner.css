@@ -107,7 +107,7 @@
 
 @media (max-width: 992px) {
   .hero-section {
-    width: 100vh !important;
+    width: 50vh !important; 
     height: 50vh !important; /* balanced height */
     background-image: url("/image/banner.png") !important; /* ✅ new image for mobile */
     background-size: cover !important;
