@@ -123,13 +123,14 @@
   .hero-section {
     position: relative;
     background-image: url("/image/banner.png") !important;
-    background-size: cover !important;
-    background-position: center center !important;
+    background-size: contain !important; /* 🔹 fit full image */
+    background-position: center top !important; /* 🔹 move up slightly */
     background-repeat: no-repeat !important;
+    background-color: #000; /* fallback for sides if image not full width */
     height: 70vh !important;
     display: flex;
     align-items: center;
-    justify-content: center; /* center text */
+    justify-content: center;
     padding: 0;
   }
 
@@ -138,7 +139,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45); /* same overlay as desktop */
+    background: rgba(0, 0, 0, 0.45);
     z-index: 1;
   }
 
@@ -151,12 +152,11 @@
     align-items: center;
     justify-content: center;
     font-family: "PoppinsStandard", "Poppins", sans-serif;
-    max-width: 90%;
+    max-width: 95%;
     color: #ffffff;
     padding: 1rem;
   }
 
-  /* ✨ same as desktop */
   .hero-content h1 {
     font-size: 2.8rem !important;
     line-height: 1.2 !important;
