@@ -1,160 +1,165 @@
-/* 🌟 Elegant minimal beige navbar */
 .navbar {
   background-color: #f3f1ea !important;
-  backdrop-filter: blur(10px);
-  transition: top 0.35s ease-in-out, opacity 0.35s ease-in-out;
-  padding: 5px 0;
+  padding: 2px 0;
+  align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  position: fixed !important;
-  width: 100%;
+  transition: top 0.35s ease-in-out, opacity 0.35s ease-in-out;
   z-index: 9999;
+  position: fixed;
+  width: 100%;
+  min-height: 120px;
+  top: 0;
 }
 
-/* ✅ Smooth show/hide only */
-.navbar.nav-hide {
-  top: -80px; /* hides smoothly */
-  opacity: 0;
-}
-
-.navbar.nav-show {
+/* ✨ Show / Hide navbar animation */
+.nav-show {
   top: 0;
   opacity: 1;
 }
 
-/* ✅ Logo styles */
-.nav-logo {
-  height: 60px;
-  transition: transform 0.3s ease;
+.nav-hide {
+  top: -130px; /* move up and hide */
+  opacity: 0;
 }
 
+/* ✅ Container setup */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ✅ Logo sizing */
+.nav-logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+}
 .nav-logo:hover {
   transform: scale(1.05);
 }
 
-/* ✅ Links */
-.nav-link {
-  color: #2d2d2d !important;
-  font-weight: 700;
-  font-size: 20px;
-  transition: color 0.25s ease;
-  text-decoration: none;
-  padding: 0 25px;
+/* ✅ Navigation links */
+.navbar-nav {
+  display: flex;
+  gap: 95px;
+  justify-content: center;
+  text-align: center;
 }
 
+.nav-link {
+  color: #0f0f0f !important;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 .nav-link:hover,
 .nav-link.active {
-  color: #a07c12 !important;
+  color: #0067b3 !important;
 }
 
-/* ✅ Subtle shadow */
-.navbar.shadow-sm {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
+/* ✅ Body padding to avoid overlap */
+body {
+  padding-top: 135px;
 }
 
-/* 🌐 Desktop layout */
-@media (min-width: 992px) {
-  .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  .navbar-nav {
-    display: flex;
-    gap: 60px;
-    margin: 0 auto;
-  }
-}
 
-/* 📱 Mobile layout (default Bootstrap collapse hidden) */
-@media (max-width: 991px) {
-  .navbar-nav .nav-item:nth-child(n + 3) {
-    display: none !important;
-  }
 
-  .nav-logo {
-    height: 50px;
-  }
+/* 🌟 Header Row: logo right + close left */
+/* ✅ Fix Header Row - Always stays same position */
 
-  .navbar {
-    padding: 8px 0;
-  }
-
-  .navbar-collapse.show .navbar-nav {
-    text-align: center;
-    width: 100%;
-  }
-}
-
-/* 🧭 Custom Fullscreen Overlay Menu */
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  background: rgba(255, 255, 255, 0.6); /* ⬆️ more visible background */
-  backdrop-filter: blur(8px); /* ⬇️ reduced blur for clearer view */
-  -webkit-backdrop-filter: blur(8px);
+ background-color: #f3f1ea !important;
+  backdrop-filter: blur(12px); /* see home page through */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
   transition: all 0.4s ease;
-  z-index: 99999;
+  z-index: 9999;
 }
-
-/* when active */
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* close button */
-.mobile-close {
-  position: absolute;
-  top: 30px;
-  right: 35px;
-  font-size: 45px;
-  color: #000;
-  cursor: pointer;
-  font-weight: 400;
-  line-height: 1;
+/* 🌟 Blur effect only for mobile screens */
+@media (max-width: 768px) {
+  body.menu-open .home-page {
+    filter: blur(6px);
+    transition: filter 0.4s ease;
+  }
 }
 
-/* overlay links */
-.mobile-menu a {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #2d2d2d;
+.mobile-menu-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* left = button, right = logo */
+  align-items: center;
+  padding: 12px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(243, 241, 234, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 10000;
+}
+/* ✅ Optional: equal spacing look */
+.mobile-menu-header img {
+  order: 2; /* ✅ Logo right */
+}
+
+.mobile-hamburger {
+  order: 1; /* ✅ Close button left */
+}
+
+
+.mobile-menu-header img {
+  width: 120px;
+  height: auto;
+}
+
+.mobile-hamburger {
+  font-size: 34px;
+  color: #0067b3;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mobile-hamburger:hover {
+  transform: scale(1.1);
+}
+
+/* 🌟 Centered Menu Links */
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-links a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #002244;
   text-decoration: none;
+  margin: 18px 0;
   transition: color 0.3s ease;
 }
 
-.mobile-menu a:hover {
-  color: #a07c12;
-}
-
-/* button */
-.get-started {
-  margin-top: 20px;
-  background: #a07c12;
-  color: #fff;
-  border: none;
-  padding: 14px 38px;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.get-started:hover {
-  background: #8d6d0e;
-  transform: translateY(-2px);
+.mobile-links a:hover {
+  color: #0067b3;
 }
