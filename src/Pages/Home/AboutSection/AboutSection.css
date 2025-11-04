@@ -136,8 +136,8 @@
 
   /* ✨ Heading style */
   .about-heading {
-    font-size: 1.2rem; /* smaller heading */
-    font-weight: 1000;
+    font-size: 1.3rem; /* smaller heading */
+    font-weight: 900;
     letter-spacing: 0.5px;
     line-height: 1.1;
     margin-bottom: 5px;
@@ -154,15 +154,17 @@
 
   /* 💡 Subheading style */
   .about-subheading {
-    color: #777; /* light color */
-   font-size: 0.05rem;
-
-    font-weight: 50px;
-    margin-top: 3px;
-    margin-bottom: 8px;
-    line-height: 1.2;
-  }
-
+  color: #777;
+  font-size: 0.55rem;    /* smaller, readable size */
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  max-width: 90%;        /* prevent too-wide lines */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;    /* center align */
+}
   /* Gradient line below subheading */
   .heading-line {
     width: 120px;
@@ -181,14 +183,16 @@
 
   /* 🖼 Image styling */
   .about-image img {
-  width: 200vw; /* viewport മുഴുവൻ വീതി */
+ 
+  width: 100vw;          /* full viewport width */
   height: auto;
   object-fit: cover;
-  border-radius: 0; /* edges round ആക്കേണ്ടതില്ലെങ്കിൽ */
-  display: block; /* unwanted gaps ഒഴിവാക്കാൻ */
-  margin: 0;
-  padding-top: 10px;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0;
 }
+
 
 
   /* 📝 Paragraph styling */
