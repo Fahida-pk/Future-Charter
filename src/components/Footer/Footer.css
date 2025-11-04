@@ -93,18 +93,18 @@
 
   .footer-info {
     text-align: left;
-    margin-bottom: -10px;             /* bring text lower */
+    margin-bottom: -90px;             /* bring text lower */
   }
 
   .footer-info p {
-    font-size: 16px;
+    font-size: 10px;
     margin: 3px 0;
   }
 
   .vision-box {
     justify-content: flex-end;
-    margin-bottom: -80px;             /* positions Vision 2030 near skyline */
-    width: 40%;
+    margin-bottom: -90px;             /* positions Vision 2030 near skyline */
+    width: 50%;
   }
 
   .vision-logo {

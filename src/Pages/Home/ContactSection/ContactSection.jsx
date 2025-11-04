@@ -16,7 +16,7 @@ export default function ContactSection() {
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
             <textarea rows="4" placeholder="Your Message" required />
-            <button type="submit">Send Message</button>
+            <button type="submit">SEND MESSAGE</button>
           </form>
         </div>
       </div>
