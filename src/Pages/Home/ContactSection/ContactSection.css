@@ -120,6 +120,7 @@
   background: linear-gradient(90deg, #0039cc, #008cff);
   transform: translateY(-2px);
   cursor: pointer;
+  color: black;
 }
 
 /* Responsive */
