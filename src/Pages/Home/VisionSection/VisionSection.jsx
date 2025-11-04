@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
           style={{ maxWidth: "800px", margin: "0 auto" }}
           data-aos="fade-up"
         >
-          At Future Charter Trading Company, we are committed to providing
+          At AFDAL ITQAN WUJUDAH, we are committed to providing
           exceptional services that contribute to the Kingdom’s Vision 2030.
           Our values are rooted in reliability, safety, and customer
           satisfaction, making us a trusted partner for organizations across
