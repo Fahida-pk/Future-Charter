@@ -1,118 +1,92 @@
 .contact-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #fafafa 0%, #fffbe8 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
-  overflow: hidden;
-}
-
-/* --- Background: Strong blur layer --- */
-.contact-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("https://complextradingco.com/img/about.png") center/cover no-repeat;
-  filter: blur(35px) brightness(0.8); /* Stronger blur + slight dim */
-  transform: scale(1.1);
-  z-index: 1;
-}
-
-/* --- Semi-clear foreground image --- */
-.contact-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("https://complextradingco.com/img/about.png") center/cover no-repeat;
-  opacity: 0.2; /* Just a hint of clear version */
-  z-index: 2;
-}
-
-/* --- Glass form --- */
-.contact-form-container {
-  position: relative;
-  z-index: 3;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(15px) saturate(140%);
-  -webkit-backdrop-filter: blur(15px) saturate(140%);
-  border-radius: 20px;
-  padding: 45px 40px;
-  max-width: 420px;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1100px;
   width: 90%;
-  color: #fff;
-  text-align: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* --- Headings --- */
+/* Image section */
+.contact-image img {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass form container */
+.contact-form-container {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 40px 35px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+  color: #222;
+  text-align: left;
+}
+
 .contact-form-container h2 {
-  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 10px;
-  font-weight: 600;
-  color: #fff;
-}
-.contact-form-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("https://complextradingco.com/img/about.png") center/cover no-repeat;
-  z-index: -1;
-}
-.contact-form-container p {
-  font-size: 1rem;
-  margin-bottom: 25px;
-  color: #e8e8e8;
+  color: #222;
 }
 
-/* --- Inputs --- */
+.contact-form-container p {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 12px 15px;
   margin-bottom: 15px;
-  border: none;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.25);
-  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
   outline: none;
   font-size: 1rem;
+  color: #333;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #ddd;
-}
-
-/* --- Button --- */
 .contact-form button {
-  background: linear-gradient(270deg, #0070C0, #339DFF, #0070C0);
-  background-size: 400% 400%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  color: #fff;
-  transition: all 0.3s ease;
-  padding: 12px 30px;
-  font-weight: 500;
+  width: 100%;
+  padding: 12px;
+  background: #ffcc00;
+  border: none;
   border-radius: 8px;
-  animation: blueFlow 6s ease infinite;
-  box-shadow: 0 4px 12px rgba(0, 112, 192, 0.35);
+  color: #111;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .contact-form button:hover {
-  cursor: pointer;
-  color: black;
+  background: #f6b800;
+  transform: translateY(-2px);
 }
 
-/* --- Responsive --- */
+/* Responsive */
 @media (max-width: 768px) {
-  .contact-section {
-    height: auto;
-    padding: 60px 20px;
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
   }
 
   .contact-form-container {
-    padding: 30px 25px;
+    width: 100%;
   }
 }
