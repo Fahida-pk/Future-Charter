@@ -1,0 +1,42 @@
+.truck-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #f8f9fb; /* optional background color */
+  padding: 60px 0;
+}
+
+.truck-marquee {
+  display: flex;
+  align-items: center;
+  animation: truckMove 10s linear infinite;
+}
+
+.truck-marquee img {
+  height: 220px; /* adjust as you like */
+  margin-right: 100px;
+  user-select: none;
+}
+
+/* Keyframes for movement */
+@keyframes truckMove {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Optional: reverse direction */
+.truck-section.reverse .truck-marquee {
+  animation-direction: reverse;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .truck-marquee img {
+    height: 150px;
+    margin-right: 60px;
+  }
+}
