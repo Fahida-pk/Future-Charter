@@ -31,7 +31,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()} Future Charter Trading Company. All Rights Reserved.
+          © {new Date().getFullYear()} Afdal Itqan Wujudah Company. All Rights Reserved.
         </p>
       </div>
     </footer>
