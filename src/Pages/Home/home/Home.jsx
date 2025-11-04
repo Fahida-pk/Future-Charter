@@ -8,7 +8,7 @@ import ServicesSection from "../ServicesSection/ServicesSection.jsx";
 import VisionSection from "../VisionSection/VisionSection.jsx";
 import ContactSection from "../ContactSection/ContactSection.jsx";
 import  VisionMissionSection from "../Mission/mission.jsx";
-import TruckSection from "../TruckSection/TruckSection.jsx";
+
 export default function Home() {
   return (
     <>
@@ -25,7 +25,7 @@ export default function Home() {
       <VisionSection />
       <VisionMissionSection/>
       <ContactSection />
-        <TruckSection />
+      
        
     </>
   );
