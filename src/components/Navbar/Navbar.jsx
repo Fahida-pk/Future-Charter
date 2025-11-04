@@ -21,6 +21,7 @@ const Navbar = () => {
 
   return (
     <>
+      {/* ✅ Desktop Navbar (unchanged) */}
       <nav
         className={`navbar navbar-expand-lg fixed-top shadow-sm ${
           show ? "nav-show" : "nav-hide"
@@ -36,12 +37,12 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* ✅ Mobile toggle button (hamburger / close) */}
+          {/* ✅ Mobile toggle button */}
           <div
             className="mobile-hamburger d-lg-none"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setMenuOpen(true)}
           >
-            {menuOpen ? <FaTimes /> : <FaBars />}
+            <FaBars />
           </div>
 
           {/* ✅ Desktop Menu */}
@@ -77,7 +78,7 @@ const Navbar = () => {
 
       {/* ✅ Mobile Overlay Menu */}
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-        {/* ✅ Header Row (logo right + close on left) */}
+        {/* ✅ Header Row (close on left + logo on right) */}
         <div className="mobile-menu-header">
           <div className="mobile-hamburger" onClick={() => setMenuOpen(false)}>
             <FaTimes />
