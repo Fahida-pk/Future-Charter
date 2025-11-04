@@ -1,3 +1,4 @@
+/* === Layout === */
 .contact-section {
   position: relative;
   width: 100%;
@@ -5,11 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
   overflow: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Background image */
+/* === Background Image === */
 .contact-image img {
   position: absolute;
   top: 0;
@@ -17,10 +18,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   z-index: 1;
 }
 
-/* Dark overlay for better contrast */
+/* === Blur Overlay === */
 .contact-section::before {
   content: "";
   position: absolute;
@@ -28,48 +30,52 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45); /* adjust darkness as needed */
+  backdrop-filter: blur(6px); /* ✅ Soft blur */
+  -webkit-backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.35); /* light dark overlay for clarity */
   z-index: 2;
 }
 
-/* Glass-style contact form */
+/* === Glass Contact Form === */
 .contact-form-container {
   position: relative;
   z-index: 3;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
   padding: 40px;
-  max-width: 420px;
   width: 90%;
+  max-width: 420px;
   color: #fff;
-  text-align: center;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Headings and text */
+/* === Headings === */
 .contact-form-container h2 {
   font-size: 2rem;
   margin-bottom: 10px;
   font-weight: 600;
+  color: #fff;
 }
 
 .contact-form-container p {
   font-size: 1rem;
   margin-bottom: 25px;
-  color: #f5f5f5;
+  color: #e5e5e5;
 }
 
-/* Inputs */
+/* === Input Fields === */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 12px 14px;
   margin-bottom: 15px;
   border: none;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
   color: #fff;
   outline: none;
   font-size: 1rem;
@@ -80,31 +86,30 @@
   color: #ddd;
 }
 
-/* Button */
+/* === Button === */
 .contact-form button {
-  background: linear-gradient(270deg, #0070C0, #339DFF, #0070C0);
-  background-size: 400% 400%;
-  border: 2px solid rgba(255, 255, 255, 0.4); /* 🌟 Light border */
+  width: 100%;
+  background: linear-gradient(90deg, #0070C0, #00BFFF);
+  border: none;
   color: #fff;
-  transition: all 0.3s ease;
-  padding: 12px 30px;
+  font-size: 1rem;
   font-weight: 500;
-  border-radius: 8px;
-  animation: blueFlow 6s ease infinite;
+  border-radius: 10px;
+  padding: 12px;
+  transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 112, 192, 0.35);
 }
 
 .contact-form button:hover {
-  background: linear-gradient(270deg, #0070C0, #339DFF, #0070C0);
+  background: linear-gradient(90deg, #0056b3, #0099cc);
   cursor: pointer;
-  color: black;
 }
 
-/* Responsive design */
+/* === Responsive === */
 @media (max-width: 768px) {
   .contact-section {
     height: auto;
-    padding: 60px 20px;
+    padding: 80px 20px;
   }
 
   .contact-form-container {
