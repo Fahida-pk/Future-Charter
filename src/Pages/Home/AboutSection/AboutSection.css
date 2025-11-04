@@ -137,7 +137,7 @@
   /* ✨ Heading style */
   .about-heading {
     font-size: 1.2rem; /* smaller heading */
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 0.5px;
     line-height: 1.1;
     margin-bottom: 5px;
@@ -155,8 +155,8 @@
   /* 💡 Subheading style */
   .about-subheading {
     color: #777; /* light color */
-    font-size: 0.85rem;
-    font-weight: 400;
+    font-size: 0.55rem;
+    font-weight: 200;
     margin-top: 3px;
     margin-bottom: 8px;
     line-height: 1.2;
@@ -195,8 +195,8 @@
     margin-bottom: 6px; /* less gap */
     line-height: 1.4;
     color: #222;
-    font-size: 0.9rem; /* slightly larger text */
-    font-weight: 400;
+    font-size: 0.5rem; /* slightly larger text */
+    font-weight: 200;
   }
 
 

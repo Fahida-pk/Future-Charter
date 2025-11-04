@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom"; // ✅ Import Link
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./mission.css";
 
 export default function VisionMissionSection() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false }); // animation on scroll + refresh
+    AOS.init({ duration: 1000, once: false });
   }, []);
 
   return (
@@ -27,7 +27,6 @@ export default function VisionMissionSection() {
                 efficient and cost-effective solutions that meet the demands of
                 today’s evolving business landscape.
               </p>
-              {/* ✅ Link instead of button */}
               <Link to="/services" className="vm-btn">
                 KNOW MORE
               </Link>
@@ -35,11 +34,7 @@ export default function VisionMissionSection() {
           </div>
 
           {/* OUR MISSION */}
-          <div
-            className="col-md-5 mb-4"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
+          <div className="col-md-5 mb-4" data-aos="fade-up" data-aos-delay="200">
             <div className="vm-card vm-down">
               <h3 className="vm-heading" data-aos="zoom-in">
                 OUR MISSION
@@ -52,7 +47,6 @@ export default function VisionMissionSection() {
                 innovative, and adaptable solutions that enhance productivity,
                 safety, and sustainability in every sector we serve.
               </p>
-              {/* ✅ Link instead of button */}
               <Link to="/services" className="vm-btn">
                 KNOW MORE
               </Link>

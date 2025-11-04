@@ -38,6 +38,7 @@
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   animation: dashmove 1.5s linear infinite;
+  z-index: 0;
 }
 
 @keyframes dashmove {
@@ -49,13 +50,11 @@
   }
 }
 
-
 /* ✨ Hover effect */
 .vm-card:hover {
   transform: translateY(-5px);
   border-color: #807cf5;
   cursor: pointer;
-  
 }
 
 /* 🟡 Title style */
@@ -95,18 +94,17 @@
   align-items: center;
   transition: all 0.3s ease;
   text-decoration: none;
+  position: relative;
+  z-index: 2;
 }
-
-
 
 .vm-btn:hover {
   background: linear-gradient(90deg, #432edc, #6357ef);
   transform: translateY(-2px);
-  text-decoration: none; /* keep underline off even on hover */
-   cursor: pointer;
-  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  color:black !important;
 }
-
 
 /* 🌤️ Light background glow */
 .mission-section::before,
@@ -134,11 +132,11 @@
 
 /* 👇 Stagger effect */
 .vm-up {
-  margin-top: 0; /* Vision normal */
+  margin-top: 0;
 }
 
 .vm-down {
-  margin-top: 50px; /* Mission lower */
+  margin-top: 50px;
 }
 
 /* 📱 Responsive */
