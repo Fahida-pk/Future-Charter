@@ -135,7 +135,8 @@
   }
 
   .about-heading {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
   }
 
@@ -144,20 +145,21 @@
   }
 
   .about-image img {
-    width: 100% !important;  /* ensures full width */
+    width: auto !important;  /* ensures full width */
     height: auto !important; /* keeps correct proportion */
     border-radius: 8px;
     object-fit: cover;
   }
 
   .about-text p {
-    font-size: 0.65rem;
-    line-height: 1.3;
-    margin-bottom: 5px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-top: 5px;
+    margin-bottom: 8px;
   }
 
   .about-text {
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
   /* Optional: show only first 3 paragraphs on mobile */
