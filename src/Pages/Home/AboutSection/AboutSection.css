@@ -155,11 +155,11 @@
   /* 💡 Subheading style */
   .about-subheading {
   color: #777;
-  font-size: 0.05rem;    /* smaller, readable size */
-  font-weight: 100;
+  font-size: 0.02rem;    /* smaller, readable size */
+  font-weight: 50px;
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: 1.2;
+  line-height: 1;
   max-width: 100%;        /* prevent too-wide lines */
   margin-left: auto;
   margin-right: auto;
@@ -206,8 +206,8 @@
   margin-bottom: 3px;   /* balanced spacing */
   line-height: 1.6;     /* better readability */
   color: #222;
-  font-size: 0.9rem;    /* readable size on mobile */
-  font-weight: 400;
+  font-size: 0.5rem;    /* readable size on mobile */
+  font-weight: 200;
 }
 
 
