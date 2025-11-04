@@ -155,9 +155,9 @@
   /* 💡 Subheading style */
   .about-subheading {
     color: #777; /* light color */
-   font-size: 0.08rem;
+   font-size: 0.05rem;
 
-    font-weight: 100;
+    font-weight: 50px;
     margin-top: 3px;
     margin-bottom: 8px;
     line-height: 1.2;
@@ -181,13 +181,13 @@
 
   /* 🖼 Image styling */
   .about-image img {
-  width: 100vw; /* viewport മുഴുവൻ വീതി */
+  width: 200vw; /* viewport മുഴുവൻ വീതി */
   height: auto;
   object-fit: cover;
   border-radius: 0; /* edges round ആക്കേണ്ടതില്ലെങ്കിൽ */
   display: block; /* unwanted gaps ഒഴിവാക്കാൻ */
   margin: 0;
-  padding-top: 0;
+  padding-top: 10px;
 }
 
 
@@ -195,7 +195,7 @@
  .about-text {
   padding: 20px 15px;   /* top & side padding */
   text-align: justify;  /* full width fill effect */
-  background-color: #fff; /* optional - white background */
+
 }
 
 .about-text p {
