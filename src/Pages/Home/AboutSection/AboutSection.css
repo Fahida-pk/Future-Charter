@@ -141,6 +141,7 @@
     letter-spacing: 0.5px;
     line-height: 1.1;
     margin-bottom: 5px;
+    color: black;
   }
 
   /* ✨ Highlight effect for AFDAL ITQAN WUJUDAH */
@@ -154,11 +155,11 @@
   /* 💡 Subheading style */
   .about-subheading {
   color: #777;
-  font-size: 3px;        /* smaller, neat size */
-  font-weight: 50px;       /* normal readable weight */
+  font-size: 2px;        /* smaller, neat size */
+  font-weight: 10px;       /* normal readable weight */
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: 0.3;       /* balanced spacing */
+  line-height: 0.5;       /* balanced spacing */
   max-width: 100%;         /* keeps text compact */
   margin-left: auto;
   margin-right: auto;
