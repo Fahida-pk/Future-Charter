@@ -161,6 +161,7 @@ body {
 
 /* 🌟 Optional blur effect on homepage when menu open */
 @media (max-width: 768px) {
+  
   body.menu-open .home-page {
     filter: blur(8px);
     transition: filter 0.4s ease;
