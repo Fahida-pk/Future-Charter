@@ -191,10 +191,12 @@
   }
 
   .about-text p {
-  margin-bottom: 16px;
-  line-height: 1.8;
+  margin-bottom: 10px;
+  line-height: 1.5;
   color:black;
-  font-size: .8rem;
+  font-size: .5rem;
+  font-weight: .5rem;
+  font-style: normal;
 }
 
 
@@ -203,7 +205,7 @@
   }
 
   /* Optional: show only first 3 paragraphs on mobile */
-  .about-text p:nth-of-type(n+4) {
+  .about-text p:nth-of-type(n+3) {
     display: none;
   }
 }
