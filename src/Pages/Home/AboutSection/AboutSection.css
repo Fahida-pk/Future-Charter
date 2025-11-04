@@ -194,7 +194,7 @@
   margin-bottom: 16px;
   line-height: 1.8;
   color:black;
-  font-size: .5rem;
+  font-size: .8rem;
 }
 
 
@@ -203,7 +203,7 @@
   }
 
   /* Optional: show only first 3 paragraphs on mobile */
-  .about-text p:nth-of-type(n+3) {
+  .about-text p:nth-of-type(n+4) {
     display: none;
   }
 }
