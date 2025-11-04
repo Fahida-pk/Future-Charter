@@ -81,31 +81,38 @@
 }
 
 
-/* Responsive */
-/* ✅ Mobile Responsive Fix */
+/* ✅ Responsive Footer for Mobile (keeps desktop-style layout) */
 @media (max-width: 768px) {
   .footer-content {
-    flex-direction: column;      /* Stack vertically */
-    align-items: center;         /* Center all items */
-    text-align: center;
-    gap: 15px;                   /* Small gap between items */
+    flex-direction: row;              /* keep side-by-side layout */
+    justify-content: space-between;   /* email left, logo right */
+    align-items: center;
+    text-align: left;
+    padding: 0 15px;
   }
 
   .footer-info {
-    margin-bottom: 90px;
+    text-align: left;
+    margin-bottom: 0;
   }
 
   .footer-info p {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 4px 0;
   }
 
   .vision-box {
-    justify-content: center;     /* Center logo */
-    margin: 0 auto;
-    width: 70%;
+    justify-content: flex-end;
+    margin-bottom: -40px;             /* adjusts distance from skyline */
+    width: 40%;
   }
 
   .vision-logo {
-    max-width: 260px;            /* Smaller for mobile */
+    max-width: 180px;                 /* scaled for mobile */
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding: 8px 0;
   }
 }
