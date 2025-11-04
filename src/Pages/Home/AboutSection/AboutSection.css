@@ -179,7 +179,7 @@
 
 
   .about-image img {
-    width: 100vh !important;
+    width: auto !important;
     height: auto !important; 
     background-size: 100% 100% !important; 
    background-size: cover !important;
@@ -191,11 +191,11 @@
   }
 
   .about-text p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   line-height: 1.5;
   color:black;
-  font-size: .5rem;
-  font-weight: .5rem;
+  font-size: .8rem;
+  font-weight: .8rem;
   font-style: normal;
 }
 
