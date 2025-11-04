@@ -103,6 +103,8 @@
   background: linear-gradient(90deg, #432edc, #6357ef);
   transform: translateY(-2px);
   text-decoration: none; /* keep underline off even on hover */
+   cursor: pointer;
+  color: black;
 }
 
 
