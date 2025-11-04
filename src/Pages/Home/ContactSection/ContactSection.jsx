@@ -5,13 +5,7 @@ export default function ContactSection() {
   return (
     <section className="contact-section" id="contact">
       {/* Full background image */}
-      <div className="contact-image">
-        <img
-          src="https://complextradingco.com/img/about.png"
-          alt="Contact"
-        />
-      </div>
-
+     
       {/* Glass form overlay */}
       <div className="contact-form-container">
         <h2>Contact Us</h2>

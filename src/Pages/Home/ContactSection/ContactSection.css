@@ -9,18 +9,7 @@
   overflow: hidden;
 }
 
-/* Background image – clear and visible */
-.contact-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-/* Subtle dark overlay (optional, can remove if you want full clarity) */
+/* Background - fully blurred layer */
 .contact-section::before {
   content: "";
   position: absolute;
@@ -28,17 +17,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.15); /* very light overlay */
+  background: url("https://complextradingco.com/img/about.png") center/cover no-repeat;
+  filter: blur(20px);
+  transform: scale(1.1); /* avoid blur edge lines */
+  z-index: 1;
+}
+
+/* Clear version of same image overlay */
+.contact-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://complextradingco.com/img/about.png") center/cover no-repeat;
+  opacity: 0.35; /* control how visible the clear version is */
   z-index: 2;
 }
 
-/* Glass-style form only */
+/* Form container on top */
 .contact-form-container {
   position: relative;
   z-index: 3;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
   border-radius: 16px;
   padding: 40px;
   max-width: 420px;
@@ -98,7 +102,6 @@
 }
 
 .contact-form button:hover {
-  background: linear-gradient(270deg, #0070C0, #339DFF, #0070C0);
   cursor: pointer;
   color: black;
 }

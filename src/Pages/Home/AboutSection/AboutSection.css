@@ -154,11 +154,11 @@
   /* 💡 Subheading style */
   .about-subheading {
   color: #777;
-  font-size: 5px;        /* smaller, neat size */
-  font-weight: 200;       /* normal readable weight */
+  font-size: 3px;        /* smaller, neat size */
+  font-weight: 50px;       /* normal readable weight */
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: 1.1;       /* balanced spacing */
+  line-height: 0.3;       /* balanced spacing */
   max-width: 100%;         /* keeps text compact */
   margin-left: auto;
   margin-right: auto;
