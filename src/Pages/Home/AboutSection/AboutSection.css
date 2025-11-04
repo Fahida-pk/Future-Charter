@@ -135,7 +135,7 @@
   }
 
   .about-heading {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   line-height: 1.2;
 }
@@ -180,7 +180,7 @@
 
   .about-image img {
     width: 100vh !important;
-    height: 65vh !important; 
+    height: auto !important; 
     background-size: 100% 100% !important; 
    background-size: cover !important;
    
