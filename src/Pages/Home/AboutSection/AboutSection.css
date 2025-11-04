@@ -137,7 +137,7 @@
   /* ✨ Heading style */
   .about-heading {
     font-size: 1.2rem; /* smaller heading */
-    font-weight: 900;
+    font-weight: 1000;
     letter-spacing: 0.5px;
     line-height: 1.1;
     margin-bottom: 5px;
@@ -155,7 +155,8 @@
   /* 💡 Subheading style */
   .about-subheading {
     color: #777; /* light color */
-    font-size: 0.1rem;
+   font-size: 0.08rem;
+
     font-weight: 100;
     margin-top: 3px;
     margin-bottom: 8px;
@@ -180,25 +181,30 @@
 
   /* 🖼 Image styling */
   .about-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 6px;
-  }
+  width: 100vw; /* viewport മുഴുവൻ വീതി */
+  height: auto;
+  object-fit: cover;
+  border-radius: 0; /* edges round ആക്കേണ്ടതില്ലെങ്കിൽ */
+  display: block; /* unwanted gaps ഒഴിവാക്കാൻ */
+  margin: 0;
+  padding-top: 0;
+}
+
 
   /* 📝 Paragraph styling */
-  .about-text {
-    padding-top: 20px;
-  }
+ .about-text {
+  padding: 20px 15px;   /* top & side padding */
+  text-align: justify;  /* full width fill effect */
+  background-color: #fff; /* optional - white background */
+}
 
-  .about-text p {
-    margin-bottom: 3px; /* less gap */
-    line-height: 1.3;
-    color: #222;
-    font-size: 0.55rem; /* slightly larger text */
-    font-weight: 400;
-  }
-
+.about-text p {
+  margin-bottom: 3px;   /* balanced spacing */
+  line-height: 1.6;     /* better readability */
+  color: #222;
+  font-size: 0.9rem;    /* readable size on mobile */
+  font-weight: 400;
+}
 
 
   /* Optional: show only first 3 paragraphs on mobile */
