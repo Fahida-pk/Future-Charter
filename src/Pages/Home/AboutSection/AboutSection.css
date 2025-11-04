@@ -155,7 +155,7 @@
   /* 💡 Subheading style */
   .about-subheading {
   color: #777;
-  font-size: 0.02rem;    /* smaller, readable size */
+  font-size: 200px;    /* smaller, readable size */
   font-weight: 50px;
   margin-top: 0;
   margin-bottom: 10px;
@@ -206,8 +206,8 @@
   margin-bottom: 3px;   /* balanced spacing */
   line-height: 1.6;     /* better readability */
   color: #222;
-  font-size: 0.5rem;    /* readable size on mobile */
-  font-weight: 200;
+  font-size: 1rem;    /* readable size on mobile */
+  font-weight: 300;
 }
 
 
