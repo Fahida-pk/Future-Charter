@@ -128,73 +128,54 @@
   pointer-events: none;
 }
 
-/* ✅ Responsive Fix for mobile image width and layout */
+/* ✅ Simplified & Lighter Mobile View */
 @media (max-width: 600px) {
-  .about-section {
-    padding: 20px 10px;
+  .contact-section {
+    height: auto;
+    padding: 35px 15px;
   }
 
-  /* 🌟 Heading one line and centered */
-  .about-heading {
-    font-size: 1.3rem;
-    text-align: center;
-    letter-spacing: 0.5px;
-    line-height: 1.1;
-    margin-bottom: 5px;
-  }
-
-  /* ✨ Highlight gradient effect */
-  .highlight {
-    background: linear-gradient(90deg, #0070C0, #00BFFF, #0070C0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-    text-shadow: 1px 1px 8px rgba(0, 112, 192, 0.3);
-  }
-
-  /* 🔵 Subheading directly under heading */
-  .about-subheading {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 4px;
-    margin-bottom: 10px;
-  }
-
-  /* Animated line under subheading */
-  .heading-line {
-    width: 140px;
-    height: 4px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #160eaf, #3a8be9, #00BFFF, #2714f8);
-    background-size: 200% 200%;
-    border-radius: 3px;
-    animation: lineFlow 10s ease infinite;
-  }
-
-  @keyframes lineFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  /* 🖼 Image full width with rounded corners */
-  .about-image img {
-    width: 100% !important;
-    height: auto !important;
+  .contact-form-container {
+    max-width: 100%;
+    padding: 25px 18px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
-    display: block;
   }
 
-  /* 📄 Paragraph styling — close spacing */
-  .about-text {
-    padding-top: 10px;
+  /* Heading: smaller + lighter */
+  .contact-form-container h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8px;
   }
 
-  .about-text p {
-    margin-bottom: 6px;
-    line-height: 1.4;
-    color: #000;
+  /* Paragraph: minimal or hidden */
+  .contact-form-container p {
+    display: none; /* ❗ hides it on mobile; or use next line instead if you want to keep it very small */
+    /* font-size: 0.8rem;
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300; */
+  }
+
+  /* Input fields: smaller and lighter */
+  .contact-form input,
+  .contact-form textarea {
     font-size: 0.85rem;
+    padding: 9px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-weight: 300;
+  }
+
+  /* Button: smaller + lighter weight */
+  .contact-form button {
+    padding: 9px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-radius: 6px;
   }
 }
