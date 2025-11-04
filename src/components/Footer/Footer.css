@@ -1,0 +1,93 @@
+.footer-section {
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Background Skyline */
+.footer-top {
+  background: #eaf3fa url("https://huda.com.sa/wp-content/uploads/2024/10/Footer-design.png")
+    no-repeat center bottom;
+  background-size: cover;
+  padding: 60px 0 100px;
+  position: relative;
+  border: none;
+}
+
+/* Content Layout */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #004f8c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Contact Info */
+.footer-info p {
+  margin: 6px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-info a {
+  color: #004f8c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #0072bc;
+  text-decoration: underline;
+}
+
+/* Vision 2030 Logo */
+/* Vision Box */
+.vision-box {
+  display: flex;
+  align-items: flex-end; /* aligns image bottom with skyline base */
+  justify-content: flex-end;
+  margin-bottom: -30px; /* pushes image downward to meet the blue bar */
+}
+
+/* Vision 2030 Logo */
+.vision-logo {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  background: #0072bc;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 0;
+  border: none;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-box {
+    margin-top: 20px;
+    width: 85%;
+  }
+}
