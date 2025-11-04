@@ -139,7 +139,7 @@
 
   .contact-form-container {
     width: 90%;
-    margin: -750px auto 0 auto; /* brings form over image */
+    margin: -75px auto 0 auto; /* brings form over image */
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     border-radius: 20px;
