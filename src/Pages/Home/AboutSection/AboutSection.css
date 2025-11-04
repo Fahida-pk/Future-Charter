@@ -128,46 +128,40 @@
   pointer-events: none;
 }
 
-
-@media (max-width: 768px) {
-  .about-section .row {
-    flex-direction: column;
-    position: relative;
+/* ✅ Responsive Fix for mobile image width */
+@media (max-width: 600px) {
+  .about-section {
+    padding: 20px 15px;
   }
 
-  .about-image {
-    position: relative;
+  .about-heading {
+    font-size: 1.8rem;
+   
+  }
+
+  .about-section h6 {
+    font-size: 0.55rem; /* even smaller on mobile */
   }
 
   .about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    filter: brightness(0.85);
-  }
-
-  /* ✅ Text overlay on top of the image */
-  .about-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* pushes text toward bottom */
-    padding: 25px 18px;
-    background: rgba(0, 0, 0, 0.45);
-    color: #fff;
-    border-radius: 10px;
+    width: 100% !important;  /* ensures full width */
+    height: auto !important; /* keeps correct proportion */
+    border-radius: 8px;
+    object-fit: cover;
   }
 
   .about-text p {
-    color: #fff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    font-size: 0.65rem;
+    line-height: 1.3;
+    margin-bottom: 5px;
+  }
+
+  .about-text {
+    padding-top: 10px;
+  }
+
+  /* Optional: show only first 3 paragraphs on mobile */
+  .about-text p:nth-of-type(n+3) {
+    display: none;
   }
 }
-
