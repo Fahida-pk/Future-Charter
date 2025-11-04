@@ -136,7 +136,7 @@
 
   /* ✨ Heading style */
   .about-heading {
-    font-size: 1.4rem;      /* slightly larger for emphasis */
+    font-size: 1.2rem;      /* slightly larger for emphasis */
   font-weight: 900;       /* extra bold */
   letter-spacing: 0.5px;
   line-height: 1.1;
@@ -159,7 +159,7 @@
   font-weight: 400;       /* normal readable weight */
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: 1.2;       /* balanced spacing */
+  line-height: 0.5;       /* balanced spacing */
   max-width: 90%;         /* keeps text compact */
   margin-left: auto;
   margin-right: auto;
