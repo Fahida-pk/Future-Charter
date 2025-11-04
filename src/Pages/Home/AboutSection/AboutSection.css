@@ -136,25 +136,26 @@
 
   /* ✨ Heading style */
   .about-heading {
-    font-size: 1.2rem; /* smaller heading */
-    font-weight: 900;
-    letter-spacing: 0.5px;
-    line-height: 1.1;
-    margin-bottom: 5px;
+    font-size: 1.4rem;      /* slightly larger for emphasis */
+  font-weight: 900;       /* extra bold */
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  margin-bottom: 5px;
   }
 
   /* ✨ Highlight effect for AFDAL ITQAN WUJUDAH */
   .highlight {
-    background: linear-gradient(90deg, #0070C0, #00BFFF);
-    
-    font-weight: 700;
-    letter-spacing: 0.5px;
-  }
+ color: linear-gradient(90deg, #160eaf, #00BFFF);
+  font-weight: 900;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
 
   /* 💡 Subheading style */
   .about-subheading {
   color: #777;
-  font-size: 28px;        /* smaller, neat size */
+  font-size: 10px;        /* smaller, neat size */
   font-weight: 400;       /* normal readable weight */
   margin-top: 0;
   margin-bottom: 10px;
