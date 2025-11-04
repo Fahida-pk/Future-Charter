@@ -128,84 +128,73 @@
   pointer-events: none;
 }
 
-/* ✅ Responsive Fix for mobile image width */
+/* ✅ Responsive Fix for mobile image width and layout */
 @media (max-width: 600px) {
   .about-section {
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
 
+  /* 🌟 Heading one line and centered */
   .about-heading {
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  line-height: 1.2;
-}
-/* ✨ Highlight effect for AFDAL ITQAN WUJUDAH */
-.highlight {
-  background: linear-gradient(90deg, #0070C0, #00BFFF, #0070C0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 12px rgba(0, 112, 192, 0.4);
-  animation: textFlow 6s ease infinite;
-}
-
-/* Gradient animation */
-
-
-.heading-line {
-  width: 180px;
-  height: 5px;
-  background: linear-gradient(90deg,#160eaf,#3a8be9, #00BFFF, #2714f8);
-  background-size: 200% 200%;
-  border-radius: 3px;
-  margin-top: 10px;
-  animation: lineFlow 10s ease infinite; /* 🌊 continuous light movement */
-  box-shadow: 0 0 8px rgba(12, 57, 179, 0.4); /* optional soft glow */
-}
-
-/* 🔄 Animation Keyframes */
-@keyframes lineFlow {
-  0% {
-    background-position: 0% 50%;
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    margin-bottom: 5px;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
+  /* ✨ Highlight gradient effect */
+  .highlight {
+    background: linear-gradient(90deg, #0070C0, #00BFFF, #0070C0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    text-shadow: 1px 1px 8px rgba(0, 112, 192, 0.3);
+  }
 
+  /* 🔵 Subheading directly under heading */
+  .about-subheading {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+
+  /* Animated line under subheading */
+  .heading-line {
+    width: 140px;
+    height: 4px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #160eaf, #3a8be9, #00BFFF, #2714f8);
+    background-size: 200% 200%;
+    border-radius: 3px;
+    animation: lineFlow 10s ease infinite;
+  }
+
+  @keyframes lineFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* 🖼 Image full width with rounded corners */
   .about-image img {
-    width: auto !important;
-    height: auto !important; 
-    background-size: 100% 100% !important; 
-   background-size: cover !important;
-   
-    background-repeat: no-repeat !important;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px;
+    display: block;
+  }
+
+  /* 📄 Paragraph styling — close spacing */
+  .about-text {
+    padding-top: 10px;
   }
 
   .about-text p {
-  margin-bottom: 20px;
-  line-height: 1.3;
-  color:black;
-  font-size: .5rem;
-  font-weight: .5rem;
-  font-style: normal;
-}
-
-
-  .about-text {
-    padding-top: 20px;
-  }
-
-  /* Optional: show only first 3 paragraphs on mobile */
-  .about-text p:nth-of-type(n+3) {
-    display: none;
+    margin-bottom: 6px;
+    line-height: 1.4;
+    color: #000;
+    font-size: 0.85rem;
   }
 }
