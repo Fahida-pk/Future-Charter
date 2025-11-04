@@ -8,12 +8,15 @@
 
 /* Background Skyline */
 .footer-top {
-  background: #eaf3fa url("https://huda.com.sa/wp-content/uploads/2024/10/Footer-design.png")
+  background: #dbebf8 url("https://huda.com.sa/wp-content/uploads/2024/10/Footer-design.png")
     no-repeat center bottom;
   background-size: cover;
   padding: 60px 0 100px;
   position: relative;
   border: none;
+}
+.footer-info {
+  margin-bottom: -10px; /* adjust between -5px and -20px for perfect line-up */
 }
 
 /* Content Layout */
@@ -22,7 +25,7 @@
   margin: 0 auto;
   color: #004f8c;
   display: flex;
-  align-items: center;
+  align-items: flex-end; /* 👈 aligns both sides to the bottom */
   justify-content: space-between;
   padding: 0 20px;
 }
@@ -48,10 +51,9 @@
 /* Vision 2030 Logo */
 /* Vision Box */
 .vision-box {
-  display: flex;
-  align-items: flex-end; /* aligns image bottom with skyline base */
+   display: flex;
   justify-content: flex-end;
-  margin-bottom: -30px; /* pushes image downward to meet the blue bar */
+  margin-bottom: -90px; /* adjust if needed to meet the skyline edge */
 }
 
 /* Vision 2030 Logo */
