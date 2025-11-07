@@ -1,20 +1,17 @@
 import React from "react";
 import WhatWeOffer from "../../components/WhatWeOffer/WhatWeOffer";
-
 import "./About.css";
 
 const About = () => {
   return (
     <>
       <section className="about-section">
-        {/* 🔹 Top Heading Section with Background Image */}
         <div className="about-hero">
           <div className="about-hero-overlay">
             <h1 className="about-hero-title">ABOUT US</h1>
           </div>
         </div>
 
-        {/* 🔹 Split Section (Image + Text) */}
         <div className="about-split-section">
           <div className="about-image"></div>
 
@@ -45,7 +42,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* 🔹 “What We Offer” Section (Timeline Style) */}
       <WhatWeOffer />
     </>
   );

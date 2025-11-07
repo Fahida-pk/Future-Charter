@@ -33,7 +33,8 @@ const WhatWeOffer = () => {
 
   return (
     <section className="offer-section">
-      <h2 className="offer-title">What We Offer</h2>
+      {/* 🔹 Stylish steady heading */}
+      <h2 className="section-heading">What We Offer</h2>
 
       <div className="offer-timeline" ref={timelineRef}>
         <div

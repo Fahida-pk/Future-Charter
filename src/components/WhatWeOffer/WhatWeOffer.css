@@ -4,14 +4,44 @@
   text-align: center;
   position: relative;
   font-family: "https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2";
- 
 }
 
-.offer-title {
-  font-size: 42px;
-  font-weight: 700;
-  color: #111;
+/* 🔹 Stylish steady heading */
+.offer-section .section-heading {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin-top: -30px;
   margin-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+/* ✨ Animated underline only */
+.offer-section .section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #160eaf, #00BFFF, #2714f8);
+  border-radius: 10px;
+  animation: underlineGrow 2s ease-out forwards;
+}
+
+/* Underline grow animation */
+@keyframes underlineGrow {
+  from {
+    width: 0;
+    opacity: 0.3;
+  }
+  to {
+    width: 50%;
+    opacity: 1;
+  }
 }
 
 /* Timeline */
@@ -76,7 +106,6 @@
   transition: all 0.5s ease;
 }
 
-/* Circle fills only after line reaches it */
 .offer-container.active::before {
   background: #0072e3;
   box-shadow: 0 0 15px rgba(0, 114, 227, 0.6);

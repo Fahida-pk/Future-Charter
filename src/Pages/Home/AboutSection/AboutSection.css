@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 /* Background */
@@ -12,6 +13,7 @@
   z-index: 1;
   padding: 60px 0;
   background: linear-gradient(to bottom right, #fafafa, #ffffff);
+  font-family: "https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2";
 }
 
 /* Background blur overlay */
@@ -27,9 +29,11 @@
 
 /* Heading */
 .about-heading {
+  display: block;
+  margin: 0;                /* remove all extra margins */
+  padding: 0;
   font-size: 2.5rem;
-  letter-spacing: 1px;
-  line-height: 1.2;
+  line-height: 1.1;   
 }
 /* ✨ Highlight effect for AFDAL ITQAN WUJUDAH */
 .highlight {
@@ -42,8 +46,22 @@
   animation: textFlow 6s ease infinite;
 }
 
-/* Gradient animation */
+.about-heading {
+  margin-bottom: 4px !important; /* fine-tune small gap between heading & subheading */
+}
 
+
+
+/* Gradient animation */
+.about-subheading {
+  display: block;
+  margin-top: 2px;          /* very small gap */
+  margin-bottom: 6px;       /* small space before blue line */
+  padding: 0;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.3;
+}
 
 .heading-line {
   width: 180px;
