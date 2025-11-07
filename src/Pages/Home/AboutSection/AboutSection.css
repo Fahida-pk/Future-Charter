@@ -155,7 +155,7 @@
   /* ✨ Heading style */
   .about-heading {
     font-size: 0.8rem; /* smaller heading */
-    font-weight: 900;
+    font-weight: 1000;
     letter-spacing: 0.5px;
     line-height: 1.1;
     margin-bottom: 5px;
@@ -166,7 +166,7 @@
   .highlight {
     color: linear-gradient(90deg, #0070C0, #00BFFF);
     
-    font-weight: 500;
+    font-weight: 900;
     letter-spacing: 0.2px;
   }
 
