@@ -7,7 +7,7 @@ export default function ServicesSection() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false, // animate every scroll
+      once: false,
       easing: "ease-in-out",
       offset: 100,
     });
@@ -23,11 +23,7 @@ industries, including construction, logistics,
 hospitality, and more. We provide skilled, 
 semi-skilled, and unskilled workers to help 
 our clients achieve operational efficiency 
-and meet their project goals. Our rigorous 
-recruitment process ensures that each 
-individual aligns with our client’s standards, 
-delivering high-quality work and 
-productivity`,
+and meet their project goals.`,
       animation: "fade-right",
     },
     {
@@ -37,12 +33,7 @@ productivity`,
 equipment for short-term and long-term 
 rentals, providing reliable machinery, 
 trucks, and specialized equipment to meet 
-the needs of various sectors. Our fleet is 
-meticulously maintained to guarantee 
-optimal performance, safety, and reliability, 
-empowering businesses to operate 
-seamlessly without the burden of asset 
-ownership`,
+the needs of various sectors.`,
       animation: "fade-left",
     },
     {
@@ -50,28 +41,39 @@ ownership`,
       image: "/image/food.jpeg",
       description: `We are a trusted provider of foodstuff 
 supplies, specializing in bulk distribution for 
-companies, institutions, and events. We 
-source a wide range of high-quality food 
-products to ensure that our clients receive 
-fresh, nutritious, and affordable options. 
-With our efficient logistics and timely 
-delivery, we support organizations in 
-maintaining a steady supply of essential 
-food items`,
+companies, institutions, and events. 
+We source high-quality food products for 
+freshness, nutrition, and affordability.`,
       animation: "fade-right",
     },
     {
       title: "SAFETY EQUIPMENT & GENERAL TRADING",
       image: "/image/saftey.jpeg",
       description: `Our safety equipment division offers a 
-comprehensive selection of personal 
-protective equipment (PPE), safety gear, 
-and general trading items to help 
-businesses maintain high safety standards. 
-We understand the importance of a safe 
-work environment and are committed to 
-supplying products that meet international 
-quality and safety regulations`,
+comprehensive selection of PPE, safety 
+gear, and trading items that meet 
+international safety standards.`,
+      animation: "fade-left",
+    },
+    {
+      title: "MEDICAL CONSUMABLES & EQUIPMENT",
+      image: "/image/medical.png",
+      description: `Providing reliable and high-standard 
+consumable items for clinics, hospitals, and 
+healthcare centers. Supplying advanced 
+medical devices and tools designed to meet 
+the highest healthcare standards.`,
+      animation: "fade-right",
+    },
+    {
+      title: "DERMACEUTICAL & COSMETIC INNOVATIONS",
+      image: "/image/skin.png",
+      description: `Offering a specialized range of products 
+and equipment tailored for dermatology 
+clinics and professionals. Distributing 
+premium cosmetic and skincare solutions 
+that combine innovation, safety, and 
+effectiveness.`,
       animation: "fade-left",
     },
   ];
@@ -79,10 +81,7 @@ quality and safety regulations`,
   return (
     <section className="services-section py-5 text-center">
       <div className="container">
-        <h2
-          className="section-heading mb-5"
-          data-aos="zoom-in-up"
-        >
+        <h2 className="section-heading mb-5" data-aos="zoom-in-up">
           OUR SERVICES
         </h2>
 
@@ -90,7 +89,7 @@ quality and safety regulations`,
           {services.map((service, index) => (
             <div
               key={index}
-              className="col-12 col-sm-10 col-md-6 col-lg-5"
+              className="col-12 col-sm-10 col-md-6 col-lg-4" // 👈 now 3x3 layout
               data-aos={service.animation}
             >
               <div className="service-card">

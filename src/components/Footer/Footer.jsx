@@ -9,16 +9,16 @@ const Footer = () => {
           {/* Left: Contact info */}
           <div className="footer-info">
             <p>
-              <a href="mailto:info@futurecharterksa.com">
-                info@futurecharterksa.com
+              <a href="mailto:info@afdalitqanksa.com">
+                info@afdalitqanksa.com
               </a>
             </p>
             <p>
-              <a href="tel:+966535064375">+966 53 506 4375</a>
+              <a href="tel:+966545810399">+966 54 581 0399</a>
             </p>
           </div>
 
-          {/* Right: Vision 2030 logo (bigger, no title/border) */}
+          {/* Right: Vision 2030 logo */}
           <div className="vision-box">
             <img
               src="/image/vision2030-white.png" // Update if path differs
