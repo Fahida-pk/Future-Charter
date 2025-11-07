@@ -158,43 +158,23 @@
 
 /* 🔹 ✅ Responsive: Perfect phone view */
 @media screen and (max-width: 768px) {
-  .offer-section {
-    position: relative;
+  .offer-container {
+    width: 100%;
+    padding: 20px 25px 20px 70px;
+    margin-bottom: 40px;
   }
 
-  .offer-timeline {
-    position: absolute;
-    left: 30px; /* keeps line steady */
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(180deg, #007bff, #00c6ff);
-    margin: 0;
+  .offer-container.right {
+    left: 0;
   }
 
   .offer-timeline::after,
   .offer-line-fill {
-    left: 30px !important;
-  }
-
-  .offer-container {
-    width: 100%;
-    padding: 20px 20px 20px 70px; /* gives space for the circle */
-    margin-bottom: 40px;
-    position: relative;
+    left: 35px;
   }
 
   .offer-container::before {
-    content: "";
-    position: absolute;
-    left: 21px; /* perfectly aligns with the line */
-    top: 25px;
-    width: 15px;
-    height: 15px;
-    background: #007bff;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 2px #007bff;
+    left: 20px;
   }
 
   .offer-content {
