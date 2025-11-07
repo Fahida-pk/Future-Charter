@@ -154,8 +154,8 @@
 
   /* ✨ Heading style */
   .about-heading {
-    font-size: 1rem; /* smaller heading */
-    font-weight: 700;
+    font-size: 0.8rem; /* smaller heading */
+    font-weight: 900;
     letter-spacing: 0.5px;
     line-height: 1.1;
     margin-bottom: 5px;
