@@ -36,16 +36,7 @@ trucks, and specialized equipment to meet
 the needs of various sectors.`,
       animation: "fade-left",
     },
-    {
-      title: "FOODSTUFFS SUPPLY",
-      image: "/image/food.jpeg",
-      description: `We are a trusted provider of foodstuff 
-supplies, specializing in bulk distribution for 
-companies, institutions, and events. 
-We source high-quality food products for 
-freshness, nutrition, and affordability.`,
-      animation: "fade-right",
-    },
+    
     {
       title: "SAFETY EQUIPMENT & GENERAL TRADING",
       image: "/image/saftey.jpeg",
@@ -55,6 +46,7 @@ gear, and trading items that meet
 international safety standards.`,
       animation: "fade-left",
     },
+    
     {
       title: "MEDICAL CONSUMABLES & EQUIPMENT",
       image: "/image/medical.png",
@@ -63,6 +55,16 @@ consumable items for clinics, hospitals, and
 healthcare centers. Supplying advanced 
 medical devices and tools designed to meet 
 the highest healthcare standards.`,
+      animation: "fade-right",
+    },
+    {
+      title: "FOODSTUFFS SUPPLY",
+      image: "/image/food.jpeg",
+      description: `We are a trusted provider of foodstuff 
+supplies, specializing in bulk distribution for 
+companies, institutions, and events. 
+We source high-quality food products for 
+freshness, nutrition, and affordability.`,
       animation: "fade-right",
     },
     {
