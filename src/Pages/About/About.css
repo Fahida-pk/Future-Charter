@@ -1,0 +1,120 @@
+/* 🔹 Overall Section */
+.about-section {
+  font-family: "https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2";
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔹 Top Banner with Background Image */
+.about-hero {
+  position: relative;
+  background: url("/public/image/banner.jpeg") center/cover no-repeat;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* remove unwanted space above */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(7.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-title {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  z-index: 2;
+  position: relative;
+  top: 30px;
+}
+
+/* 🔹 Split Section (Below Header) */
+.about-split-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10%;
+  background-color: #ffffff;
+  gap: 60px;
+}
+
+.about-image {
+  flex: 1;
+  background: url("/public/image/hand.png") top center / cover no-repeat;
+  height: 520px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-subtitle {
+  color: #0078ff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #001e44;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ✅ Responsive */
+@media (max-width: 992px) {
+  .about-split-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 350px;
+  }
+
+  .about-hero {
+    height: 300px;
+  }
+
+  .about-hero-title {
+    font-size: 50px;
+    top: 15px;
+  }
+}
