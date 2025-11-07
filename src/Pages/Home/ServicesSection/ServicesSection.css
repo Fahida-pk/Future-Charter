@@ -171,23 +171,3 @@
     font-size: 13px;
   }
 }
-
-/* 🌀 Mobile Slide Layout — ADD THIS BELOW ALL RESPONSIVE CODE */
-@media (max-width: 768px) {
-  .row {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding-bottom: 10px;
-  }
-
-  .col-12 {
-    flex: 0 0 80%;
-    scroll-snap-align: center;
-  }
-
-  .service-card {
-    min-width: 100%;
-  }
-}
