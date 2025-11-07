@@ -156,12 +156,12 @@
   font-size: 16px;
 }
 
-/* Responsive */
+/* 🔹 ✅ Responsive: Perfect phone view */
 @media screen and (max-width: 768px) {
   .offer-container {
     width: 100%;
-    padding-left: 80px;
-    padding-right: 25px;
+    padding: 20px 25px 20px 70px;
+    margin-bottom: 40px;
   }
 
   .offer-container.right {
@@ -170,10 +170,19 @@
 
   .offer-timeline::after,
   .offer-line-fill {
-    left: 30px;
+    left: 35px;
   }
 
   .offer-container::before {
-    left: 15px;
+    left: 20px;
+  }
+
+  .offer-content {
+    padding: 20px;
+  }
+
+  .offer-section .section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
   }
 }
