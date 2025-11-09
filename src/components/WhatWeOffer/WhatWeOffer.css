@@ -156,32 +156,39 @@
   font-size: 16px;
 }
 
-/* 🔹 ✅ Responsive: Perfect phone view */
+/* 🔹 Perfect Phone View – clean straight layout */
 @media screen and (max-width: 768px) {
+
   .offer-container {
     width: 100%;
-    padding: 20px 25px 20px 70px;
+    padding: 20px;
     margin-bottom: 40px;
+    left: 0 !important;        /* remove left/right shifting */
   }
 
+  /* remove left/right separation */
+  .offer-container.left,
   .offer-container.right {
-    left: 0;
+    left: 0 !important;
   }
 
+  /* Timeline line & fill */
   .offer-timeline::after,
   .offer-line-fill {
-    left: 35px;
+    left: 15px !important;
   }
 
+  /* Circle alignment */
   .offer-container::before {
-    left: 20px;
+    left: 0 !important;
   }
 
   .offer-content {
-    padding: 20px;
+    padding-left: 40px;        /* box text tidy alignment */
   }
 
-  .offer-section .section-heading {
+  /* Heading spacing */
+  .section-heading {
     font-size: 1.8rem;
     margin-bottom: 40px;
   }
