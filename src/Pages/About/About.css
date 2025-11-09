@@ -97,6 +97,7 @@
   text-align: justify;
 }
 
+/* 🔹 Mobile Responsive Fix */
 @media (max-width: 576px) {
   .about-hero {
     height: 180px;
@@ -117,18 +118,21 @@
     gap: 30px;
   }
 
+  /* ✅ Fixed image visibility issue */
   .about-image {
-    background-size: contain;
-     background: url("/image/hand.png") top center / cover no-repeat;
-    height: auto;
+    background: url("/image/hand.png") center center / contain no-repeat;
     width: 100%;
-    
-    margin-top: 5px;
+    height: 50vw; /* responsive height */
+    margin: 10px 0;
+    opacity: 1;
+    transform: translate(0);
   }
 
   .about-text {
     text-align: center;
     padding: 0 10px;
+    opacity: 1;
+    transform: translate(0);
   }
 
   .about-heading {
@@ -139,5 +143,6 @@
   .about-description {
     font-size: 14.5px;
     line-height: 1.7;
+    text-align: justify;
   }
 }
