@@ -229,11 +229,11 @@
 }
 
 .about-text p {
-  margin-bottom: 3px;   /* balanced spacing */
+  margin-bottom: 2px;   /* balanced spacing */
   line-height: 1.6;     /* better readability */
   color: #222;
-  font-size: 0.8rem;    /* readable size on mobile */
-  font-weight: 200;
+  font-size: 1rem;    /* readable size on mobile */
+  font-weight: 250;
 }
 
 
