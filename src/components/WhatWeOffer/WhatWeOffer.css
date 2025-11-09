@@ -198,27 +198,19 @@
     border-radius: 2px;
   }
 
-  /* Circle with arrow — one side only */
   .offer-container::before {
-   content: "➜";
+  content: "➜";
   position: absolute;
   top: 18px;
+  right: calc(50% - 600px);
   font-size: 20px;
-  }
-
-  /* Active glow */
-.offer-container.active::before {
-  background: #0072e3;
-  color: #fff;
-  box-shadow: 0 0 65px rgba(0,114,227,0.6);
+  transform: rotate(0deg);
 }
 
-/* Left box — arrow between box and center line */
 .offer-container.left::before {
-  left: 580px;  
-  transform: rotate(180deg); /* arrow points ← toward line */         /* position arrow next to line */
-  
+  display: none;
 }
+
   /* Simplified content */
   .offer-content {
     background: transparent !important;
