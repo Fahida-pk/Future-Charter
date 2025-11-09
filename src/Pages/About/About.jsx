@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import WhatWeOffer from "../../components/WhatWeOffer/WhatWeOffer";
 import "./About.css";
 
 const About = () => {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".about-image, .about-text");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    });
+
+    elements.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <>
       <section className="about-section">
@@ -17,7 +31,7 @@ const About = () => {
 
           <div className="about-text">
             <h2 className="about-heading">
-              We Are Ready To Make Your Dream & Grow Up Your Business.
+              We Are Ready To Make Your Dream & Grow Up Your Business:-
             </h2>
             <p className="about-description">
               Afdal Itqan Wujudah Company is a dynamic and diversified enterprise
