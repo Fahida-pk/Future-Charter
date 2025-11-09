@@ -229,7 +229,9 @@
 }
 
 .about-text p {
-  margin-bottom: 5px;   /* balanced spacing */
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
+  margin-bottom: .9px;   /* balanced spacing */
   line-height: 1.6;     /* better readability */
   color: #222;
   font-size: .9rem;    /* readable size on mobile */
