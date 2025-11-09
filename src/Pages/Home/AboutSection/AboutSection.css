@@ -231,10 +231,10 @@
 .about-text1 p {
  
   margin-bottom: 1px;  /* balanced spacing */
-  line-height: 1.4;     /* better readability */
+  line-height: 1.2;     /* better readability */
   color: #222;
-  font-size: 1rem;    /* readable size on mobile */
-  font-weight: 200;
+  font-size: .9rem;    /* readable size on mobile */
+  font-weight: 175px;
   margin-top: 2px;
   
 }
