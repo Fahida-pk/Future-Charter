@@ -175,12 +175,14 @@
 
 @media screen and (max-width: 768px) {
 
+  /* Main container fixes */
   .offer-container {
     width: 100%;
-    padding: 10px 15px 10px 55px; /* spacing for arrow + line */
-    margin-bottom: 25px;
+    padding: 15px 15px 15px 55px; /* space for arrow + line */
+    margin-bottom: 30px;
     left: 0 !important;
     position: relative;
+    overflow: visible !important; /* ensure arrows aren’t hidden */
     z-index: 1;
   }
 
@@ -189,21 +191,20 @@
     left: 0 !important;
   }
 
-  /* Timeline vertical line on one side */
+  /* Single vertical line on left */
   .offer-timeline::after,
   .offer-line-fill {
-    left: 25px !important;
+    left: 28px !important;
     width: 3px !important;
     border-radius: 2px;
   }
 
-  /* Make arrow appear on left side for ALL boxes */
+  /* Common arrow for all containers */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%) rotate(0deg);
+    left: 10px;
+    top: 20px; /* keeps it at top-left consistently */
     font-size: 18px;
     color: #fff;
     background: linear-gradient(135deg, #0072e3, #2714f8);
@@ -213,16 +214,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 114, 227, 0.5);
-    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 114, 227, 0.4);
+    z-index: 5;
   }
 
-  /* Keep each arrow visible on scroll */
-  .offer-container.active::before {
-    opacity: 1;
-  }
-
-  /* Simplified content */
+  /* Uniform layout for content */
   .offer-content {
     background: transparent !important;
     border: none !important;
