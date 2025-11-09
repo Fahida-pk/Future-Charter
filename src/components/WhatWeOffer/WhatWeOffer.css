@@ -180,7 +180,7 @@
 
   .offer-container {
     width: 100%;
-    padding: 10px 15px 10px 55px; /* spacing for circle arrow */
+    padding: 10px 15px 10px 55px; /* space for arrow + line */
     margin-bottom: 25px;
     left: 0 !important;
   }
@@ -198,20 +198,18 @@
     border-radius: 2px;
   }
 
+  /* Arrow visible on left side */
   .offer-container::before {
-  content: "➜";
-  position: absolute;
-  top: 18px;
-  right: calc(50% - 600px);
-  font-size: 20px;
-  transform: rotate(0deg);
-}
+    content: "➜";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 18px;
+    color: #0072e3;
+    transform: rotate(0deg);
+  }
 
-.offer-container.left::before {
-  display: none;
-}
-
-  /* Simplified content */
+  /* Simplified content for mobile */
   .offer-content {
     background: transparent !important;
     border: none !important;
