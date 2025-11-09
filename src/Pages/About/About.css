@@ -1,6 +1,14 @@
+/* 🔹 Font Import */
+@font-face {
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
+}
+
 /* 🔹 About Section */
 .about-section {
-  font-family: "https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2";
+  
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -27,7 +35,7 @@
 
 .about-hero-title {
   color: #fff;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 800;
   letter-spacing: 1px;
   z-index: 2;
@@ -57,6 +65,8 @@
 
 .about-text {
   flex: 1;
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
   color: #001e44;
   opacity: 0;
   transform: translateY(80px);
@@ -72,8 +82,8 @@
 
 /* Text */
 .about-heading {
-  font-size: 34px;
-  font-weight: 800;
+  font-size: 30px;
+  font-weight: 750;
   color: #001e44;
   margin-bottom: 25px;
 }
@@ -87,13 +97,6 @@
   text-align: justify;
 }
 
-/* Fonts */
-@font-face {
-  font-family: "MyRoboto";
-  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
-       format("woff2");
-}
-
 /* 🔹 Tablet */
 @media (max-width: 992px) {
   .about-hero {
@@ -102,6 +105,8 @@
 
   .about-hero-title {
     font-size: 46px;
+    font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
   }
 
   .about-split-section {
@@ -111,22 +116,26 @@
   }
 
   .about-image {
-  flex: 1;
-  background: url("/public/image/hand.png") top center / contain no-repeat;
-  height: 520px;
-  width: 100%;
-  opacity: 0;
-  transform: translateX(80px);
-  transition: 0.8s ease;
-}
+    flex: 1;
+    background: url("/image/hand.png") top center / contain no-repeat;
+    height: 420px;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: 0.8s ease;
+  }
 
   .about-heading {
     font-size: 26px;
+    font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
   }
 
   .about-description {
     font-size: 15.5px;
     text-align: center;
+    font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
   }
 }
 
@@ -141,17 +150,19 @@
   }
 
   .about-image {
-  flex: 1;
-  background: url("/public/image/hand.png") top center / contain no-repeat;
-  height: 520px;
-  width: 100%;
-  opacity: 0;
-  transform: translateX(80px);
-  transition: 0.8s ease;
-}
+    flex: 1;
+    background: url("/image/hand.png") top center / contain no-repeat;
+    height: 320px;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: 0.8s ease;
+  }
 
   .about-text {
     text-align: center;
+    font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
   }
 
   .about-heading {
@@ -160,5 +171,7 @@
 
   .about-description {
     font-size: 14.5px;
+    font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
   }
 }
