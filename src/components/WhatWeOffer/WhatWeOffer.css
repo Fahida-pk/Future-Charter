@@ -1,12 +1,26 @@
+/* ===============================
+   GLOBAL FONT
+================================*/
+@font-face {
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
+       format("woff2");
+}
+
+/* ===============================
+   OFFER SECTION
+================================*/
 .offer-section {
   background: #f6f6ff;
   padding: 100px 0;
   text-align: center;
   position: relative;
-  font-family: "https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2";
+  font-family: "MyRoboto";
 }
 
-/* 🔹 Stylish steady heading */
+/* ===============================
+   HEADING + ANIMATED UNDERLINE
+================================*/
 .offer-section .section-heading {
   font-size: 2.4rem;
   font-weight: 900;
@@ -19,7 +33,6 @@
   letter-spacing: 1px;
 }
 
-/* ✨ Animated underline only */
 .offer-section .section-heading::after {
   content: "";
   position: absolute;
@@ -32,26 +45,20 @@
   animation: underlineGrow 2s ease-out forwards;
 }
 
-/* Underline grow animation */
 @keyframes underlineGrow {
-  from {
-    width: 0;
-    opacity: 0.3;
-  }
-  to {
-    width: 50%;
-    opacity: 1;
-  }
+  from { width: 0; opacity: 0.3; }
+  to { width: 50%; opacity: 1; }
 }
 
-/* Timeline */
+/* ===============================
+   TIMELINE BASE LINE
+================================*/
 .offer-timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Gray base line */
 .offer-timeline::after {
   content: "";
   position: absolute;
@@ -64,7 +71,6 @@
   border-radius: 3px;
 }
 
-/* Blue line that fills with scroll */
 .offer-line-fill {
   position: absolute;
   width: 6px;
@@ -77,7 +83,9 @@
   z-index: 1;
 }
 
-/* Timeline items */
+/* ===============================
+   TIMELINE CARDS
+================================*/
 .offer-container {
   padding: 20px 40px;
   position: relative;
@@ -92,55 +100,64 @@
   transform: translateY(0);
 }
 
-/* Circles */
+.offer-container.left { left: 0; }
+.offer-container.right { left: 50%; }
+
+/* ===============================
+   ARROW ALIGNMENT
+================================*/
+/* ===============================
+   ARROW ALIGNMENT — FIXED
+================================*/
+
+/* Common arrow style */
 .offer-container::before {
-  content: "";
+  content: "➜";
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 20px;
-  background: #fff;
-  border: 10px solid #0072e3;
-  border-radius: 50%;
-  z-index: 2;
-  transition: all 0.8s ease;
+  top: 18px;
+  font-size: 20px;
+  
 }
 
+/* Active glow */
 .offer-container.active::before {
   background: #0072e3;
-  box-shadow: 0 0 30px rgba(0, 114, 227, 0.6);
+  color: #fff;
+  box-shadow: 0 0 65px rgba(0,114,227,0.6);
 }
 
-/* Left and Right alignment */
-.offer-container.left {
-  left: 0;
-}
-
-.offer-container.right {
-  left: 50%;
-}
-
+/* Left box — arrow between box and center line */
 .offer-container.left::before {
-  right: -13px;
+  left: 580px;  
+  transform: rotate(180deg); /* arrow points ← toward line */         /* position arrow next to line */
+  
 }
 
+/* Right box — arrow between box and center line */
 .offer-container.right::before {
-  left: -13px;
+ 
+   right: 580px;     
+  transform: rotate(0deg); /* arrow points → toward line */         /* position arrow next to line */
+  
 }
 
-/* Card design */
+
+
+/* ===============================
+   CARD STYLE
+================================*/
 .offer-content {
   background: #fff;
   padding: 25px 35px;
   border-radius: 10px;
   border: 2px solid #0072e3;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
 }
 
 .offer-content:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .offer-content h3 {
@@ -155,45 +172,39 @@
   line-height: 1.7;
   font-size: 16px;
 }
-@font-face {
-  font-family: "MyRoboto";
-  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
-       format("woff2");
-}
 
-/* 🔹 Perfect Phone View – clean straight layout */
+/* ===============================
+   MOBILE VIEW
+================================*/
 @media screen and (max-width: 768px) {
 
   .offer-container {
     width: 100%;
-    padding: 10px 15px 10px 40px;   /* perfect left spacing */
-    margin-bottom: 18px;           /* smaller gap */
+    padding: 10px 15px 10px 40px;
+    margin-bottom: 18px;
     left: 0 !important;
   }
 
-  /* Keep everything centered vertically */
   .offer-container.left,
   .offer-container.right {
     left: 0 !important;
   }
 
-  /* 🔹 Timeline line – thin, correct position */
   .offer-timeline::after,
   .offer-line-fill {
-    left: 18px !important;           /* perfect line position */
+    left: 18px !important;
     width: 3px !important;
   }
 
-  /* 🔹 Circle perfect size + sits exactly on line */
   .offer-container::before {
-    left: 12px !important;           /* aligns circle with line */
-    width: 12px !important;          /* circle smaller */
-    height: 12px !important;
-    top: 22px !important;            /* better vertical align */
-    border-width: 3px !important;    /* clean border */
+    left: 10px !important;
+    top: 20px !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-width: 3px !important;
+    content: "";
   }
 
-  /* 🔹 Card clean style */
   .offer-content {
     padding: 10px 10px 10px 15px !important;
     background: transparent !important;

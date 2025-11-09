@@ -31,7 +31,7 @@ const About = () => {
 
           <div className="about-text">
             <h2 className="about-heading">
-              We Are Ready To Make Your Dream & Grow Up Your Business:-
+              We Are Ready To Make Your Dream & Grow Up Your Business.
             </h2>
             <p className="about-description">
               Afdal Itqan Wujudah Company is a dynamic and diversified enterprise

@@ -73,7 +73,7 @@
 /* Text */
 .about-heading {
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 800;
   color: #001e44;
   margin-bottom: 25px;
 }
@@ -82,6 +82,7 @@
   font-size: 17px;
   color: #444;
   line-height: 1.9;
+  margin-top: 15px;
   margin-bottom: 22px;
   text-align: justify;
 }
