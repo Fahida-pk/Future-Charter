@@ -155,59 +155,62 @@
   line-height: 1.7;
   font-size: 16px;
 }
+@font-face {
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
+       format("woff2");
+}
 
 /* 🔹 Perfect Phone View – clean straight layout */
 @media screen and (max-width: 768px) {
-  @font-face {
-    font-family: "MyRoboto";
-    src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
-         format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
 
   .offer-container {
     width: 100%;
-    padding: 18px;              /* slightly reduced padding */
-    margin-bottom: 25px;        /* 🔹 reduced from 40px → smaller gap */
+    padding: 10px 15px 10px 40px;   /* perfect left spacing */
+    margin-bottom: 18px;           /* smaller gap */
     left: 0 !important;
   }
 
+  /* Keep everything centered vertically */
   .offer-container.left,
   .offer-container.right {
     left: 0 !important;
   }
 
-  /* Timeline line & fill */
+  /* 🔹 Timeline line – thin, correct position */
   .offer-timeline::after,
   .offer-line-fill {
-    left: 15px !important;
-    width: 3px !important;      /* 🔹 thinner line */
+    left: 18px !important;           /* perfect line position */
+    width: 3px !important;
   }
 
-  /* Circle alignment + smaller size */
+  /* 🔹 Circle perfect size + sits exactly on line */
   .offer-container::before {
-    left: 0 !important;
-    width: 14px !important;     /* 🔹 reduced size */
-    height: 14px !important;
+    left: 12px !important;           /* aligns circle with line */
+    width: 12px !important;          /* circle smaller */
+    height: 12px !important;
+    top: 22px !important;            /* better vertical align */
+    border-width: 3px !important;    /* clean border */
   }
 
-  /* Content spacing */
+  /* 🔹 Card clean style */
   .offer-content {
-    padding-left: 28px !important; /* closer to line */
+    padding: 10px 10px 10px 15px !important;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
-    border-radius: 0 !important;
   }
 
   .offer-content h3 {
     text-align: center;
+    font-size: 20px;
     font-weight: 700;
+    margin-bottom: 6px;
   }
 
   .offer-content p {
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.6;
+    font-size: 15px;
   }
 }

@@ -9,7 +9,7 @@
 /* 🔹 Hero Section */
 .about-hero {
   position: relative;
-  background: url("/public/image/banner.jpeg") center/cover no-repeat;
+  background: url("/image/banner.jpeg") center/cover no-repeat;
   height: 350px;
   display: flex;
   align-items: center;
@@ -47,16 +47,12 @@
 
 .about-image {
   flex: 1;
-  background: url("/public/image/hand.png") top center / cover no-repeat;
+  background: url("/image/hand.png") top center / cover no-repeat;
   height: 520px;
   width: 100%;
-  margin: 0 auto;
-  border-radius: 0;
-  box-shadow: none;
-  object-fit: cover;
   opacity: 0;
   transform: translateX(80px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .about-text {
@@ -64,26 +60,21 @@
   color: #001e44;
   opacity: 0;
   transform: translateY(80px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: 0.8s ease;
 }
 
-/* 🔹 Active animation class */
-.about-image.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
+/* Active */
+.about-image.active,
 .about-text.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(0);
 }
 
-/* 🔹 Text Styling */
+/* Text */
 .about-heading {
   font-size: 34px;
   font-weight: 700;
   color: #001e44;
-  line-height: 1.4;
   margin-bottom: 25px;
 }
 
@@ -95,19 +86,14 @@
   text-align: justify;
 }
 
-/* ✅ Fonts */
+/* Fonts */
 @font-face {
   font-family: "MyRoboto";
   src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
        format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  font-family: "MyRoboto", sans-serif;
 }
 
-/* 🟡 Tablets */
+/* 🔹 Tablet */
 @media (max-width: 992px) {
   .about-hero {
     height: 280px;
@@ -115,7 +101,6 @@
 
   .about-hero-title {
     font-size: 46px;
-    padding: 0 10px;
   }
 
   .about-split-section {
@@ -125,13 +110,8 @@
   }
 
   .about-image {
-    width: 100%;
-    height: 300px;
+    height: 320px;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
-    display: block;
-    margin-top: -10px;
   }
 
   .about-heading {
@@ -141,38 +121,23 @@
   .about-description {
     font-size: 15.5px;
     text-align: center;
-    line-height: 1.8;
   }
 }
 
-/* 📱 Mobile */
+/* 🔹 Mobile */
 @media (max-width: 576px) {
   .about-hero {
     height: 220px;
-    background-position: center top;
   }
 
   .about-hero-title {
     font-size: 28px;
-    line-height: 1.3;
-    padding: 0 15px;
-  }
-
-  .about-split-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 5%;
-    gap: 30px;
   }
 
   .about-image {
-    width: 100%;
     height: 300px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top center;
-    display: block;
-    margin-top: -10px;
   }
 
   .about-text {
@@ -181,12 +146,9 @@
 
   .about-heading {
     font-size: 22px;
-    line-height: 1.4;
   }
 
   .about-description {
     font-size: 14.5px;
-    line-height: 1.7;
-    text-align: center;
   }
 }
