@@ -110,9 +110,14 @@
   }
 
   .about-image {
-    height: 320px;
-    background-size: contain;
-  }
+  flex: 1;
+  background: url("/public/image/hand.png") top center / contain no-repeat;
+  height: 520px;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(80px);
+  transition: 0.8s ease;
+}
 
   .about-heading {
     font-size: 26px;
@@ -135,10 +140,14 @@
   }
 
   .about-image {
-    height: 300px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  flex: 1;
+  background: url("/public/image/hand.png") top center / contain no-repeat;
+  height: 520px;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(80px);
+  transition: 0.8s ease;
+}
 
   .about-text {
     text-align: center;
