@@ -198,16 +198,22 @@
     border-radius: 2px;
   }
 
-  /* Arrow visible on left side */
+  /* Arrow visible on left side — clearly beside text */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    top: 10px;
-    left: 15px;
-    font-size: 35px;
-    background-color: #0072e3;
-    color: #0072e3;
-    transform: rotate(0deg);
+    top: 18px;
+    left: 7px;
+    font-size: 22px;
+    color: #fff;
+    background: linear-gradient(135deg, #0072e3, #2714f8);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 114, 227, 0.6);
   }
 
   /* Simplified content for mobile */
@@ -220,7 +226,7 @@
 
   .offer-content h3 {
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #0a0a23;
     margin-bottom: 6px;
