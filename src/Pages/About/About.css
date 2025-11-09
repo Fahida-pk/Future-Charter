@@ -73,7 +73,17 @@
 }
 
 /* ✅ Responsive Fixes */
-
+@font-face {
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
+       format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Use the font everywhere */
+* {
+  font-family: "MyRoboto", sans-serif;
+}
 /* 🟡 Tablets & Small Laptops */
 @media (max-width: 992px) {
   .about-hero {
@@ -92,9 +102,13 @@
   }
 
   .about-image {
-    width: 100%;
-    height: 320px;
-    background-position: center top;
+   width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: block;
+    margin-top: -10px;
   }
 
   .about-heading {
@@ -107,7 +121,17 @@
     line-height: 1.8;
   }
 }
-
+@font-face {
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
+       format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Use the font everywhere */
+* {
+  font-family: "MyRoboto", sans-serif;
+}
 /* 📱 Mobile Phones */
 @media (max-width: 576px) {
   .about-hero {
@@ -122,14 +146,24 @@
   }
 
   .about-split-section {
+    flex-direction: column;
+    align-items: center;
     padding: 40px 5%;
     gap: 30px;
   }
 
   .about-image {
-    height: 230px;
-    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: top center;
+    display: block;
+    margin-top: -10px;
+  }
+
+  .about-text {
+    text-align: center;
   }
 
   .about-heading {
@@ -141,24 +175,5 @@
     font-size: 14.5px;
     line-height: 1.7;
     text-align: center;
-  }
-}
-
-/* 📱 Extra Small Screens (like older phones) */
-@media (max-width: 380px) {
-  .about-hero-title {
-    font-size: 24px;
-  }
-
-  .about-heading {
-    font-size: 20px;
-  }
-
-  .about-description {
-    font-size: 13.5px;
-  }
-
-  .about-image {
-    height: 200px;
   }
 }
