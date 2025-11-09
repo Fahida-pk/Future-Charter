@@ -120,9 +120,10 @@
   .about-image {
     background-size: contain;
      background: url("/image/hand.png") top center / cover no-repeat;
-    height: 260px;
+    height: auto;
     width: 100%;
-    margin-bottom: 15px;
+    
+    margin-top: 5px;
   }
 
   .about-text {

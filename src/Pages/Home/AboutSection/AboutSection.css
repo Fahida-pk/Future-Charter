@@ -215,7 +215,7 @@
   object-fit: cover;
   border-radius: 0;
   display: block;
-  margin-top: 5px;
+  margin-top: 2px;
   padding-top: 0;
 }
 
@@ -230,10 +230,10 @@
 
 .about-text1 p {
  
-  margin-bottom: 2px;  /* balanced spacing */
+  margin-bottom: .9px;  /* balanced spacing */
   line-height: 1.6;     /* better readability */
   color: #222;
-  font-size: 1rem;    /* readable size on mobile */
+  font-size: .9rem;    /* readable size on mobile */
   font-weight: 200;
   margin-top: 2px;
   
