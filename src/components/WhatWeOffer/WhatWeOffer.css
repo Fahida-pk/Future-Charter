@@ -200,29 +200,25 @@
 
   /* Circle with arrow — one side only */
   .offer-container::before {
-    content: "➜";
-    position: absolute;
-    top: 20px;
-    left: 14px;
-    font-size: 13px;
-    color: #fff;
-    background: linear-gradient(90deg, #0072e3, #00bfff);
-    border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 8px rgba(0, 114, 227, 0.4);
-    z-index: 2;
+   content: "➜";
+  position: absolute;
+  top: 18px;
+  font-size: 20px;
   }
 
-  /* Active glow (optional animation) */
-  .offer-container.active::before {
-    background: linear-gradient(90deg, #160eaf, #00bfff);
-    box-shadow: 0 0 18px rgba(0, 114, 227, 0.6);
-  }
+  /* Active glow */
+.offer-container.active::before {
+  background: #0072e3;
+  color: #fff;
+  box-shadow: 0 0 65px rgba(0,114,227,0.6);
+}
 
+/* Left box — arrow between box and center line */
+.offer-container.left::before {
+  left: 580px;  
+  transform: rotate(180deg); /* arrow points ← toward line */         /* position arrow next to line */
+  
+}
   /* Simplified content */
   .offer-content {
     background: transparent !important;
