@@ -173,16 +173,15 @@
   font-size: 16px;
 }
 
-/* ===============================
-   MOBILE VIEW — One-Sided Arrow Timeline
-================================*/
 @media screen and (max-width: 768px) {
 
   .offer-container {
     width: 100%;
-    padding: 10px 15px 10px 55px; /* space for arrow + line */
+    padding: 10px 15px 10px 55px; /* spacing for arrow + line */
     margin-bottom: 25px;
     left: 0 !important;
+    position: relative;
+    z-index: 1;
   }
 
   .offer-container.left,
@@ -198,25 +197,32 @@
     border-radius: 2px;
   }
 
-  /* Arrow visible on left side — clearly beside text */
+  /* Make arrow appear on left side for ALL boxes */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    top: 18px;
-    left: 7px;
-    font-size: 22px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    font-size: 18px;
     color: #fff;
     background: linear-gradient(135deg, #0072e3, #2714f8);
     border-radius: 50%;
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 114, 227, 0.6);
+    box-shadow: 0 0 10px rgba(0, 114, 227, 0.5);
+    z-index: 2;
   }
 
-  /* Simplified content for mobile */
+  /* Keep each arrow visible on scroll */
+  .offer-container.active::before {
+    opacity: 1;
+  }
+
+  /* Simplified content */
   .offer-content {
     background: transparent !important;
     border: none !important;
