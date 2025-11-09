@@ -190,13 +190,23 @@
     left: 0 !important;
   }
 
-  .offer-content {
-    padding-left: 40px;        /* box text tidy alignment */
-  }
+  /* 🚫 Remove blue box and shadow around offer boxes */
+.offer-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
 
-  /* Heading spacing */
-  .section-heading {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-  }
+/* Optional – center the text neatly */
+.offer-content h3 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.offer-content p {
+  text-align: center;
+  line-height: 1.8;
+}
+
 }
