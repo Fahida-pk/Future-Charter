@@ -6,15 +6,16 @@ import "aos/dist/aos.css";
 export default function AboutSection() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // speed of animation
-      once: false,     // true = only once, false = animates every scroll
-      mirror: true     // ensures animation happens when scrolling up too
+      duration: 1000,
+      once: false,
+      mirror: true
     });
   }, []);
 
   return (
     <section className="about-section py-5">
       <div className="container">
+        
         {/* 🔹 Heading */}
         <div className="text-center mb-5" data-aos="fade-up">
           <h2 className="fw-bold text-dark about-heading">
@@ -26,16 +27,18 @@ export default function AboutSection() {
           <div className="heading-line mx-auto"></div>
         </div>
 
-        {/* 🔹 Image + Text with animations */}
+        {/* 🔹 Image + Text */}
         <div className="row align-items-stretch">
+          
           {/* Left - Image */}
           <div className="col-lg-6" data-aos="fade-right">
-            <div className="about-image h-100">
+            <div className="about-image1 h-100">
               <img
-                src="/image/about.jpeg"
-                alt="Future Charter Meeting"
-                className="img-fluid rounded shadow h-100 w-100 object-cover"
-              />
+  src="/image/ban.jpeg"
+  alt="About"
+  className="img-fluid rounded shadow h-100 w-100 object-cover"
+/>
+
             </div>
           </div>
 
@@ -70,10 +73,11 @@ export default function AboutSection() {
                 <strong>Saudi Arabia’s Vision 2030</strong>, supporting the
                 Kingdom’s transformation toward a diversified and
                 knowledge-based economy. Driven by our mission to deliver
-                reliable, efficient, and customer-centric solutions, Afdal Itqan Wujudah  continues to set new benchmarks in service standards
-                across the Kingdom. From manpower to machinery, we aim to be
-                your trusted partner in building a stronger and more sustainable
-                future for Saudi Arabia.
+                reliable, efficient, and customer-centric solutions, Afdal Itqan Wujudah 
+                continues to set new benchmarks in service standards across the
+                Kingdom. From manpower to machinery, we aim to be your trusted
+                partner in building a stronger and more sustainable future for
+                Saudi Arabia.
               </p>
 
               <p>
@@ -87,6 +91,7 @@ export default function AboutSection() {
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>

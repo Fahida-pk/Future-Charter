@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
+  
 }
 
 /* Background */
@@ -126,8 +126,12 @@
   line-height: 1.7;
   color: #333;
   font-size: 1rem;
+  text-align: justify;
 }
-
+.about-image1{
+  width: 100%;
+  height: auto;
+}
 /* ✅ Center Fold Shadow */
 .book-fold {
   position: absolute;
@@ -204,7 +208,7 @@
   }
 
   /* 🖼 Image styling */
-  .about-image img {
+  .about-image1 img {
  
   width: 100vw;          /* full viewport width */
   height: auto;
