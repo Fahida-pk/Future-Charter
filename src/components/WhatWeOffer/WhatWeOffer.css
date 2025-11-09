@@ -180,7 +180,7 @@
 
   .offer-container {
     width: 100%;
-    padding: 15px 25px 15px 60px; /* space for arrow */
+    padding: 10px 15px 10px 55px; /* space for circle arrow */
     margin-bottom: 25px;
     left: 0 !important;
   }
@@ -190,52 +190,53 @@
     left: 0 !important;
   }
 
-  /* Keep timeline line visible on one side */
+  /* Timeline line */
   .offer-timeline::after,
   .offer-line-fill {
     left: 25px !important;
     width: 3px !important;
+    border-radius: 2px;
   }
 
-  /* Bring back arrow same as desktop */
+  /* Circle arrow on the line */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    top: 22px;
-    left: 35px;
-    font-size: 18px;
-    color: #0072e3;
-    transform: rotate(0deg);
+    top: 18px;
+    left: 15px;
+    font-size: 12px;
+    color: #fff;
+    background: linear-gradient(90deg, #0072e3, #00bfff);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,114,227,0.4);
     z-index: 2;
   }
 
-  .offer-container.active::before {
-    color: #fff;
-    background: #0072e3;
-    border-radius: 50%;
-    padding: 3px 6px;
-    box-shadow: 0 0 20px rgba(0,114,227,0.6);
-  }
-
-  /* Card style simplified but clean */
+  /* Simplified card — no box border */
   .offer-content {
-    padding: 18px 20px;
-    background: #fff !important;
-    border: 2px solid #0072e3 !important;
-    border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 0 0 0;
   }
 
   .offer-content h3 {
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
-    margin-bottom: 6px;
+    color: #0a0a23;
+    margin-bottom: 4px;
   }
 
   .offer-content p {
     text-align: left;
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 14px;
+    color: #444;
   }
 }

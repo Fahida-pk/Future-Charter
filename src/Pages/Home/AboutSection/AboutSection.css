@@ -215,7 +215,7 @@
   object-fit: cover;
   border-radius: 0;
   display: block;
-  margin-top: .9px;
+  margin-top: 2px;
   padding-top: 0;
 }
 
@@ -236,7 +236,7 @@
   color: #222;
   font-size: .9rem;    /* readable size on mobile */
   font-weight: 200;
-  margin-top: 2px;
+  
 }
 
 
