@@ -178,17 +178,28 @@
 ================================*/
 @media screen and (max-width: 768px) {
 
-  .offer-container {
-    width: 100%;
-    padding: 10px 15px 10px 40px;
-    margin-bottom: 18px;
-    left: 0 !important;
-  }
+  .offer-container::before {
+  content: "➜";
+  position: absolute;
+  top: 18px;
+  font-size: 20px;
+  
+}
 
-  .offer-container.left,
-  .offer-container.right {
-    left: 0 !important;
-  }
+/* Active glow */
+.offer-container.active::before {
+  background: #0072e3;
+  color: #fff;
+  box-shadow: 0 0 65px rgba(0,114,227,0.6);
+}
+
+/* Left box — arrow between box and center line */
+.offer-container.left::before {
+  left: 580px;  
+  transform: rotate(180deg); /* arrow points ← toward line */         /* position arrow next to line */
+  
+}
+
 
   .offer-timeline::after,
   .offer-line-fill {
