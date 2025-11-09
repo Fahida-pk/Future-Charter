@@ -174,14 +174,14 @@
 }
 
 /* ===============================
-   MOBILE VIEW
+   MOBILE VIEW (Fixed with arrow)
 ================================*/
 @media screen and (max-width: 768px) {
 
   .offer-container {
     width: 100%;
-    padding: 10px 15px 10px 40px;
-    margin-bottom: 18px;
+    padding: 15px 25px 15px 60px; /* space for arrow */
+    margin-bottom: 25px;
     left: 0 !important;
   }
 
@@ -190,37 +190,51 @@
     left: 0 !important;
   }
 
+  /* Keep timeline line visible on one side */
   .offer-timeline::after,
   .offer-line-fill {
-    left: 18px !important;
+    left: 25px !important;
     width: 3px !important;
   }
 
+  /* Bring back arrow same as desktop */
   .offer-container::before {
-    left: 10px !important;
-    top: 20px !important;
-    width: 10px !important;
-    height: 10px !important;
-    border-width: 3px !important;
-    content: "";
+    content: "➜";
+    position: absolute;
+    top: 22px;
+    left: 35px;
+    font-size: 18px;
+    color: #0072e3;
+    transform: rotate(0deg);
+    z-index: 2;
   }
 
+  .offer-container.active::before {
+    color: #fff;
+    background: #0072e3;
+    border-radius: 50%;
+    padding: 3px 6px;
+    box-shadow: 0 0 20px rgba(0,114,227,0.6);
+  }
+
+  /* Card style simplified but clean */
   .offer-content {
-    padding: 10px 10px 10px 15px !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+    padding: 18px 20px;
+    background: #fff !important;
+    border: 2px solid #0072e3 !important;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   }
 
   .offer-content h3 {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 6px;
   }
 
   .offer-content p {
-    text-align: center;
+    text-align: left;
     line-height: 1.6;
     font-size: 15px;
   }
