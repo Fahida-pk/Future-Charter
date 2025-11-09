@@ -223,17 +223,17 @@
 
   /* 📝 Paragraph styling */
  .about-text {
-  padding:25px;   /* top & side padding */
+  padding:20px  25px;   /* top & side padding */
   text-align: justify;  /* full width fill effect */
 
 }
 
 .about-text p {
  
-  margin-bottom: 10px;  /* balanced spacing */
+  margin-bottom: 20px;  /* balanced spacing */
   line-height: 1.6;     /* better readability */
   color: #222;
-  font-size: 1rem;    /* readable size on mobile */
+  font-size: 1.5rem;    /* readable size on mobile */
   font-weight: 200;
   
 }
