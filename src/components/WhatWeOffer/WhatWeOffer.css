@@ -168,8 +168,8 @@
 
   .offer-container {
     width: 100%;
-    padding: 20px;
-    margin-bottom: 40px;
+    padding: 18px;              /* slightly reduced padding */
+    margin-bottom: 25px;        /* 🔹 reduced from 40px → smaller gap */
     left: 0 !important;
   }
 
@@ -182,16 +182,19 @@
   .offer-timeline::after,
   .offer-line-fill {
     left: 15px !important;
+    width: 3px !important;      /* 🔹 thinner line */
   }
 
-  /* Circle alignment */
+  /* Circle alignment + smaller size */
   .offer-container::before {
     left: 0 !important;
+    width: 14px !important;     /* 🔹 reduced size */
+    height: 14px !important;
   }
 
-  /* 🚫 Remove blue box and shadow around offer boxes */
+  /* Content spacing */
   .offer-content {
-    padding-left: 25px !important; /* 🔹 reduced from 40px → closer to line */
+    padding-left: 28px !important; /* closer to line */
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
