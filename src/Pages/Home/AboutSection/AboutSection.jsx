@@ -44,7 +44,7 @@ export default function AboutSection() {
 
           {/* Right - Text */}
           <div
-            className="col-lg-6 d-flex flex-column justify-content-center about-text"
+            className="col-lg-6 d-flex flex-column justify-content-center about-text1"
             data-aos="fade-left"
           >
             <div>
