@@ -175,15 +175,19 @@
 
 @media screen and (max-width: 768px) {
 
-  /* Main container fixes */
-  .offer-container {
-    width: 100%;
-    padding: 15px 15px 15px 55px; /* space for arrow + line */
-    margin-bottom: 30px;
-    left: 0 !important;
+  /* Make sure parent container allows visible arrows */
+  .offer-timeline {
     position: relative;
-    overflow: visible !important; /* ensure arrows aren’t hidden */
-    z-index: 1;
+    padding-left: 50px;
+  }
+
+  .offer-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 15px 20px 55px; /* space for arrow + line */
+    margin-bottom: 35px;
+    left: 0 !important;
+    overflow: visible !important;
   }
 
   .offer-container.left,
@@ -191,34 +195,39 @@
     left: 0 !important;
   }
 
-  /* Single vertical line on left */
-  .offer-timeline::after,
-  .offer-line-fill {
-    left: 28px !important;
-    width: 3px !important;
+  /* Timeline vertical line on one fixed side */
+  .offer-timeline::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #0072e3, #2714f8);
     border-radius: 2px;
+    z-index: 1;
   }
 
-  /* Common arrow for all containers */
+  /* Arrow — same for all containers */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    left: 10px;
-    top: 20px; /* keeps it at top-left consistently */
+    left: 12px;
+    top: 22px;
     font-size: 18px;
     color: #fff;
     background: linear-gradient(135deg, #0072e3, #2714f8);
     border-radius: 50%;
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 114, 227, 0.4);
-    z-index: 5;
+    box-shadow: 0 0 8px rgba(0, 114, 227, 0.4);
+    z-index: 3;
   }
 
-  /* Uniform layout for content */
+  /* Mobile content style */
   .offer-content {
     background: transparent !important;
     border: none !important;
