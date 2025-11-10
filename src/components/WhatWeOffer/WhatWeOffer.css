@@ -183,23 +183,7 @@
   }
 
   
-  /* All containers full width */
-  .offer-container {
-    position: relative;
-    width: 100%;
-    padding: 20px 15px 20px 65px; /* space for arrow + line */
-    margin-bottom: 35px;
-    left: 0 !important;
-    overflow: visible !important;
-    opacity: 1 !important; /* ensure visible */
-    transform: none !important; /* prevent hidden on inactive */
-  }
-
-  .offer-container.left,
-  .offer-container.right {
-    left: 0 !important;
-  }
-
+  
   /* Arrow visible for all items */
   .offer-container::before {
     content: "➜";
@@ -236,7 +220,7 @@
 
   .offer-content h3 {
     text-align: left;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 600;
     color: #0a0a23;
     margin-bottom: 6px;
