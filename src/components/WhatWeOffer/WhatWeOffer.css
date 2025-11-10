@@ -175,33 +175,18 @@
 
 @media screen and (max-width: 768px) {
 
-  /* Timeline area setup */
+  /* Timeline parent */
   .offer-timeline {
     position: relative;
-    padding-left: 60px; /* enough space for line + arrow */
+    padding-left: 60px;
     max-width: 100%;
   }
 
-  /* Make all containers align left side */
-  .offer-container {
-    position: relative;
-    width: 100%;
-    padding: 20px 15px 20px 60px; /* space for arrow */
-    margin-bottom: 35px;
-    left: 0 !important;
-    overflow: visible !important;
-  }
-
-  .offer-container.left,
-  .offer-container.right {
-    left: 0 !important;
-  }
-
-  /* Single vertical line */
+  /* Timeline vertical line on one side */
   .offer-timeline::after {
     content: "";
     position: absolute;
-    left: 26px; /* position of vertical line */
+    left: 28px; /* vertical line position */
     top: 0;
     width: 4px;
     height: 100%;
@@ -210,19 +195,29 @@
     z-index: 1;
   }
 
-  /* If using the fill line */
-  .offer-line-fill {
-    left: 26px !important;
-    margin-left: 0;
-    width: 4px;
+  /* All containers full width */
+  .offer-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 15px 20px 65px; /* space for arrow + line */
+    margin-bottom: 35px;
+    left: 0 !important;
+    overflow: visible !important;
+    opacity: 1 !important; /* ensure visible */
+    transform: none !important; /* prevent hidden on inactive */
   }
 
-  /* Arrow — touches the line exactly */
+  .offer-container.left,
+  .offer-container.right {
+    left: 0 !important;
+  }
+
+  /* Arrow visible for all items */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    left: 16px; /* arrow touches the line */
-    top: 20px;
+    left: 18px; /* aligns with line */
+    top: 22px; /* vertically centered with heading */
     font-size: 14px;
     color: #fff;
     background: linear-gradient(135deg, #0072e3, #2714f8);
@@ -234,10 +229,16 @@
     justify-content: center;
     box-shadow: 0 0 8px rgba(0, 114, 227, 0.4);
     z-index: 3;
-    transform: rotate(0deg); /* arrow points right towards text */
   }
 
-  /* Card text style */
+  /* Even if not "active", arrow shows */
+  .offer-container.active::before,
+  .offer-container::before {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Content style */
   .offer-content {
     background: transparent !important;
     border: none !important;
