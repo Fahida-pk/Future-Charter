@@ -175,15 +175,20 @@
 
 @media screen and (max-width: 768px) {
 
-  
-  
-  
+  /* Container positioning */
+  .offer-container {
+    position: relative;
+    margin-left: 40px; /* space for arrow and line */
+    border-left: 3px solid #0072e3; /* vertical line on left */
+    padding-left: 20px;
+  }
+
   /* Arrow visible for all items */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    left: 18px; /* aligns with line */
-    top: 22px; /* vertically centered with heading */
+    left: -12px; /* aligns with the left line */
+    top: 22px;
     font-size: 14px;
     color: #fff;
     background: linear-gradient(135deg, #0072e3, #2714f8);
@@ -196,8 +201,6 @@
     box-shadow: 0 0 8px rgba(0, 114, 227, 0.4);
     z-index: 3;
   }
-
-  
 
   /* Content style */
   .offer-content {
