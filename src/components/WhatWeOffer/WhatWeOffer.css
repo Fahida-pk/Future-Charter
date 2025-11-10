@@ -175,59 +175,70 @@
 
 @media screen and (max-width: 768px) {
 
-  /* Make sure parent container allows visible arrows */
+  /* Parent timeline spacing so arrows are visible */
   .offer-timeline {
     position: relative;
-    padding-left: 50px;
+    padding-left: 56px; /* space for the vertical line + arrow */
+    max-width: 100%;
   }
 
+  /* Make each card full width and allow arrow/content to sit on left */
   .offer-container {
     position: relative;
     width: 100%;
-    padding: 20px 15px 20px 55px; /* space for arrow + line */
-    margin-bottom: 35px;
+    padding: 18px 16px 18px 56px; /* left padding leaves room for arrow + line */
+    margin-bottom: 30px;
     left: 0 !important;
     overflow: visible !important;
   }
 
+  /* Remove left/right positioning on mobile */
   .offer-container.left,
   .offer-container.right {
     left: 0 !important;
   }
 
-  /* Timeline vertical line on one fixed side */
+  /* Single vertical timeline on the left */
   .offer-timeline::after {
     content: "";
     position: absolute;
-    left: 25px;
+    left: 24px;              /* where the line sits */
     top: 0;
-    width: 3px;
+    width: 4px;
     height: 100%;
     background: linear-gradient(180deg, #0072e3, #2714f8);
-    border-radius: 2px;
+    border-radius: 3px;
     z-index: 1;
   }
 
-  /* Arrow — same for all containers */
+  /* If you use the fill element, align it to the same x */
+  .offer-line-fill {
+    left: 24px !important;
+    margin-left: -2px;
+    width: 4px;
+  }
+
+  /* Arrow — same position for all containers, next to the line */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    left: 12px;
-    top: 22px;
-    font-size: 18px;
+    left: 8px;               /* distance from viewport left; sits left of the line */
+    top: 20px;
+    font-size: 14px;
     color: #fff;
     background: linear-gradient(135deg, #0072e3, #2714f8);
     border-radius: 50%;
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 8px rgba(0, 114, 227, 0.4);
+    box-shadow: 0 0 8px rgba(0, 114, 227, 0.35);
     z-index: 3;
+    transform: rotate(0deg); /* ensure arrow points right towards content */
   }
 
-  /* Mobile content style */
+  /* Mobile card styling (flat) */
   .offer-content {
     background: transparent !important;
     border: none !important;
