@@ -175,13 +175,7 @@
 
 @media screen and (max-width: 768px) {
 
-  /* Timeline parent */
-  .offer-timeline {
-    position: relative;
-    padding-left: 60px;
-    max-width: 100%;
-  }
-
+  
   
   
   /* Arrow visible for all items */
@@ -203,12 +197,7 @@
     z-index: 3;
   }
 
-  /* Even if not "active", arrow shows */
-  .offer-container.active::before,
-  .offer-container::before {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
+  
 
   /* Content style */
   .offer-content {
