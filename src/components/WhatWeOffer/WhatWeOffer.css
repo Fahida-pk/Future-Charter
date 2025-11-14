@@ -175,34 +175,29 @@
 
 @media screen and (max-width: 768px) {
 
-  /* Container positioning */
+  /* Container with LEFT LINE only */
   .offer-container {
     position: relative;
-    margin-left: 40px; /* space for arrow and line */
-    border-left: 3px solid #0072e3; /* vertical line on left */
+    margin-left: 40px;
+    border-left: 3px solid #0072e3; /* left vertical line */
     padding-left: 20px;
   }
 
-  /* Arrow visible for all items */
+  /* DOT instead of arrow */
   .offer-container::before {
-    content: "➜";
+    content: "";
     position: absolute;
-    left: -12px; /* aligns with the left line */
-    top: 22px;
-    font-size: 14px;
-    color: #fff;
-    background: linear-gradient(135deg, #0072e3, #2714f8);
+    left: -6px; /* brings dot exactly on the left line */
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background: #0072e3;
     border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 8px rgba(0, 114, 227, 0.4);
+    box-shadow: 0 0 6px rgba(0, 114, 227, 0.5);
     z-index: 3;
   }
 
-  /* Content style */
+  /* Paragraph-style content */
   .offer-content {
     background: transparent !important;
     border: none !important;
@@ -212,16 +207,17 @@
 
   .offer-content h3 {
     text-align: left;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
     color: #0a0a23;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   .offer-content p {
     text-align: left;
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 14px;
     color: #444;
+    margin: 0;
   }
 }
