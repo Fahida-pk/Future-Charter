@@ -97,55 +97,38 @@
   text-align: justify;
 }
 
-/* 🔹 Mobile Responsive Fix */
+/* ===============================
+   MOBILE RESPONSIVE (Fix everything)
+================================*/
 @media (max-width: 576px) {
-  .about-hero {
-    height: 180px;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .about-hero-title {
-    font-size: 28px;
-    text-align: center;
-    line-height: 1.2;
-    top: 0;
-  }
-
-  .about-split-section {
+  .about-wrapper {
     flex-direction: column;
-    padding: 40px 5%;
-    gap: 30px;
+    text-align: center;
+    gap: 20px;
   }
 
-  /* ✅ FIXED — Hand image 100% visible on mobile */
   .about-image {
-    background-image: url("/image/hand.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
-    height: 230px; /* FIXED height so image always appears */
-    margin: 10px 0;
-    opacity: 1 !important;
-    transform: translate(0) !important;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .about-text {
-    text-align: center;
+    width: 100%;
     padding: 0 10px;
-    opacity: 1 !important;
-    transform: translate(0) !important;
   }
 
   .about-heading {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 1.3;
   }
 
   .about-description {
     font-size: 14.5px;
     line-height: 1.7;
-    text-align: justify;
   }
 }
