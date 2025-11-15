@@ -111,23 +111,14 @@
     transform: none !important;
   }
 
-}
 
-@media (max-width: 576px) {
 
   .about-split-section {
     flex-direction: column;      /* STACK ITEMS */
     padding: 40px 5%;
     gap: 20px;
   }
-  .about-hero {
-  position: relative;
-  background: url("/image/banner.jpeg") center/cover no-repeat;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  
 .about-hero-title {
   color: #fff;
   font-size: 18px;
@@ -152,19 +143,7 @@
     line-height: 1.3;
   }
 
-  .about-image {
-    background: url("/image/hand.png") top center / cover no-repeat;
-    width: 100%;
-    height: 60vw;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
-  .about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+  
 /* Active */
 .about-image.active,
 .about-text.active {
