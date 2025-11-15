@@ -102,12 +102,17 @@
 }
 
 @media (max-width: 576px) {
- 
+  .about-split-section {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
   .about-image {
-  width: 100% !important;
-  height: auto !important;
-  object-fit: cover;
-  display: block !important;
+    display: block !important;
+    height: 260px !important;
+    background: url("/image/hand.png") center/cover no-repeat !important;
+    opacity: 1 !important;
+  }
 }
 
-}
+
