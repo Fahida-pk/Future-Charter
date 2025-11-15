@@ -112,7 +112,7 @@
 
   .about-image {
     width: 100% !important;
-    height: 260px !important;
+    height: 100% !important;
     background: url("/image/hand.png") center/cover no-repeat !important;
     display: block !important;
     margin: 0 auto !important;       /* 💙 EXACT CENTER */
