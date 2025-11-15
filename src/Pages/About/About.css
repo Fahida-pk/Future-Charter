@@ -102,38 +102,46 @@
 }
 
 /* MOBILE VIEW */
-@media (max-width: 576px) {
+/* ===============================
+   MOBILE VIEW (MAX 768PX)
+================================*/
+/* ===============================
+   MOBILE VIEW (MAX 768PX)
+================================*/
+@media (max-width: 768px) {
 
   .about-split-section {
     flex-direction: column !important;
-    padding: 20px !important;
-    gap: 30px !important;
+    padding: 20px 15px;
+    gap: 20px;
   }
 
   .about-image {
     width: 100% !important;
-    height: 280px !important;
-    background-image: url("/image/hand.png") !important;
+    height: 250px !important;
+    background-image: url("/image/hand.png"); /* ← use EXISTING desktop image */
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 
     opacity: 1 !important;
-    transform: translate(0) !important;
+    transform: translate(0) !important; /* animation reset */
   }
 
   .about-text {
     width: 100% !important;
-    text-align: center !important;
+    text-align: left;
     opacity: 1 !important;
     transform: translate(0) !important;
   }
 
   .about-heading {
-    text-align: center !important;
+    font-size: 22px !important;
+    line-height: 30px !important;
   }
 
   .about-description {
-    text-align: justify;
+    font-size: 15px !important;
+    line-height: 23px !important;
   }
 }
