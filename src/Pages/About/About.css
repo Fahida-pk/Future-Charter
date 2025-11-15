@@ -130,7 +130,7 @@
   .about-image {
     width: 100% !important;
     height: 280px !important;
-    background: url("/image/hand.png") center/cover no-repeat !important;
+    background: url("/image/handimg.png") center/cover no-repeat !important;
   }
 
   .about-text {
