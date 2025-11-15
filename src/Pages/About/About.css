@@ -117,15 +117,20 @@
 
 @media (max-width: 768px) {
 
+  /* Desktop version hide */
   .about-split-section {
-    flex-direction: column !important;
+    display: none !important;
+  }
+
+  /* Mobile version show */
+  .about-mobile {
+    display: block !important;
   }
 
   .about-image {
     width: 100% !important;
-    height: 240px !important;
-    background-size: cover !important;
-    background-position: center !important;
+    height: 280px !important;
+    background: url("/image/hand.png") center/cover no-repeat !important;
   }
 
   .about-text {
