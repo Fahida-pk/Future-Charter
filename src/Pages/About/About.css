@@ -109,6 +109,7 @@
 
   .about-image img {
     width: 100%;
+     background: url("/image/hand.png") top center / cover no-repeat;
     height: auto;
     display: block;
   }

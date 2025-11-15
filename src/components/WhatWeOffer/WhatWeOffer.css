@@ -196,7 +196,7 @@
   .offer-container::before {
     content: "";
     position: absolute;
-    left: -8px;   /* EXACT alignment with line */
+    left: -.10px;   /* EXACT alignment with line */
     top: 18px;    /* vertical correct position */
     width: 14px;
     height: 14px;
