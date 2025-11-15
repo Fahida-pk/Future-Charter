@@ -98,41 +98,42 @@
 }
 @media (max-width: 576px) {
 
+  /* Hero */
   .about-hero {
     background-image: url("/image/banner.jpeg") !important;
     height: 200px;
   }
 
-  .about-image {
-    width: 100%;
+  .about-hero-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    top: 30px;
   }
 
-  .about-image img {
-    width: 100%;
-     background: url("/image/hand.png") top center / cover no-repeat;
-    height: auto;
-    display: block;
-  }
-
-
+  /* Stack layout */
   .about-split-section {
-    flex-direction: column;      /* STACK ITEMS */
+    flex-direction: column;
     padding: 40px 5%;
     gap: 20px;
   }
-  
-.about-hero-title {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  z-index: 2;
-  position: relative;
-  top: 30px;
-}
-  /* Heading at top center */
+
+  /* FIX: Mobile hand image loading properly */
+  .about-image {
+    width: 100%;
+    height: 350px;
+    background-image: url("/image/hand.png") !important;
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Text block */
   .about-text {
-    order: 1;
     width: 100%;
     text-align: center;
     opacity: 1 !important;
@@ -145,14 +146,6 @@
     line-height: 1.3;
   }
 
-  
-/* Active */
-.about-image.active,
-.about-text.active {
-  opacity: 1;
-  transform: translate(0);
-}
-  /* Paragraph below image */
   .about-description {
     font-size: 8.5px;
     line-height: 1.7;

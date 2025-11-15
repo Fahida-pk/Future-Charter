@@ -175,29 +175,31 @@
 
 @media (max-width: 768px) {
 
-  /* Remove all previous timeline/center lines */
+  /* FORCE HIDE ALL CENTER LINES + DOTS */
+  .offer-wrapper::before,
+  .offer-container::after,
   .timeline-line,
   .offer-line,
-  .offer-wrapper::before,
-  .offer-container::after {
+  .center-line,
+  .center-dot {
     display: none !important;
   }
 
-  /* FULL LEFT SIDED TIMELINE */
+  /* FULL LEFT LINE ONLY */
   .offer-container {
     width: 100% !important;
     margin: 0 !important;
-    padding: 12px 15px 12px 30px !important; /* space for dot + line */
-    border-left: 3px solid #0072e3 !important; /* LEFT LINE */
+    padding: 12px 15px 12px 30px !important;
+    border-left: 3px solid #0072e3 !important;
     position: relative;
   }
 
-  /* LEFT DOT FIXED PERFECT POSITION */
+  /* ONLY LEFT DOT */
   .offer-container::before {
     content: "";
     position: absolute;
-    left: -.10px;   /* EXACT alignment with line */
-    top: 18px;    /* vertical correct position */
+    left: -8px;
+    top: 20px;
     width: 14px;
     height: 14px;
     background: #0072e3;
@@ -205,18 +207,8 @@
     z-index: 10;
   }
 
-  /* TEXT */
-  .offer-content {
-    padding: 0 !important;
-    border: none !important;
-    background: none !important;
-    box-shadow: none !important;
-  }
-
-  .offer-content h3 {
-    text-align: left !important;
-  }
-
+  /* TEXT LEFT */
+  .offer-content h3,
   .offer-content p {
     text-align: left !important;
   }
