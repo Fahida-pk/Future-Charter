@@ -107,6 +107,7 @@
     flex-direction: column !important;
     align-items: center !important;   /* 💙 IMAGE CENTER */
     text-align: center !important;    /* 💙 TEXT CENTER */
+    margin-left: 50px;
     gap: 20px !important;
   }
 
