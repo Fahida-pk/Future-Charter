@@ -183,23 +183,25 @@
   }
 
   /* Main container left-side single line */
+  @media (max-width: 768px) {
+
   .offer-container {
-    position: relative;
-    padding-left: 25px; /* space for line + dot */
     border-left: 3px solid #0072e3 !important;
-    margin-bottom: 25px;
+    padding-left: 20px;
+    position: relative;
   }
 
-  /* Dot touching the line */
   .offer-container::before {
     content: "";
     position: absolute;
-    left: -8px;    /* PERFECT alignment with line */
-    top: 6px;      /* dot center adjust */
+    left: -8px;
+    top: 10px;
     width: 14px;
     height: 14px;
     background: #0072e3;
     border-radius: 50%;
+  }
+
   }
 
   /* Heading and paragraph */
