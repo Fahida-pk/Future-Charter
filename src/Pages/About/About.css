@@ -129,7 +129,7 @@
 
   .about-image {
     width: 100% !important;
-    height: 400px !important;
+    height: 380px !important;
     background: url("/image/hand.png") center/cover no-repeat !important;
     margin-top: 15px;
   }
@@ -141,10 +141,13 @@
   .about-hero {
     height: 200px;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
   .about-hero-title {
   color: #fff;
   font-size: 40px;
   font-weight: 500;
+   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   z-index: 2;
   position: relative;
@@ -154,13 +157,13 @@
     padding: 20px 15px !important;
   }
   .about-heading{
-   font-size: 16px !important;
-    font-weight: 600 !important;
+   font-size: 14px !important;
+    font-weight: 500 !important;
     line-height: 1.2 !important;
     margin-bottom: 10px !important;
   }
   .about-description {
-  font-size: 12px !important;
+  font-size: 10px !important;
     line-height: 1.4 !important;
     margin-top: 8px !important;
     margin-bottom: 12px !important;
