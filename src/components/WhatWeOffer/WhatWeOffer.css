@@ -185,12 +185,20 @@
   /* Main container left-side single line */
   @media (max-width: 768px) {
 
+  @media (max-width: 768px) {
+
+  /* Offer item full width (so line shifts to true left) */
   .offer-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
     border-left: 3px solid #0072e3 !important;
     padding-left: 20px;
     position: relative;
+    display: block !important;
   }
 
+  /* dot on left side */
   .offer-container::before {
     content: "";
     position: absolute;
@@ -202,14 +210,22 @@
     border-radius: 50%;
   }
 
+  /* REMOVE center line from wrapper */
+  .offer-wrapper,
+  .offer-wrapper::before,
+  .offer-line,
+  .offer-container::after {
+    display: none !important;
   }
 
-  /* Heading and paragraph */
+  /* content clean */
   .offer-content {
     padding: 0 !important;
     background: transparent !important;
-    border: none !important;
     box-shadow: none !important;
+    border: none !important;
+  }
+
   }
 
   .offer-content h3 {
@@ -225,5 +241,6 @@
     font-size: 13.5px;
     line-height: 1.6;
     color: #444;
+  }
   }
 }
