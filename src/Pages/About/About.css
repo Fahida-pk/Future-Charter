@@ -100,13 +100,13 @@
 
   .about-hero {
     background-image: url("/image/banner.jpeg") !important;
-    height: 250px;
+    height: 150px;
   }
 
   .about-image {
-    background-image: url("/image/hand.png") !important;
-    width: 100%;
-    height: auto;
+     background: url("/image/hand.png") top center / cover no-repeat;
+    height: 520px;
+  width: 100%;
     opacity: 1 !important;
     transform: none !important;
   }
