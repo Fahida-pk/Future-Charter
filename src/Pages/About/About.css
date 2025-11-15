@@ -129,7 +129,7 @@
 
   .about-image {
     width: 100% !important;
-    height: 450px !important;
+    height: 400px !important;
     background: url("/image/hand.png") center/cover no-repeat !important;
     margin-top: 15px;
   }
@@ -150,18 +150,19 @@
   position: relative;
   top: 20px;
 }
+.about-split-section {
+    padding: 20px 15px !important;
+  }
   .about-heading{
-    font-size: 12px;
-  font-weight: 300;
-  color: #001e44;
-  margin-bottom: 25px;
+   font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
   }
   .about-description {
-  font-size: 10px;
-  color: #444;
-  line-height: 1;
-  margin-top: 15px;
-  margin-bottom: 22px;
-  text-align: justify;
+  font-size: 12px !important;
+    line-height: 1.4 !important;
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
 }
 }
