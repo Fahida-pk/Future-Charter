@@ -102,12 +102,7 @@
 }
 
 @media (max-width: 576px) {
-  .about-split-section {
-    flex-direction: column !important; /* 🔥 correct order */
-    gap: 25px;
-    padding: 40px 20px;
-  }
-
+ 
   .about-image {
   width: 100% !important;
   height: auto !important;
