@@ -123,9 +123,19 @@
   .about-image {
     background-image: url("/image/handimg.jpg") !important;
     background-size: contain !important;
+     height: 520px;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(80px);
+  transition: 0.8s ease;
     background-position: top center !important;
     background-repeat: no-repeat !important;
   }
+  .about-image.active,
+.about-text.active {
+  opacity: 1;
+  transform: translate(0);
+}
   /* Text block */
   .about-text {
     width: 100%;
