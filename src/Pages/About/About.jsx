@@ -64,13 +64,23 @@ const About = () => {
           </h2>
 
           <p className="about-description">
-            Afdal Itqan Wujudah Company is a dynamic and diversified enterprise...
+            Afdal Itqan Wujudah Company is a dynamic and diversified enterprise
+              based in Najran and Riyadh, Saudi Arabia. We are committed to
+              delivering high-quality, tailored solutions that meet the evolving
+              needs of our clients across multiple sectors.
           </p>
           <p className="about-description">
-            Aligned with Saudi Vision 2030...
+           Aligned with Saudi Vision 2030, our services and products support
+              the Kingdom’s economic and social growth. We specialize in manpower
+              supply, equipment rentals, food supplies, building materials,
+              uniforms, and safety solutions, as well as medical consumables,
+              medical equipment, dermatology products & equipment, and cosmetic &
+              skincare products.
           </p>
           <p className="about-description">
-            Driven by customer satisfaction...
+            Driven by customer satisfaction, reliability, and innovation, Afdal
+              Itqan Wujudah continues to set new standards in service excellence
+              and trusted partnerships across Saudi Arabia.
           </p>
         </div>
       </div>
