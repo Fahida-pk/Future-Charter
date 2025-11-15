@@ -106,7 +106,7 @@
   .about-image {
     background-image: url("/image/hand.png") !important;
     width: 100%;
-    height: 60vw;
+    height: auto;
     opacity: 1 !important;
     transform: none !important;
   }
