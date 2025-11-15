@@ -20,6 +20,15 @@ const About = () => {
   return (
     <>
       <section className="about-section">
+
+        {/* 📱 MOBILE HERO (image + text overlay) */}
+        <div className="about-hero-mobile">
+          <h1 className="about-hero-mobile-title">
+            Dream & Grow Up Your Business.
+          </h1>
+        </div>
+
+        {/* 💻 DESKTOP HERO (unchanged) */}
         <div className="about-hero">
           <div className="about-hero-overlay">
             <h1 className="about-hero-title">ABOUT US</h1>
@@ -33,12 +42,14 @@ const About = () => {
             <h2 className="about-heading">
               We Are Ready To Make Your Dream & Grow Up Your Business.
             </h2>
+
             <p className="about-description">
               Afdal Itqan Wujudah Company is a dynamic and diversified enterprise
               based in Najran and Riyadh, Saudi Arabia. We are committed to
               delivering high-quality, tailored solutions that meet the evolving
               needs of our clients across multiple sectors.
             </p>
+
             <p className="about-description">
               Aligned with Saudi Vision 2030, our services and products support
               the Kingdom’s economic and social growth. We specialize in manpower
@@ -47,6 +58,7 @@ const About = () => {
               medical equipment, dermatology products & equipment, and cosmetic &
               skincare products.
             </p>
+
             <p className="about-description">
               Driven by customer satisfaction, reliability, and innovation, Afdal
               Itqan Wujudah continues to set new standards in service excellence
