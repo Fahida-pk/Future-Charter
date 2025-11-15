@@ -102,26 +102,16 @@
 }
 
 @media (max-width: 576px) {
-
   .about-split-section {
-    flex-direction: column-reverse !important;
+    flex-direction: column !important; /* 🔥 correct order */
     gap: 25px;
     padding: 40px 20px;
   }
 
-  /* 🔥 Mobile-il always visible */
   .about-image {
-    opacity: 1 !important;
-    transform: none !important;
     height: 260px;
     background: url("/image/hand.png") center/cover no-repeat !important;
-  }
-
-  .about-heading {
-    font-size: 26px;
-  }
-
-  .about-description {
-    font-size: 15px;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
