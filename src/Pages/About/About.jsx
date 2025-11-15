@@ -56,7 +56,7 @@ const About = () => {
         </div>
         {/* MOBILE VIEW ONLY */}
       <div className="about-mobile">
-        <div className="about-second-image"></div>
+        <div className="about-image"></div>
 
         <div className="about-text">
           <h2 className="about-heading">
