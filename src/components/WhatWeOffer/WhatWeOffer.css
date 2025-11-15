@@ -200,7 +200,7 @@
   .offer-container::before {
     content: "";
     position: absolute;
-    left: -10px; /* aligns dot with line */
+    left: -15px; /* aligns dot with line */
     top: 8px;   /* SAME LINE for all */
     width: 14px;
     height: 14px;
@@ -230,7 +230,7 @@
   .offer-content h3 {
   font-size: 18px;
   color: #0a0a23;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 5px;
 }
 
