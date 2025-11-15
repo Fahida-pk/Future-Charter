@@ -104,6 +104,14 @@
     padding: 40px 5%;
     gap: 20px;
   }
+  .about-hero {
+  position: relative;
+  background: url("/image/banner.jpeg") center/cover no-repeat;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .about-hero-title {
   color: #fff;
   font-size: 18px;
