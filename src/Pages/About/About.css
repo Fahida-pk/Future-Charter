@@ -129,7 +129,7 @@
 
   .about-image {
     width: 100% !important;
-    height: auto !important;
+    height: 500px !important;
     background: url("/image/hand.png") center/cover no-repeat !important;
     margin-top: 10px;
   }
