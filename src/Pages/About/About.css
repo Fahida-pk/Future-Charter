@@ -101,7 +101,7 @@
   /* Hero */
   .about-hero {
     background-image: url("/image/banner.jpeg") !important;
-    height: 200px;
+    height: 185px;
   }
 
   .about-hero-title {
@@ -123,7 +123,7 @@
   .about-image {
     width: 100%;
     height: auto;
-    background-image: url("/public/image/handimg.jpg") !important;
+    background-image: url("/image/handimg.jpg") !important;
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -131,7 +131,6 @@
     opacity: 1 !important;
     transform: none !important;
   }
-
   /* Text block */
   .about-text {
     width: 100%;

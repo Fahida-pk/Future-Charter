@@ -175,7 +175,7 @@
 
 @media (max-width: 768px) {
 
-  /* FORCE HIDE ALL CENTER LINES + DOTS */
+  /* REMOVE ALL CENTER LINES / BOXES / AFTER ELEMENTS */
   .offer-wrapper::before,
   .offer-container::after,
   .timeline-line,
@@ -185,31 +185,34 @@
     display: none !important;
   }
 
-  /* FULL LEFT LINE ONLY */
+  /* LEFT SINGLE LINE */
   .offer-container {
     width: 100% !important;
-    margin: 0 !important;
-    padding: 12px 15px 12px 30px !important;
+    margin: 0 0 25px 0 !important;
+    padding: 0 15px 0 40px !important;
     border-left: 3px solid #0072e3 !important;
     position: relative;
+    box-shadow: none !important;
+    border-radius: 0 !important; /* box completely remove */
+    background: none !important;
   }
 
-  /* ONLY LEFT DOT */
+  /* SAME POSITION DOT FOR ALL ITEMS */
   .offer-container::before {
     content: "";
     position: absolute;
     left: -8px;
-    top: 20px;
+    top: 8px;       /* FIXED → ALL ITEMS SAME LINE */
     width: 14px;
     height: 14px;
     background: #0072e3;
     border-radius: 50%;
-    z-index: 10;
   }
 
-  /* TEXT LEFT */
+  /* CONTENT ALWAYS LEFT */
   .offer-content h3,
   .offer-content p {
     text-align: left !important;
+    margin-left: 0 !important;
   }
 }
