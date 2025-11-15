@@ -129,7 +129,7 @@
 
   .about-image {
     width: 100% !important;
-    height: 400px !important;
+    height: 450px !important;
     background: url("/image/hand.png") center/cover no-repeat !important;
     margin-top: 28px;
   }
@@ -151,15 +151,15 @@
   top: 20px;
 }
   .about-heading{
-    font-size: 15px;
-  font-weight: 200;
+    font-size: 12px;
+  font-weight: 300;
   color: #001e44;
   margin-bottom: 25px;
   }
   .about-description {
   font-size: 10px;
   color: #444;
-  line-height: 1.3;
+  line-height: 1;
   margin-top: 15px;
   margin-bottom: 22px;
   text-align: justify;
