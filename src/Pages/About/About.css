@@ -108,40 +108,58 @@
 /* ===============================
    MOBILE VIEW (MAX 768PX)
 ================================*/
+/* ===============================
+   MOBILE VIEW (MAX 768PX)
+================================*/
 @media (max-width: 768px) {
 
   .about-split-section {
     flex-direction: column !important;
-    padding: 20px 15px;
-    gap: 20px;
+    padding: 25px 15px;
+    gap: 25px;
   }
 
+  /* FIRST IMAGE (TOP IMAGE) */
   .about-image {
     width: 100% !important;
-    height: 250px !important;
-    background-image: url("/image/hand.png"); /* ← use EXISTING desktop image */
+    height: 260px !important;
+    background-image: url("/public/image/hand.png") !important;
     background-size: cover !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
-
+    border-radius: 12px;
     opacity: 1 !important;
-    transform: translate(0) !important; /* animation reset */
+    transform: translate(0) !important;
   }
 
+  /* TEXT BLOCK */
   .about-text {
     width: 100% !important;
-    text-align: left;
+    text-align: left !important;
     opacity: 1 !important;
     transform: translate(0) !important;
   }
 
   .about-heading {
-    font-size: 15px !important;
-    line-height: 10px !important;
+    font-size: 26px !important;
+    line-height: 32px !important;
+    margin-bottom: 15px;
   }
 
   .about-description {
-    font-size: 10px !important;
-    line-height: 10px !important;
+    font-size: 16px !important;
+    line-height: 26px !important;
+    text-align: justify !important;
+    margin-bottom: 18px;
+  }
+
+  /* SECOND IMAGE (LIKE YOUR SCREENSHOT) */
+  .about-second-image {
+    width: 100%;
+    height: 230px;
+    background-image: url("/public/image/handimg.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-top: 10px;
   }
 }
