@@ -173,60 +173,47 @@
   font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-  /* Remove all unwanted lines/borders */
-  .offer-section,
-  .offer-wrapper {
-    border: none !important;
-    background: none !important;
+  /* COMPLETELY REMOVE CENTER TIMELINE LINE */
+  .timeline-line,
+  .offer-line,
+  .offer-wrapper::before,
+  .offer-container::after {
+    display: none !important;
   }
 
-  /* Main container left-side single line */
-  @media (max-width: 768px) {
-
-  @media (max-width: 768px) {
-
-  /* Offer item full width (so line shifts to true left) */
+  /* Make offer container full width (forces left alignment) */
   .offer-container {
     width: 100% !important;
-    max-width: 100% !important;
     margin: 0 !important;
     border-left: 3px solid #0072e3 !important;
-    padding-left: 20px;
+    padding-left: 20px !important;
     position: relative;
-    display: block !important;
+    display: block;
   }
 
-  /* dot on left side */
+  /* Only the LEFT DOT */
   .offer-container::before {
     content: "";
     position: absolute;
-    left: -8px;
-    top: 10px;
+    left: -7px;
+    top: 15px;
     width: 14px;
     height: 14px;
     background: #0072e3;
     border-radius: 50%;
   }
 
-  /* REMOVE center line from wrapper */
-  .offer-wrapper,
-  .offer-wrapper::before,
-  .offer-line,
-  .offer-container::after {
-    display: none !important;
-  }
-
-  /* content clean */
+  /* Clean content */
   .offer-content {
     padding: 0 !important;
+    border: none !important;
     background: transparent !important;
     box-shadow: none !important;
-    border: none !important;
   }
+}
 
-  }
 
   .offer-content h3 {
     text-align: left;
@@ -242,5 +229,5 @@
     line-height: 1.6;
     color: #444;
   }
-  }
-}
+  
+
