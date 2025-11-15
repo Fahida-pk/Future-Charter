@@ -175,41 +175,53 @@
 
 @media (max-width: 768px) {
 
-  /* REMOVE ALL CENTER LINES / BOXES / AFTER ELEMENTS */
-  .offer-wrapper::before,
-  .offer-container::after,
-  .timeline-line,
-  .offer-line,
-  .center-line,
-  .center-dot {
-    display: none !important;
+  /* HIDE ALL CENTER LINES */
+  .offer-timeline::after,
+  .offer-line-fill,
+  .offer-container.right,
+  .offer-container.left {
+    left: 0 !important;
   }
 
-  /* LEFT SINGLE LINE */
+  /* LEFT SIDE SINGLE LINE */
   .offer-container {
     width: 100% !important;
+    padding: 0 10px 0 35px !important;
     margin: 0 0 25px 0 !important;
-    padding: 0 15px 0 40px !important;
+
     border-left: 3px solid #0072e3 !important;
-    position: relative;
-    box-shadow: none !important;
-    border-radius: 0 !important; /* box completely remove */
     background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    position: relative;
   }
 
-  /* SAME POSITION DOT FOR ALL ITEMS */
+  /* BLUE DOT (same for all) */
   .offer-container::before {
     content: "";
     position: absolute;
-    left: -8px;
-    top: 8px;       /* FIXED → ALL ITEMS SAME LINE */
+    left: -8px; /* aligns dot with line */
+    top: 8px;   /* SAME LINE for all */
     width: 14px;
     height: 14px;
     background: #0072e3;
     border-radius: 50%;
   }
 
-  /* CONTENT ALWAYS LEFT */
+  /* REMOVE ARROWS FROM DESKTOP */
+  .offer-container.left::before,
+  .offer-container.right::before {
+    transform: none !important;
+  }
+
+  /* TEXT LEFT ALIGN */
+  .offer-content {
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
   .offer-content h3,
   .offer-content p {
     text-align: left !important;
