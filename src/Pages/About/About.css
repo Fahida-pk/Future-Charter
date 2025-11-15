@@ -103,16 +103,18 @@
 
 @media (max-width: 576px) {
 
-  /* 🔥 TEXT FIRST → IMAGE SECOND */
   .about-split-section {
     flex-direction: column-reverse !important;
     gap: 25px;
     padding: 40px 20px;
   }
 
+  /* 🔥 Mobile-il always visible */
   .about-image {
+    opacity: 1 !important;
+    transform: none !important;
     height: 260px;
-    background-size: cover !important;
+    background: url("/image/hand.png") center/cover no-repeat !important;
   }
 
   .about-heading {
