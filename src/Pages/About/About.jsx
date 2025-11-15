@@ -54,6 +54,26 @@ const About = () => {
             </p>
           </div>
         </div>
+        {/* MOBILE VIEW ONLY */}
+      <div className="about-mobile">
+        <div className="about-second-image"></div>
+
+        <div className="about-text">
+          <h2 className="about-heading">
+            We Are Ready To Make Your Dream & Grow Up Your Business.
+          </h2>
+
+          <p className="about-description">
+            Afdal Itqan Wujudah Company is a dynamic and diversified enterprise...
+          </p>
+          <p className="about-description">
+            Aligned with Saudi Vision 2030...
+          </p>
+          <p className="about-description">
+            Driven by customer satisfaction...
+          </p>
+        </div>
+      </div>
       </section>
 
       <WhatWeOffer />
