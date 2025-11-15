@@ -175,7 +175,7 @@
 
 @media (max-width: 768px) {
 
-  /* COMPLETELY REMOVE CENTER TIMELINE LINE */
+  /* Remove all previous timeline/center lines */
   .timeline-line,
   .offer-line,
   .offer-wrapper::before,
@@ -183,51 +183,41 @@
     display: none !important;
   }
 
-  /* Make offer container full width (forces left alignment) */
+  /* FULL LEFT SIDED TIMELINE */
   .offer-container {
     width: 100% !important;
     margin: 0 !important;
-    border-left: 3px solid #0072e3 !important;
-    padding-left: 20px !important;
+    padding: 12px 15px 12px 30px !important; /* space for dot + line */
+    border-left: 3px solid #0072e3 !important; /* LEFT LINE */
     position: relative;
-    display: block;
   }
 
-  /* Only the LEFT DOT */
+  /* LEFT DOT FIXED PERFECT POSITION */
   .offer-container::before {
     content: "";
     position: absolute;
-    left: -7px;
-    top: 15px;
+    left: -8px;   /* EXACT alignment with line */
+    top: 18px;    /* vertical correct position */
     width: 14px;
     height: 14px;
     background: #0072e3;
     border-radius: 50%;
+    z-index: 10;
   }
 
-  /* Clean content */
+  /* TEXT */
   .offer-content {
     padding: 0 !important;
     border: none !important;
-    background: transparent !important;
+    background: none !important;
     box-shadow: none !important;
   }
-}
-
 
   .offer-content h3 {
-    text-align: left;
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #000;
+    text-align: left !important;
   }
 
   .offer-content p {
-    text-align: left;
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: #444;
+    text-align: left !important;
   }
-  
-
+}
