@@ -122,7 +122,7 @@
   /* FIX: Mobile hand image loading properly */
   .about-image {
     width: 100%;
-    height: auto;
+    height: 160px;
     background-image: url("/image/handimg.jpg") !important;
     background-position: top center;
     background-size: contain;
