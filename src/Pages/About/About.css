@@ -129,8 +129,9 @@
 
   .about-image {
     width: 100% !important;
-    height: 280px !important;
-    background: url("/image/handimg.jpg") center/cover no-repeat !important;
+    height: 380px !important;
+    background: url("/image/hand.png") center/cover no-repeat !important;
+    margin-top: 20px;
   }
 
   .about-text {
