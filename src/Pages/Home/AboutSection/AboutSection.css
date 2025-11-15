@@ -169,7 +169,7 @@
   /* ✨ Highlight effect for AFDAL ITQAN WUJUDAH */
   .highlight {
     color: linear-gradient(90deg, #0070C0, #00BFFF);
-    font-size: 2rem; /* smaller heading */
+    font-size: 1.5rem; /* smaller heading */
     font-weight: 1000px;
     letter-spacing: 0.2px;
   }
