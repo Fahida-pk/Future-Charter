@@ -132,6 +132,12 @@
     transform: none !important;
   }
 
+  .about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   /* Paragraph below image */
   .about-description {
     font-size: 8.5px;
