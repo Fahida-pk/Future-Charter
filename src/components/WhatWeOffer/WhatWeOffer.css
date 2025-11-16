@@ -232,11 +232,11 @@
   }
   /* WHAT WE OFFER — MOBILE FIX */
 .offer-section {
-  padding-top: 10px !important;   /* heading mukalilottu varum */
+    padding-top: 60px !important;  /* increased padding — heading thazhe varum */
 }
 
 .section-heading {
-  margin-top: 0 !important;
+    margin-top: 10px !important;   /* heading slight down */
   margin-bottom: 15px !important; /* gap kurayum */
   font-size: 20px !important;     /* size cheriya aakum */
   letter-spacing: 0.5px !important;
