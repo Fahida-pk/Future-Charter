@@ -165,8 +165,12 @@ font-family: "Playfair Display", serif;
 }
 
 .vm-tab.active {
-  background: #ffffff !important;
-  color: #0056a0 !important;
+  .vm-tab:active {
+  color: black !important;
+  background: #f0f0f0 !important;
+  transform: scale(0.97);
+}
+
 }
 
   .vm-tab {
