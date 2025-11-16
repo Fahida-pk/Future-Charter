@@ -175,26 +175,33 @@
 
 @media (max-width: 768px) {
 
-  /* ❌ Remove center line fully */
+  /* DELETE CENTER LINE */
   .offer-timeline::after,
   .offer-line-fill {
     display: none !important;
   }
 
-  /* ✅ All cards full width */
+  /* FORCE ALL ITEMS LEFT */
   .offer-container {
     width: 100% !important;
     left: 0 !important;
-    padding: 0 10px 0 40px !important;
+    transform: none !important;
+    padding: 0 10px 0 45px !important;
     margin-bottom: 25px;
     position: relative;
   }
 
-  /* ✅ LEFT SIDE BLUE LINE */
+  /* REMOVE DESKTOP POSITIONING */
+  .offer-container.left,
+  .offer-container.right {
+    left: 0 !important;
+  }
+
+  /* LEFT BLUE LINE */
   .offer-container::after {
     content: "";
     position: absolute;
-    left: 10px;
+    left: 15px;       /* position of vertical line */
     top: 0;
     width: 6px;
     height: 100%;
@@ -202,23 +209,22 @@
     border-radius: 3px;
   }
 
-  /* ✅ ARROW PERFECT ONE LINE */
+  /* PERFECT ARROW POSITION — FIXES YOUR ISSUE */
   .offer-container::before {
     content: "➜";
     position: absolute;
-    left: -2px;      /* arrow touches the line */
-    top: 15px;       /* ALL arrows same straight line */
+    left: 3px;         /* arrow next to line */
+    top: 20px;         /* ALL ARROWS SAME STRAIGHT LINE */
     font-size: 16px;
     color: #0072e3;
     z-index: 10;
   }
 
-  /* Remove desktop arrow rotation */
+  /* REMOVE DESKTOP ROTATION */
   .offer-container.left::before,
   .offer-container.right::before {
     transform: none !important;
   }
-
   /* TEXT LEFT ALIGN */
   .offer-content {
     padding: 0 !important;
