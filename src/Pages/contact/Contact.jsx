@@ -1,4 +1,5 @@
 import React from "react";
+import ContactSection from "../Home/ContactSection/ContactSection.jsx";
 
 const Contact = () => {
   return (
@@ -18,8 +19,11 @@ const Contact = () => {
         </div>
         <button className="btn btn-primary w-100">Send Message</button>
       </form>
+          <ContactSection />
+
     </section>
   );
-};
 
+};
+    
 export default Contact;
