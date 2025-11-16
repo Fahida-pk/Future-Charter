@@ -135,7 +135,7 @@ font-family: "Playfair Display", serif;
 }
 
 .vm-main-title::after { 
-  content: "●●● ────";
+  content: "●●● ─────────";
   font-size: 20px;
   display: block;
   margin: 1px auto 0;
@@ -173,7 +173,13 @@ font-family: "Playfair Display", serif;
     width: auto !important;           /* shrink size properly */
     font-size: 22px;
     padding: 12px 20px;
-  }
+    
+  outline: none !important;
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none;
+}
+
+  
 
   .vm-main-title {
     font-size: 32px;
