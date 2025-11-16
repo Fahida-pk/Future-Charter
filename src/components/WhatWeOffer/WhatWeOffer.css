@@ -240,7 +240,7 @@
   margin-bottom: 50px !important; /* gap kurayum */
   font-size: 30px !important;     /* size cheriya aakum */
 font-weight: bold;
-font-family: "Gill Sans Extrabold", sans-serif;
+font-family: "Playfair Display", serif;
 
 }
   
@@ -269,7 +269,7 @@ font-family: "Gill Sans Extrabold", sans-serif;
   color: #555;
   line-height: 1.2;
   font-size: 11px;
-    font-family: "MyRoboto"!important;
+font-family: "Urbanist", sans-serif;
 
 }
 }
