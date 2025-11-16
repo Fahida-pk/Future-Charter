@@ -237,9 +237,8 @@
 
 .section-heading {
     margin-top: 10px !important;   /* heading slight down */
-  margin-bottom: 15px !important; /* gap kurayum */
+  margin-bottom: 25px !important; /* gap kurayum */
   font-size: 20px !important;     /* size cheriya aakum */
-  letter-spacing: 0.5px !important;
     transform: translateX(-50%);
 
 }
@@ -258,7 +257,7 @@
   }
   .offer-content h3 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Fantasy" !important;
   color: #0a0a23;
  
@@ -269,7 +268,7 @@
   color: #555;
   line-height: 1.2;
   font-size: 11px;
-    font-family: "MyRoboto";
+    font-family: "MyRoboto"!important;
 
 }
 }
