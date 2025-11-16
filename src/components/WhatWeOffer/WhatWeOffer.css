@@ -211,7 +211,7 @@
 
   /* PERFECT ARROW POSITION — FIXES YOUR ISSUE */
   .offer-container::before {
-    content: "➜";
+    content: "";
     position: absolute;
     left: 3px;         /* arrow next to line */
     top: 20px;         /* ALL ARROWS SAME STRAIGHT LINE */
