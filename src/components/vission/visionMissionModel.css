@@ -121,7 +121,39 @@
 /* Mobile */
 @media (max-width: 768px) {
 
-    
+   /* Heading */
+.vm-main-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #060606;
+  text-align: center;
+  margin-bottom: 0px;
+  position: relative;
+  font-weight: bold;
+
+font-family: "Playfair Display", serif;
+}
+
+.vm-main-title::after { 
+  content: "●●● ────";
+  font-size: 20px;
+  display: block;
+  margin: 1px auto 0;
+  letter-spacing: .10px;
+
+  background: linear-gradient(90deg, #535091, #00BFFF, #2714f8, #535091);
+  border-radius: 10px;
+  animation: underline 2s ease-out forwards;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@keyframes underline {
+  from { width: 0; opacity: 0.3; }
+  to { width: 50%; opacity: 1; }
+} 
   
    .vm-tabs {
     flex-direction: row !important;   /* put them in SAME LINE */
