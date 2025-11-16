@@ -206,8 +206,7 @@
     width: 6px;
     height: 100%;
    background: linear-gradient(90deg, #0072e3, #160eaf, #00BFFF, #2714f8); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+ 
     border-radius: 3px;
   }
 
@@ -220,8 +219,6 @@
   font-weight: 900;
 
   background: linear-gradient(90deg, #0072e3, #160eaf, #00BFFF, #2714f8); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
   z-index: 10;
 }
