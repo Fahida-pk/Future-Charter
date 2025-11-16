@@ -175,44 +175,36 @@
 
 @media (max-width: 768px) {
 
-  /* HIDE ALL CENTER LINES */
-  .offer-timeline::after,
-  .offer-line-fill,
-  .offer-container.right,
-  .offer-container.left {
-    left: 0 !important;
-  }
-
-  /* LEFT SIDE SINGLE LINE */
+  /* SAME LEFT BLUE LINE */
   .offer-container {
     width: 100% !important;
     padding: 0 10px 0 35px !important;
     margin: 0 0 25px 0 !important;
-
     border-left: 10px solid #0072e3 !important;
-    background: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
     position: relative;
   }
 
-  /* BLUE DOT (same for all) */
+  /* PERFECT ONE-LINE DOT / ARROW */
   .offer-container::before {
-    content: "➜";
+    content: "➜";          /* If you want dot, replace with "" and remove rotate */
     position: absolute;
-    left: -10px; /* aligns dot with line */
-    top: 8px;   /* SAME LINE for all */
-    width: 14px;
-    height: 14px;
-    background: #0072e3;
-    border-radius: 50%;
+    left: -18px;           /* aligns arrow perfectly on line */
+    top: 12px;             /* <<< keeps ALL arrows perfectly straight */
+    font-size: 14px;
+    color: #0072e3;
+    background: none !important;
+    border-radius: 0 !important;
   }
 
-  /* REMOVE ARROWS FROM DESKTOP */
+  /* REMOVE DESKTOP ROTATION */
   .offer-container.left::before,
   .offer-container.right::before {
     transform: none !important;
   }
+
+  
+
+
 
   /* TEXT LEFT ALIGN */
   .offer-content {
