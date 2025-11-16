@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import WhatWeOffer from "../../components/WhatWeOffer/WhatWeOffer";
+import VisionMissionModel from "../../components/vission/VisionMissionModel";
+
 import "./About.css";
 
 const About = () => {
@@ -87,6 +89,8 @@ const About = () => {
       </section>
 
       <WhatWeOffer />
+      <VisionMissionModel />
+
     </>
   );
 };

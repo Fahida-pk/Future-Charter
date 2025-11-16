@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2")
+       format("woff2");
+}
+
+/* Section */
+.vm-tabs-section {
+  padding: 50px 0;
+  background: white;
+}
+
+/* Heading */
+.vm-main-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #060606;
+  text-align: center;
+  margin-bottom: 0px;
+  position: relative;
+  font-family: "MyRoboto";
+}
+
+.vm-main-title::after { 
+  content: "●●● ───────────";
+  font-size: 20px;
+  display: block;
+  margin: 1px auto 0;
+  letter-spacing: .10px;
+
+  background: linear-gradient(90deg, #535091, #00BFFF, #2714f8, #535091);
+  border-radius: 10px;
+  animation: underline 2s ease-out forwards;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@keyframes underline {
+  from { width: 0; opacity: 0.3; }
+  to { width: 50%; opacity: 1; }
+}
+
+
+/* Tabs */
+.vm-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 25px;
+}
+
+/* Tab Button */
+.vm-tab {
+  width: 300px;
+  padding: 22px 0;
+    font-family: "MyRoboto";
+
+  background: #ffffff;
+  border: none;
+  font-size: 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #0056a0;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.vm-tab:hover {
+  color: black;
+}
+
+.vm-tab.active {
+  background: #ffffff !important;
+  color: #0056a0 !important;
+}
+
+/* Side-by-side Layout */
+.vm-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;        /* 60 → 25 */
+  margin-top: 10px; /* optional */
+}
+
+
+/* LEFT IMAGE */
+.vm-left {
+  flex: 1;
+  text-align: right;   /* no right empty space */
+}
+
+/* RIGHT TEXT */
+.vm-right {
+  flex: 1;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Image */
+.vm-img {
+  width: 85%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+/* Text */
+.vm-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #2b2b2b;
+  max-width: 520px;          /* paragraph width standard */
+  text-align: justify;        /* professional clean look */
+  margin: 0 auto;   
+    font-family: "MyRoboto";
+          /* center inside right column */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    
+  
+   .vm-tabs {
+    flex-direction: row !important;   /* put them in SAME LINE */
+    justify-content: center;
+    gap: 15px; 
+  }
+
+  .vm-tab {
+    width: auto !important;           /* shrink size properly */
+    font-size: 22px;
+    padding: 12px 20px;
+  }
+
+  .vm-main-title {
+    font-size: 32px;
+  }
+
+  .vm-row {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .vm-left,
+  .vm-right {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+
+  .vm-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .vm-text {
+  font-size: 18px;
+  
+  color: #2b2b2b;
+ color: #555;
+  line-height: 1.3;
+  font-size: 10px;
+font-family: "Bodoni Moda", serif;
+}
+}
