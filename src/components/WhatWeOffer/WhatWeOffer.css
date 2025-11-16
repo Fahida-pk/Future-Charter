@@ -188,6 +188,7 @@
     transform: none !important;
     padding: 0 10px 0 45px !important;
     margin-bottom: 25px;
+    margin-top: 5px;
     position: relative;
   }
 
@@ -243,7 +244,7 @@
     margin-left: 0 !important;
   }
   .offer-content h3 {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300px;
   font-family:"fantasy";
   color: #0a0a23;
@@ -254,6 +255,6 @@
 .offer-content p {
   color: #555;
   line-height: 1.2;
-  font-size: 12px;
+  font-size: 11px;
 }
 }
