@@ -232,11 +232,11 @@
   }
   /* TEXT LEFT ALIGN */
   .section-heading {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 .section-heading {
-  margin-bottom: 25px !important;
-  font-size: 22px !important;
+  margin-bottom: 20px !important;
+  font-size: 25px !important;
 }
 
   .offer-content {
@@ -252,9 +252,9 @@
     margin-left: 0 !important;
   }
   .offer-content h3 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  font-family: "MyRoboto" !important;
+  font-family: "Fantasy" !important;
   color: #0a0a23;
  
   margin-bottom: 5px;
