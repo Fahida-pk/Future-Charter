@@ -240,6 +240,8 @@
   margin-bottom: 15px !important; /* gap kurayum */
   font-size: 20px !important;     /* size cheriya aakum */
   letter-spacing: 0.5px !important;
+    transform: translateX(-50%);
+
 }
   
   .offer-content {
