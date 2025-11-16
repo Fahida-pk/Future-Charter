@@ -216,7 +216,9 @@
     left: 3px;         /* arrow next to line */
     top: 20px;         /* ALL ARROWS SAME STRAIGHT LINE */
     font-size: 16px;
-    color: #0072e3;
+    color: linear-gradient(to bottom, #0072e3, #160eaf, #00BFFF, #2714f8);
+      
+
     z-index: 10;
   }
 
@@ -239,7 +241,9 @@
     margin-left: 0 !important;
   }
   .offer-content h3 {
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: 300px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #0a0a23;
   font-weight: 300;
   margin-bottom: 5px;
