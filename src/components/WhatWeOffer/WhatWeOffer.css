@@ -175,36 +175,49 @@
 
 @media (max-width: 768px) {
 
-  /* SAME LEFT BLUE LINE */
+  /* ❌ Remove center line fully */
+  .offer-timeline::after,
+  .offer-line-fill {
+    display: none !important;
+  }
+
+  /* ✅ All cards full width */
   .offer-container {
     width: 100% !important;
-    padding: 0 10px 0 35px !important;
-    margin: 0 0 25px 0 !important;
-    border-left: 10px solid #0072e3 !important;
+    left: 0 !important;
+    padding: 0 10px 0 40px !important;
+    margin-bottom: 25px;
     position: relative;
   }
 
-  /* PERFECT ONE-LINE DOT / ARROW */
-  .offer-container::before {
-    content: "➜";          /* If you want dot, replace with "" and remove rotate */
+  /* ✅ LEFT SIDE BLUE LINE */
+  .offer-container::after {
+    content: "";
     position: absolute;
-    left: -18px;           /* aligns arrow perfectly on line */
-    top: 12px;             /* <<< keeps ALL arrows perfectly straight */
-    font-size: 14px;
-    color: #0072e3;
-    background: none !important;
-    border-radius: 0 !important;
+    left: 10px;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: #0072e3;
+    border-radius: 3px;
   }
 
-  /* REMOVE DESKTOP ROTATION */
+  /* ✅ ARROW PERFECT ONE LINE */
+  .offer-container::before {
+    content: "➜";
+    position: absolute;
+    left: -2px;      /* arrow touches the line */
+    top: 15px;       /* ALL arrows same straight line */
+    font-size: 16px;
+    color: #0072e3;
+    z-index: 10;
+  }
+
+  /* Remove desktop arrow rotation */
   .offer-container.left::before,
   .offer-container.right::before {
     transform: none !important;
   }
-
-  
-
-
 
   /* TEXT LEFT ALIGN */
   .offer-content {
