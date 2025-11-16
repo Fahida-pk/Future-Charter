@@ -231,6 +231,14 @@
     transform: none !important;
   }
   /* TEXT LEFT ALIGN */
+  .section-heading {
+  margin-bottom: 70px;
+}
+.section-heading {
+  margin-bottom: 25px !important;
+  font-size: 22px !important;
+}
+
   .offer-content {
     padding: 0 !important;
     border: none !important;
@@ -245,8 +253,8 @@
   }
   .offer-content h3 {
   font-size: 15px;
-  font-weight: 300px;
-  font-family:"fantasy";
+  font-weight: 600;
+  font-family: "MyRoboto" !important;
   color: #0a0a23;
  
   margin-bottom: 5px;
