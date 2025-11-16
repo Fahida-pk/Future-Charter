@@ -237,9 +237,10 @@
 
 .section-heading {
     margin-top: 10px !important;   /* heading slight down */
-  margin-bottom: 25px !important; /* gap kurayum */
-  font-size: 20px !important;     /* size cheriya aakum */
-    transform: translateX(-50%);
+  margin-bottom: 50px !important; /* gap kurayum */
+  font-size: 30px !important;     /* size cheriya aakum */
+font-weight: bold;
+font-family: "Gill Sans Extrabold", sans-serif;
 
 }
   
@@ -257,7 +258,7 @@
   }
   .offer-content h3 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Fantasy" !important;
   color: #0a0a23;
  
