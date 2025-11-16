@@ -155,24 +155,6 @@ font-family: "Playfair Display", serif;
   to { width: 50%; opacity: 1; }
 } 
   
-   .vm-tabs {
-    flex-direction: row !important;   /* put them in SAME LINE */
-    justify-content: center;
-    gap: 15px; 
-  }
-.vm-tab:hover {
-  color: black;
-}
-
-
-  .vm-tab:active {
-  color: black !important;
-  background: #f0f0f0 !important;
-  transform: scale(0.97);
-
-
-}
-
   .vm-tab {
     width: auto !important;           /* shrink size properly */
     font-size: 22px;
@@ -183,7 +165,19 @@ font-family: "Playfair Display", serif;
   -webkit-touch-callout: none;
 }
 
-  
+  .vm-tabs {
+    flex-direction: row !important;   /* put them in SAME LINE */
+    justify-content: center;
+    gap: 15px; 
+  }
+.vm-tab:active {
+  color: black !important;
+  background: #f0f0f0 !important;
+  transform: scale(0.97);
+
+
+}
+
 
   .vm-main-title {
     font-size: 32px;
