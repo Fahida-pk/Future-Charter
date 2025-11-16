@@ -1,0 +1,139 @@
+/* PAGE WRAPPER WITH BLUR BACKGROUND */
+.contact-page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 TOP BANNER (GAP FIXED) */
+.contact-top-banner {
+  margin-bottom: 0px;
+  display: block;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-top-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+  transform: scale(1.1); /* removes edges so NO GAP */
+}
+
+/* CONTACT HEADING INSIDE BANNER */
+.contact-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+}
+
+/* PAGE BACKGROUND BLUR */
+.contact-page-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/image/blur.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(40px);
+  transform: scale(1.05);
+  z-index: -2;
+}
+
+/* INTRO SECTION (PARAGRAPH AREA) */
+.contact-intro-wrapper {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(6px);
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 0;
+  transition: background 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.contact-intro-text {
+  max-width: 950px;
+  margin: auto;
+  line-height: 1.9;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* LAYOUT SPACING (MAP + FORM) */
+.contact-layout {
+  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* HEIGHT VARIABLE */
+:root {
+  --contact-box-height: 650px;
+}
+
+/* LEFT MAP BOX */
+.location-box {
+  width: 600px;
+  height: var(--contact-box-height);
+  background: #7aafff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.location-map,
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* RIGHT FORM BOX */
+.contact-form-side {
+  width: 500px;
+  height: var(--contact-box-height);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+/* FORM SCROLL AREA */
+.contact-form-side .inner-scroll {
+  height: 100%;
+  overflow-y: auto;
+  padding: 30px;
+}
+
+/* 🔥 SCROLL / REFRESH ANIMATION (PRO LEVEL) */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.8s cubic-bezier(.22, .9, .28, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
