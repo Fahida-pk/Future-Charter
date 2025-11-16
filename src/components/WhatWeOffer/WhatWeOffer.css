@@ -209,18 +209,21 @@
     border-radius: 3px;
   }
 
-  /* PERFECT ARROW POSITION — FIXES YOUR ISSUE */
   .offer-container::before {
-    content: "";
-    position: absolute;
-    left: 3px;         /* arrow next to line */
-    top: 20px;         /* ALL ARROWS SAME STRAIGHT LINE */
-    font-size: 16px;
-    color: linear-gradient(to bottom, #0072e3, #160eaf, #00BFFF, #2714f8);
-      
+  content: "";               /* your arrow */
+  position: absolute;
+  left: 3px;
+  top: 20px;
+  font-size: 18px;
+  font-weight: 900;
 
-    z-index: 10;
-  }
+  background: linear-gradient(90deg, #0072e3, #160eaf, #00BFFF, #2714f8); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  z-index: 10;
+}
+
 
   /* REMOVE DESKTOP ROTATION */
   .offer-container.left::before,
