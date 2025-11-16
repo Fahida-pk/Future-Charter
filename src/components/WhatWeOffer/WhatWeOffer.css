@@ -198,7 +198,7 @@
 
   /* BLUE DOT (same for all) */
   .offer-container::before {
-    content: "";
+    content: "➜";
     position: absolute;
     left: -10px; /* aligns dot with line */
     top: 8px;   /* SAME LINE for all */
