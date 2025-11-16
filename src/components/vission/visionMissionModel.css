@@ -160,6 +160,14 @@ font-family: "Playfair Display", serif;
     justify-content: center;
     gap: 15px; 
   }
+.vm-tab:hover {
+  color: black;
+}
+
+.vm-tab.active {
+  background: #ffffff !important;
+  color: #0056a0 !important;
+}
 
   .vm-tab {
     width: auto !important;           /* shrink size properly */
