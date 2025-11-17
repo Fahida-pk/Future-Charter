@@ -198,10 +198,22 @@
 
   /* TOP BANNER */
   .contact-top-banner { height: 220px; }
-
+/* PAGE BACKGROUND BLUR */
+.contact-page-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/image/blur.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(20px);
+  transform: scale(1.05);
+  z-index: -2;
+}
   /* HEADING */
   .contact-heading { 
-    font-size: 18px !important; 
+    font-size: 25px !important; 
     top: 55%;
       font-family: "cursive", sans-serif;
 
@@ -215,7 +227,7 @@
   .get-in-touch-title {
     font-size: 28px !important;
     letter-spacing: 1px;
-      font-family: "cursive", sans-serif;
+font-family: "Playfair Display", serif;
 
   }
 
