@@ -94,17 +94,58 @@
 
 }
 
+@media (max-width: 768px) {
+
+  /* Correct Order */
+  .manpower-left {
+    order: 1; /* Heading + Paragraph + Button first */
+  }
+
+  .manpower-right {
+    order: 2; /* Image second */
+  }
+
+  .standard-paragraph {
+    order: 3; /* Paragraph third (if needed separately) */
+  }
+
+  .manpower-btn {
+    order: 4; /* Button last */
+  }
+
+  /* Layout changes */
+  .manpower-section {
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .manpower-left {
+    order: 1;
+  }
+  .manpower-right {
+    order: 2;
+  }
+  .standard-paragraph {
+    order: 3;
+  }
+  .manpower-btn {
+    order: 4;
+  }
+}
 
 @media (max-width: 768px) {
 
   /* Order Change */
   .manpower-right {
-    order: 1; /* Image first */
+    order: 2; /* Image first */
     margin-top: 0; /* Remove extra margin */
   }
 
   .manpower-left {
-    order: 2; /* Text next */
+    order: 1; /* Text next */
   }
 
   .manpower-btn {
@@ -140,11 +181,11 @@
 
   /* Still keep same order */
   .manpower-right {
-    order: 1;
+    order: 2;
   }
 
   .manpower-left {
-    order: 2;
+    order: 1;
   }
 
   .manpower-btn {
