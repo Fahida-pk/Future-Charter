@@ -76,11 +76,8 @@
   box-shadow: 0 10px 40px rgba(0,0,0,0.12);
 }
 
-/* ============================= */
-/*       MEDIA RESPONSIVE        */
-/* ============================= */
-
 @media (max-width: 992px) {
+
   .manpower-section {
     padding: 60px 40px;
     gap: 40px;
@@ -88,16 +85,33 @@
 
   .manpower-title {
     font-size: 36px;
-        font-family: "cursive", sans-serif;
-
+    font-family: "Playfair Display", serif;
   }
 
   .manpower-image {
     max-width: 380px;
   }
+
 }
 
+
 @media (max-width: 768px) {
+
+  /* Order Change */
+  .manpower-right {
+    order: 1; /* Image first */
+    margin-top: 0; /* Remove extra margin */
+  }
+
+  .manpower-left {
+    order: 2; /* Text next */
+  }
+
+  .manpower-btn {
+    order: 3; /* Button last */
+  }
+
+  /* Layout changes */
   .manpower-section {
     flex-direction: column;
     padding: 40px 25px;
@@ -110,34 +124,40 @@
 
   .manpower-title {
     font-size: 18px;
-        font-family: "cursive", sans-serif;
-
+    font-family: "Playfair Display", serif;
   }
 
   .manpower-btn {
     width: 75%;
-    justify-content: center;
     text-align: center;
-  }
-
-  .manpower-right {
-    margin-top: 30px;
   }
 
   .manpower-image {
     max-width: 100%;
   }
 }
-
 @media (max-width: 480px) {
+
+  /* Still keep same order */
+  .manpower-right {
+    order: 1;
+  }
+
+  .manpower-left {
+    order: 2;
+  }
+
+  .manpower-btn {
+    order: 3;
+  }
+
   .manpower-section {
     padding: 30px 20px;
   }
 
   .manpower-title {
     font-size: 18px;
-        font-family: "cursive", sans-serif;
-
+    font-family: "Playfair Display", serif;
   }
 
   .standard-paragraph {
