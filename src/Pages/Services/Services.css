@@ -61,30 +61,37 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .full-banner {
-    height: 300px; /* mobile perfect height */
+    height: 300px;
   }
 
-  .full-banner::before,
+  /* Background should cover (fill fully) */
+  .full-banner::before {
+    background-size: cover !important;
+  }
+
+  /* Foreground image should remain same model as desktop (no cropping) */
   .full-banner::after {
-    background-size: cover !important; /* force image to fill */
+    background-size: contain !important;
   }
 
   .banner-text {
-    font-size: 40px; /* mobile safe size */
-        font-family: "cursive", sans-serif;
-
+    font-size: 40px;
+    font-family: "cursive", sans-serif;
     top: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .full-banner {
-    height: 220px; /* small mobile */
+    height: 220px;
+  }
+
+  .full-banner::after {
+    background-size: contain !important;
   }
 
   .banner-text {
     font-size: 28px;
     font-family: "cursive", sans-serif;
-
   }
 }
