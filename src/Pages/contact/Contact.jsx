@@ -5,8 +5,7 @@ import "./Contact.css";
 export default function Contact() {
 
   const introText = `
-   Afdal Itqan Wujudah Company delivers smart, reliable, and high-quality solutions across multiple sectors in Saudi Arabia. We provide manpower, equipment, food supplies, building materials, uniforms, safety products, and advanced medical, dermatology, cosmetic, and skincare solutions. Driven by innovation and aligned with Saudi Vision 2030, we help businesses operate safer, faster, and more efficiently through trusted, long-term partnerships.
-  `;
+Afdal Itqan Wujudah Company is a trusted multi-sector provider in Saudi Arabia, delivering reliable manpower, equipment, food supplies, building materials, uniforms, safety products, and advanced medical, dermatology, cosmetic, and skincare solutions. With operations in Najran and Riyadh, we offer tailored, high-quality services that support the Kingdom’s progress under Saudi Vision 2030. Driven by innovation and long-term partnerships, we help businesses operate safer, smoother, and more efficiently across every sector we serve.  `;
 
   /* Scroll Animation */
   useEffect(() => {

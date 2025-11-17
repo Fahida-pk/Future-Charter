@@ -1,0 +1,55 @@
+.full-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Blurred background */
+.full-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/image/banner.jpeg") center/cover no-repeat;
+
+  filter: blur(5px);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+/* Clear (sharp) main image */
+.full-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/image/service banner.png") center/contain no-repeat;
+  filter: blur(1.8px);
+  z-index: 2;
+}
+
+/* Center text */
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.banner-text {
+    font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
+   color: #fff;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  z-index: 2;
+  position: relative;
+  top: 30px;
+}
