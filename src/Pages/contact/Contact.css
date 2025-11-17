@@ -186,18 +186,55 @@
   transform: translateX(0);
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE FIXED */
 @media (max-width: 1024px) {
-  .contact-heading { font-size: 48px; }
+  .contact-heading { font-size: 35px; }
   .contact-layout { padding: 40px 20px; gap: 30px; }
-  .location-box, .contact-form-side { width: 100%; height: 500px; }
-  :root { --contact-box-height: 520px; }
+  .location-box, .contact-form-side { width: 100%; height: auto; min-height: 500px; }
+  :root { --contact-box-height: auto; }
 }
 
 @media (max-width: 768px) {
-  .contact-top-banner { height: 250px; }
-  .contact-heading { font-size: 32px; }
-  .contact-intro-text { font-size: 17px; }
-  .location-box, .contact-form-side { width: 100%; height: 420px; }
-  :root { --contact-box-height: 430px; }
+
+  /* TOP BANNER */
+  .contact-top-banner { height: 220px; }
+
+  /* HEADING */
+  .contact-heading { 
+    font-size: 28px !important; 
+    top: 55%;
+  }
+
+  /* GET IN TOUCH SECTION */
+  .get-in-touch-bg { 
+    padding: 40px 15px;
+  }
+
+  .get-in-touch-title {
+    font-size: 28px !important;
+    letter-spacing: 1px;
+  }
+
+  .touch-highlight {
+    font-size: 35px !important;
+  }
+
+  /* PARAGRAPH */
+  .contact-intro-text {
+    font-size: 16px !important;
+    padding: 0 15px;
+    line-height: 1.7;
+  }
+
+  /* MAP + FORM FULL WIDTH & HEIGHT */
+  .location-box,
+  .contact-form-side {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 450px;
+  }
+
+  :root { 
+    --contact-box-height: auto; 
+  }
 }
