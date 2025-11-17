@@ -237,14 +237,15 @@ font-family: "Playfair Display", serif;
 
   /* PARAGRAPH */
   .contact-intro-text {
-   max-width: 90%;
-    font-size: 16px;
-    line-height: 1.7;
+    max-width: 85%;
     margin: 0 auto;
-    padding: 0 10px;
-    text-align: center;
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 1.75;      /* smoother reading */
+    text-align: justify;     /* uniform left & right */
+    text-justify: inter-word;
+    word-spacing: 1px;
   }
-
   /* MAP + FORM FULL WIDTH & HEIGHT */
   .location-box,
   .contact-form-side {

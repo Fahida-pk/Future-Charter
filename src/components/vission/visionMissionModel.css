@@ -135,7 +135,7 @@ font-family: "Playfair Display", serif;
 }
 
 .vm-main-title::after { 
-  content: "●●● ─────────";
+  content: "●●● ───────";
   font-size: 20px;
   display: block;
   margin: 1px auto 0;
