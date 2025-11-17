@@ -228,13 +228,17 @@
   .touch-highlight { font-size: 35px !important; }
 
   .contact-intro-text {
-    max-width: 85%;
-    padding: 0 12px;
-    font-size: 16px;
-    line-height: 1.2;
+    max-width: 95%;
+    padding: 0 10px;
+    font-size: 13px;       /* Not too big, not too small */
+    line-height: 1.6;      /* Smooth breathing space */
+    font-weight: 300;      /* Light look like second image */
     text-align: justify;
     text-justify: inter-word;
-  }
+    font-family: "Playfair Display", serif;
+    margin: 0 auto;        /* Centers the block */
+}
+
 
   .location-box,
   .contact-form-side {
