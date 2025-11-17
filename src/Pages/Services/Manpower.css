@@ -106,11 +106,11 @@
   }
 
   .standard-paragraph {
-    order: 3; /* Paragraph third (if needed separately) */
+    order: 4; /* Paragraph third (if needed separately) */
   }
 
   .manpower-btn {
-    order: 4; /* Button last */
+    order: 3; /* Button last */
   }
 
   /* Layout changes */
@@ -161,10 +161,10 @@
     order: 2;
   }
   .standard-paragraph {
-    order: 3;
+    order: 4;
   }
   .manpower-btn {
-    order: 4;
+    order: 3;
   }
   /* Still keep same order */
   .manpower-right {
