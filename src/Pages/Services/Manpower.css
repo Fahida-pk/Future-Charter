@@ -1,44 +1,194 @@
-@media (max-width: 768px) {
+/* MAIN SECTION */
+.manpower-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 90px 120px;
+  background: #f7faff;
+  gap: 60px;
+  flex-wrap: wrap;
+}
 
+/* LEFT SIDE */
+.manpower-left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.manpower-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
+}
+
+/* Clean Paragraph */
+.standard-paragraph {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  max-width: 900px;
+  margin: 0 auto 28px;
+  font-family: "Georgia", serif;
+  word-spacing: 1px;
+  letter-spacing: 0.3px;
+  text-align: justify;
+}
+
+/* BUTTON (no animation, stable) */
+.manpower-btn {
+  background: linear-gradient(270deg, #0070C0, #339DFF, #0070C0);
+  background-size: 400% 400%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 112, 192, 0.35);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.manpower-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 112, 192, 0.5);
+  cursor: pointer;
+  color: black;
+}
+
+/* RIGHT IMAGE */
+.manpower-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.manpower-image {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  object-fit: cover;
+  background: rgb(122, 119, 119);
+  padding: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 992px) {
+
+  .manpower-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .manpower-title {
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+  }
+
+  .manpower-image {
+    max-width: 380px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+/* Correct Order */
+  .manpower-left {
+    order: 1; /* Heading + Paragraph + Button first */
+  }
+
+  .manpower-right {
+    order: 2; /* Image second */
+  }
+
+  .standard-paragraph {
+    order: 3; /* Paragraph third (if needed separately) */
+  }
+
+  .manpower-btn {
+    order: 4; /* Button last */
+  }
+
+  /* Layout changes */
   .manpower-section {
     flex-direction: column;
     padding: 40px 25px;
     text-align: center;
   }
+  /* Order Change */
+  .manpower-right {
+    order: 2; /* Image first */
+    margin-top: 0; /* Remove extra margin */
+  }
 
   .manpower-left {
-    order: 1;
+    order: 1; /* Text next */
+  }
+
+  .manpower-btn {
+    order: 3; /* Button last */
+  }
+
+  /* Layout changes */
+  
+  .manpower-left {
     max-width: 100%;
   }
 
   .manpower-title {
     font-size: 18px;
-  }
-
-  .standard-paragraph {
-    order: 2;
-  }
-
-  .manpower-right {
-    order: 3;
-    margin-top: 20px;
+    font-family: "Playfair Display", serif;
   }
 
   .manpower-btn {
-    order: 4;
     width: 75%;
     text-align: center;
-    margin: 20px auto 0;
+  }
+
+  .manpower-image {
+    max-width: 100%;
   }
 }
-
 @media (max-width: 480px) {
+.manpower-left {
+    order: 1;
+  }
+  .manpower-right {
+    order: 2;
+  }
+  .standard-paragraph {
+    order: 3;
+  }
+  .manpower-btn {
+    order: 4;
+  }
+  /* Still keep same order */
+  .manpower-right {
+    order: 2;
+  }
+
+  .manpower-left {
+    order: 1;
+  }
+
+  .manpower-btn {
+    order: 3;
+  }
+
+  .manpower-section {
+    padding: 30px 20px;
+  }
 
   .manpower-title {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
   }
 
   .standard-paragraph {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
