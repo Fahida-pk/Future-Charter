@@ -201,8 +201,10 @@
 
   /* HEADING */
   .contact-heading { 
-    font-size: 28px !important; 
+    font-size: 18px !important; 
     top: 55%;
+      font-family: "cursive", sans-serif;
+
   }
 
   /* GET IN TOUCH SECTION */
@@ -213,6 +215,8 @@
   .get-in-touch-title {
     font-size: 28px !important;
     letter-spacing: 1px;
+      font-family: "cursive", sans-serif;
+
   }
 
   .touch-highlight {
@@ -221,9 +225,12 @@
 
   /* PARAGRAPH */
   .contact-intro-text {
-    font-size: 16px !important;
-    padding: 0 15px;
+   max-width: 90%;
+    font-size: 16px;
     line-height: 1.7;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
   }
 
   /* MAP + FORM FULL WIDTH & HEIGHT */
