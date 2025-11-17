@@ -36,18 +36,17 @@ export default function Contact() {
         <h2 className="contact-heading">CONTACT US</h2>
       </div>
 
-      {/* ⭐ GET IN TOUCH + PARAGRAPH SAME BACKGROUND */}
+      {/* ⭐ GET IN TOUCH + PARAGRAPH */}
       <div className="get-in-touch-bg scroll-animate">
 
         <div className="get-in-touch-wrapper">
-          <h2 class="get-in-touch-title">
-GET IN <span class="touch-highlight">TOUCH</span>
-</h2>
-
+          <h2 className="get-in-touch-title">
+            GET IN <span className="touch-highlight">TOUCH</span>
+          </h2>
         </div>
 
         <div className="contact-intro-wrapper">
-          <p className="contact-intro-text">{introText}</p>
+          <p className="contact-intro-text scroll-animate">{introText}</p>
         </div>
 
       </div>

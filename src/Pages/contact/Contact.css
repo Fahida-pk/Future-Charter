@@ -71,12 +71,12 @@
   margin-bottom: 20px;
 }
 
-/* ✨ FIXED GET IN TOUCH TITLE FONT + LINE ISSUE */
+/* TITLE */
 .get-in-touch-title {
   font-size: 40px;
   font-weight: 300;
   letter-spacing: 3px;
-  font-family: "Playfair Display", serif; /* BEAUTIFUL LUXURY FONT */
+  font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
   white-space: nowrap;
@@ -113,13 +113,23 @@
   100% { left: 100%; }
 }
 
-/* PARAGRAPH */
+/* ⭐ PARAGRAPH */
 .contact-intro-text {
   max-width: 950px;
   margin: auto;
   line-height: 1.9;
   font-size: 20px;
   color: #000;
+
+  /* NEW ANIMATION */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animate.show.contact-intro-text {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* MAP + FORM LAYOUT */
@@ -196,57 +206,36 @@
 
 @media (max-width: 768px) {
 
-  /* TOP BANNER */
   .contact-top-banner { height: 220px; }
-/* PAGE BACKGROUND BLUR */
-.contact-page-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("/image/blur.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(20px);
-  transform: scale(1.05);
-  z-index: -2;
-}
-  /* HEADING */
+
+  .contact-page-wrapper::before {
+    filter: blur(20px);
+  }
+
   .contact-heading { 
     font-size: 25px !important; 
     top: 55%;
-      font-family: "cursive", sans-serif;
-
+    font-family: "cursive", sans-serif;
   }
 
-  /* GET IN TOUCH SECTION */
-  .get-in-touch-bg { 
-    padding: 40px 15px;
-  }
+  .get-in-touch-bg { padding: 40px 15px; }
 
   .get-in-touch-title {
     font-size: 28px !important;
     letter-spacing: 1px;
-font-family: "Playfair Display", serif;
-
   }
 
-  .touch-highlight {
-    font-size: 35px !important;
-  }
+  .touch-highlight { font-size: 35px !important; }
 
-  /* PARAGRAPH */
   .contact-intro-text {
     max-width: 85%;
-    margin: 0 auto;
     padding: 0 12px;
     font-size: 16px;
-    line-height: 1.75;      /* smoother reading */
-    text-align: justify;     /* uniform left & right */
+    line-height: 1.2;
+    text-align: justify;
     text-justify: inter-word;
-    word-spacing: 1px;
   }
-  /* MAP + FORM FULL WIDTH & HEIGHT */
+
   .location-box,
   .contact-form-side {
     width: 100% !important;
@@ -254,7 +243,5 @@ font-family: "Playfair Display", serif;
     min-height: 450px;
   }
 
-  :root { 
-    --contact-box-height: auto; 
-  }
+  :root { --contact-box-height: auto; }
 }
