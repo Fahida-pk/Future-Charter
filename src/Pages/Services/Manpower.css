@@ -160,24 +160,11 @@
   .manpower-right {
     order: 2;
   }
-  .standard-paragraph {
-    order: 4;
-  }
+  
   .manpower-btn {
     order: 3;
   }
-  /* Still keep same order */
-  .manpower-right {
-    order: 2;
-  }
-
-  .manpower-left {
-    order: 1;
-  }
-
-  .manpower-btn {
-    order: 3;
-  }
+  
 
   .manpower-section {
     padding: 30px 20px;
