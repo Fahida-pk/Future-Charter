@@ -69,28 +69,29 @@
 @media (max-width: 768px) {
 
   .building-section {
-    flex-direction: column;
+   flex-direction: column;
     padding: 40px 25px;
-    text-align: center;
     gap: 20px;
+    text-align: center;
   }
 
   .building-right {
-    order: 1;
+  order: 1;
     max-width: 100%;
+    text-align: center;
+    margin-left: 0 !important;
   }
 
   .building-title {
-    font-size: 18px;
+   font-size: 18px;
     font-family: "Playfair Display", serif;
   }
 
   .building-left {
-    order: 2;
+   order: 2;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -10px;
   }
 
   .building_image {
@@ -100,6 +101,10 @@
 
 /* SMALL MOBILE */
 @media (max-width: 480px) {
+    .building-section {
+    padding: 30px 20px;
+  }
+
   .building-title {
     font-size: 18px;
   }
