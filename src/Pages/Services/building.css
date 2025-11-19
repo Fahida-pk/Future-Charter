@@ -42,9 +42,10 @@
 
 /* Clean Paragraph – same as safety */
 .building-description {
-  font-size: 18px;
+   font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
+  max-width: 900px;
   margin: 0 0 28px;
   font-family: "Georgia", serif;
   text-align: justify;
