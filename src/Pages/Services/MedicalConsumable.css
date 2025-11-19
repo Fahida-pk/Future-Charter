@@ -13,7 +13,18 @@
   flex: 1;
   max-width: 550px;
 }
-
+.medical-consumable-description
+{
+font-size: 18px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  max-width: 900px;
+  margin: 0 auto 28px;
+  font-family: "Georgia", serif;
+  word-spacing: 1px;
+  letter-spacing: 0.3px;
+  text-align: justify;
+}
 .medical-consumable-title {
   font-size: 44px;
   font-weight: 700;
@@ -66,28 +77,47 @@
 /* MEDIA 768 */
 @media (max-width: 768px) {
   .medical-consumable-section {
-    flex-direction: column;
+     flex-direction: column;
     padding: 40px 25px;
     text-align: center;
   }
   .medical-consumable-left {
-    order: 1;
-    max-width: 100%;
+      order: 1;
+       max-width: 100%;
   }
   .medical-consumable-right {
     order: 2;
   }
   .medical-consumable-title {
-    font-size: 28px;
+   font-size: 18px;
+    font-family: "Playfair Display", serif;
+  }
+  .medical-consumable-image {
+     max-width: 100%;
   }
 }
 
 /* MEDIA 480 */
 @media (max-width: 480px) {
   .medical-consumable-section {
-    padding: 30px 20px;
+     padding: 30px 20px;
+  }
+  .medical-consumable-left {
+      order: 1;
+      
+  }
+  .medical-consumable-right {
+    order: 2;
   }
   .medical-consumable-title {
-    font-size: 22px;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
   }
+  .medical-consumable-image {
+     max-width: 100%;
+  }
+  .medical-consumable-description
+{
+font-size: 12px;
+}
 }
