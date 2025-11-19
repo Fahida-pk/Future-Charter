@@ -15,7 +15,7 @@ const Equipment = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src="/image/equipment.png"
+          src="/image/eguipments.jpeg"
           alt="equipment"
           className="equipment_image"
         />
