@@ -64,7 +64,7 @@
   }
 
   .banner-text {
-    font-size: 50px;
+    font-size: 25px;
     font-family: "cursive", sans-serif;
     top: 10px;
   }
@@ -80,7 +80,7 @@
   }
 
   .banner-text {
-    font-size: 35px;
+    font-size: 25px;
     font-family: "cursive", sans-serif;
   }
 }

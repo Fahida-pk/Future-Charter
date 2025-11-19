@@ -75,7 +75,7 @@
   }
 
   .building-title {
-    font-size: 18px;
+    font-size: 15px;
     font-family: "Playfair Display", serif;
   }
 
@@ -95,7 +95,6 @@
   .building_image {
     width: 100%;
     max-width: 100%;
-    border-radius: 20px;
   }
 }
 
@@ -103,11 +102,11 @@
 @media (max-width: 480px) {
 
   .building-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .std-paragraph {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .building_image {
