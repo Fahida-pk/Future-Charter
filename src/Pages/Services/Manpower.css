@@ -60,7 +60,7 @@
 @media (max-width: 992px) {
 
   .manpower-section {
-    padding: 60px 40px;
+    padding: 30px 20px;
     gap: 20px;
   }
 
@@ -97,7 +97,7 @@
   /* Layout changes */
   .manpower-section {
     flex-direction: column;
-    padding: 40px 25px;
+    padding: 20px 10px;
     text-align: center;
   }
   /* Order Change */
