@@ -21,13 +21,24 @@
   margin-bottom: 10px;
   font-family: "MyRoboto";
 }
-
+.dermatology-description
+{
+  font-size: 15px;
+  line-height: 1.3;
+  color: #3a3a3a;
+  max-width: 700px;
+  margin: 0 auto 18px;
+  font-family: "Georgia", serif;
+  word-spacing: .5px;
+  letter-spacing: 0.2px;
+  text-align: justify;
+} 
 .stand-paragraph {
   font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
   max-width: 900px;
-  margin: 0 auto 28px;
+  margin: 0 auto 18px;
   font-family: "Georgia", serif;
   text-align: justify;
 }
@@ -79,6 +90,12 @@
   }
   .dermatology-title {
     font-size: 28px;
+  }
+  .stand-paragraph {
+    font-size: 5px; /* better size */
+    line-height: 1; /* FIX: normal spacing */
+    letter-spacing: 0px; /* FIX: remove wide spacing */
+    word-spacing: 0px;   /* FIX: stop extra gap between words */
   }
 }
 
