@@ -1,0 +1,93 @@
+.dermatology-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 150px;
+  background: #f7faff;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.dermatology-left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.dermatology-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: "MyRoboto";
+}
+
+.stand-paragraph {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  max-width: 900px;
+  margin: 0 auto 28px;
+  font-family: "Georgia", serif;
+  text-align: justify;
+}
+
+/* RIGHT IMAGE */
+.dermatology-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dermatology-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+  background: rgb(196, 198, 241);
+  padding: 5px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.12);
+}
+
+/* MEDIA 992 */
+@media (max-width: 992px) {
+  .dermatology-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+  .dermatology-title {
+    font-size: 36px;
+  }
+  .dermatology-image {
+    max-width: 380px;
+  }
+}
+
+/* MEDIA 768 */
+@media (max-width: 768px) {
+  .dermatology-section {
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+  .dermatology-left {
+    order: 1;
+    max-width: 100%;
+  }
+  .dermatology-right {
+    order: 2;
+  }
+  .dermatology-title {
+    font-size: 28px;
+  }
+}
+
+/* MEDIA 480 */
+@media (max-width: 480px) {
+  .dermatology-section {
+    padding: 30px 20px;
+  }
+  .dermatology-title {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,93 @@
+.medical-consumable-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 150px;
+  background: #f7faff;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.medical-consumable-left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.medical-consumable-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: "MyRoboto";
+}
+
+.stand-paragraph {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  max-width: 900px;
+  margin: 0 auto 28px;
+  font-family: "Georgia", serif;
+  text-align: justify;
+}
+
+/* RIGHT IMAGE */
+.medical-consumable-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.medical-consumable-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+  background: rgb(196, 198, 241);
+  padding: 5px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.12);
+}
+
+/* MEDIA 992 */
+@media (max-width: 992px) {
+  .medical-consumable-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+  .medical-consumable-title {
+    font-size: 36px;
+  }
+  .medical-consumable-image {
+    max-width: 380px;
+  }
+}
+
+/* MEDIA 768 */
+@media (max-width: 768px) {
+  .medical-consumable-section {
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+  .medical-consumable-left {
+    order: 1;
+    max-width: 100%;
+  }
+  .medical-consumable-right {
+    order: 2;
+  }
+  .medical-consumable-title {
+    font-size: 28px;
+  }
+}
+
+/* MEDIA 480 */
+@media (max-width: 480px) {
+  .medical-consumable-section {
+    padding: 30px 20px;
+  }
+  .medical-consumable-title {
+    font-size: 22px;
+  }
+}

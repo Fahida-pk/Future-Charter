@@ -6,8 +6,14 @@ const Manpower = () => {
   return (
     <div className="manpower-section">
 
-      {/* LEFT CONTENT */}
-      <div className="manpower-left">
+      {/* LEFT CONTENT - left side ninn move */}
+      <motion.div
+        className="manpower-left"
+        initial={{ x: -80, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 1 }}
+      >
         <h2 className="manpower-title">Manpower Supply</h2>
 
         <p className="manpower-description standard-paragraph">
@@ -18,29 +24,22 @@ const Manpower = () => {
           we ensure that every individual meets our clients’ standards, delivering consistent,
           high-quality work and optimal productivity.
         </p>
+      </motion.div>
 
-        {/* CONTACT BUTTON */}
-        <motion.a
-          href="/contact"
-          className="manpower-btn"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          CONTACT US
-        </motion.a>
-
-      </div>
-
-      {/* RIGHT IMAGE */}
-      <div className="manpower-right">
+      {/* RIGHT IMAGE - right side ninn move */}
+      <motion.div
+        className="manpower-right"
+        initial={{ x: 80, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 1 }}
+      >
         <img
           src="/image/manpower.png"
           alt="Manpower Supply"
           className="manpower-image"
         />
-      </div>
+      </motion.div>
 
     </div>
   );

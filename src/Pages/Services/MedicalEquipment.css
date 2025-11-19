@@ -1,0 +1,110 @@
+/* MAIN SECTION */
+.medical-equipment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 120px;
+  background: #f7faff;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/* LEFT IMAGE */
+.medical-equipment-left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.medical-equipment-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+  background: rgb(196, 198, 241);
+  padding: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* RIGHT CONTENT */
+.medical-equipment-right {
+  flex: 1;
+  max-width: 550px;
+  margin-left: -200px;
+}
+
+.medical-equipment-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: "MyRoboto";
+}
+
+/* Clean Paragraph */
+.std-paragraph {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  margin: 0 auto 28px;
+  font-family: "Georgia", serif;
+  text-align: justify;
+}
+
+/* ============================= */
+/*       MEDIA – 992px           */
+/* ============================= */
+@media (max-width: 992px) {
+  .medical-equipment-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .medical-equipment-title {
+    font-size: 36px;
+  }
+
+  .medical-equipment-image {
+    max-width: 380px;
+  }
+}
+
+/* ============================= */
+/*       MEDIA – 768px           */
+/* ============================= */
+@media (max-width: 768px) {
+  .medical-equipment-section {
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .medical-equipment-left {
+    order: 1;
+  }
+
+  .medical-equipment-right {
+    order: 2;
+    margin-left: 0;
+  }
+
+  .medical-equipment-title {
+    font-size: 28px;
+  }
+}
+
+/* ============================= */
+/*       MEDIA – 480px           */
+/* ============================= */
+@media (max-width: 480px) {
+  .medical-equipment-section {
+    padding: 30px 20px;
+  }
+
+  .medical-equipment-title {
+    font-size: 22px;
+  }
+
+  .std-paragraph {
+    font-size: 14px;
+  }
+}

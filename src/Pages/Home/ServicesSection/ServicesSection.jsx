@@ -15,15 +15,28 @@ export default function ServicesSection() {
 
   const services = [
     {
-      title: "MANPOWER SOLUTIONS",
-      image: "/image/saftey1.jpeg",
-      description: `Our manpower solutions are tailored to 
-meet the staffing needs of diverse 
-industries, including construction, logistics, 
-hospitality, and more. We provide skilled, 
-semi-skilled, and unskilled workers to help 
-our clients achieve operational efficiency 
-and meet their project goals.`,
+      title: "Building Materials ",
+      image: "/image/building.jpg",
+      description: `Offering durable and cost-effective materials for commercial and industrial construction projects.`,
+      animation: "fade-right",
+    },
+    {
+      title: "SAFETY EQUIPMENT & GENERAL TRADING",
+      image: "/image/saftey.jpeg",
+      description: `Our safety equipment division offers a 
+comprehensive selection of PPE, safety 
+gear, and trading items that meet 
+international safety standards.`,
+      animation: "fade-left",
+    },
+    {
+      title: "MEDICAL CONSUMABLES & EQUIPMENT",
+      image: "/image/medical.png",
+      description: `Providing reliable and high-standard 
+consumable items for clinics, hospitals, and 
+healthcare centers. Supplying advanced 
+medical devices and tools designed to meet 
+the highest healthcare standards.`,
       animation: "fade-right",
     },
     {
@@ -37,26 +50,9 @@ the needs of various sectors.`,
       animation: "fade-left",
     },
     
-    {
-      title: "SAFETY EQUIPMENT & GENERAL TRADING",
-      image: "/image/saftey.jpeg",
-      description: `Our safety equipment division offers a 
-comprehensive selection of PPE, safety 
-gear, and trading items that meet 
-international safety standards.`,
-      animation: "fade-left",
-    },
     
-    {
-      title: "MEDICAL CONSUMABLES & EQUIPMENT",
-      image: "/image/medical.png",
-      description: `Providing reliable and high-standard 
-consumable items for clinics, hospitals, and 
-healthcare centers. Supplying advanced 
-medical devices and tools designed to meet 
-the highest healthcare standards.`,
-      animation: "fade-right",
-    },
+    
+    
     {
       title: "FOODSTUFFS SUPPLY",
       image: "/image/food.jpeg",

@@ -1,21 +1,21 @@
 /* MAIN SECTION */
-.manpower-section {
+.safety-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 90px 120px;
   background: #f7faff;
-  gap: 60px;
+  gap: 150px;
   flex-wrap: wrap;
 }
 
 /* LEFT SIDE */
-.manpower-left {
+.safety-left {
   flex: 1;
   max-width: 550px;
 }
 
-.manpower-title {
+.safety-title {
   font-size: 44px;
   font-weight: 700;
   color: #222;
@@ -25,7 +25,7 @@
 }
 
 /* Clean Paragraph */
-.standard-paragraph {
+.safety-description {
   font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
@@ -37,18 +37,15 @@
   text-align: justify;
 }
 
-
-
-
 /* RIGHT IMAGE */
-.manpower-right {
+.safety-right {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.manpower-image {
-   width: 100%;
+.safety-image {
+  width: 100%;
   max-width: 500px;
   border-radius: 30px;
   object-fit: cover;
@@ -58,105 +55,69 @@
 }
 
 @media (max-width: 992px) {
-
-  .manpower-section {
+  .safety-section {
     padding: 60px 40px;
     gap: 40px;
   }
 
-  .manpower-title {
+  .safety-title {
     font-size: 36px;
     font-family: "Playfair Display", serif;
   }
 
-  .manpower-image {
+  .safety-image {
     max-width: 380px;
   }
-
 }
 
-
 @media (max-width: 768px) {
-/* Correct Order */
-  .manpower-left {
-    order: 1; /* Heading + Paragraph + Button first */
+  .safety-left {
+    order: 1;
   }
 
-  .manpower-right {
-    order: 2; /* Image second */
+  .safety-right {
+    order: 2;
   }
 
-  .standard-paragraph {
-    order: 4; /* Paragraph third (if needed separately) */
-  }
-
-  .manpower-btn {
-    order: 3; /* Button last */
-  }
-
-  /* Layout changes */
-  .manpower-section {
+  .safety-section {
     flex-direction: column;
     padding: 40px 25px;
     text-align: center;
   }
-  /* Order Change */
-  .manpower-right {
-    order: 2; /* Image first */
-    margin-top: 0; /* Remove extra margin */
-  }
 
-  .manpower-left {
-    order: 1; /* Text next */
-  }
-
-  .manpower-btn {
-    order: 3; /* Button last */
-  }
-
-  /* Layout changes */
-  
-  .manpower-left {
+  .safety-left {
     max-width: 100%;
   }
 
-  .manpower-title {
+  .safety-title {
     font-size: 18px;
     font-family: "Playfair Display", serif;
   }
 
-  .manpower-btn {
-    width: 75%;
-    text-align: center;
-  }
-
-  .manpower-image {
+  .safety-image {
     max-width: 100%;
   }
 }
+
 @media (max-width: 480px) {
-.manpower-left {
+  .safety-left {
     order: 1;
   }
-  .manpower-right {
+
+  .safety-right {
     order: 2;
   }
-  
-  .manpower-btn {
-    order: 3;
-  }
-  
 
-  .manpower-section {
+  .safety-section {
     padding: 30px 20px;
   }
 
-  .manpower-title {
+  .safety-title {
     font-size: 18px;
     font-family: "Playfair Display", serif;
   }
 
-  .standard-paragraph {
+  .safety-description {
     font-size: 10px;
   }
 }

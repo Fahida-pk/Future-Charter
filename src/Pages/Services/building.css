@@ -1,0 +1,107 @@
+/* MAIN SECTION */
+.building-section {
+   display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 90px 120px;
+  background: #f7faff;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/* LEFT IMAGE */
+.building-left {
+   flex: 1;
+    max-width: 550px;
+   
+
+}
+
+.building_image {
+   width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+  background: rgb(122, 119, 119);
+  padding: 5px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.12);
+}
+
+/* RIGHT CONTENT */
+.building-right {
+  flex: 1;
+  max-width: 550px;
+  margin-left: -200px; /* Strong left move */
+
+}
+
+.building-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: "MyRoboto";
+  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
+}
+
+/* Clean Paragraph */
+.std-paragraph {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  margin: 0 auto 28px;
+  font-family: "Georgia", serif;
+  word-spacing: 1px;
+  letter-spacing: 0.3px;
+  text-align: justify;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .building-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .building-title {
+    font-size: 36px;
+  }
+
+  .building_image {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .building-section {
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .building-left {
+    order: 1;
+  }
+
+  .building-right {
+    order: 2;
+  }
+
+  .building-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .building-section {
+    padding: 30px 20px;
+  }
+
+  .building-title {
+    font-size: 22px;
+  }
+
+  .std-paragraph {
+    font-size: 14px;
+  }
+}
