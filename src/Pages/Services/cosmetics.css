@@ -96,6 +96,16 @@ padding: 20px 25px;
     font-size: 18px;
     font-family: "Playfair Display", serif;
   }
+  .cosmetics-description {
+  font-size: 14px !important;
+    line-height: 1.9 !important;
+    font-family: "Georgia", serif;
+    text-align: justify !important;   /* SAME AS SAFETY */
+    word-spacing: 1px !important;     /* SAME AS SAFETY */
+    letter-spacing: 0.3px !important; /* SAME AS SAFETY */
+    margin: 0 auto 28px !important;   /* SAME AS SAFETY */
+    max-width: 900px !important;
+}
 }
 
 @media (max-width: 480px) {
