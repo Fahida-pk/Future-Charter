@@ -2,10 +2,10 @@
 .building-section {
    display: flex;
    justify-content: space-between;
-   align-items: center; 
+   align-items: flex-start;  /* safety model pole */
    padding: 90px 120px;
    background: #f7faff;
-   gap: 100px;
+   gap: 120px;   /* safety gap → same feel */
    flex-wrap: wrap;
 }
 
@@ -29,7 +29,7 @@
 .building-right {
   flex: 1;
   max-width: 550px;
-  margin-left: -200px;
+  margin-left: 0; /* 🔥 removed negative margin */
 }
 
 .building-title {
@@ -39,29 +39,45 @@
   margin-bottom: 10px;
   font-family: "MyRoboto";
 }
+
+/* Clean Paragraph – same as safety */
 .building-description {
   font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
-  max-width: 900px;
-  margin: 0 auto 28px;
+  margin: 0 0 28px;
   font-family: "Georgia", serif;
   text-align: justify;
+  word-spacing: 1px;
+  letter-spacing: 0.3px;
 }
 
-/* MOBILE VIEW */
+/* TABLET */
+@media (max-width: 992px) {
+  .building-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .building-title {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
 
   .building-section {
     flex-direction: column;
-    padding: 10px 25px 40px;
+    padding: 40px 25px;
     text-align: center;
+    gap: 20px;
   }
 
   .building-right {
     order: 1;
     max-width: 100%;
-    margin-left: 0 !important;
   }
 
   .building-title {
@@ -74,16 +90,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -20px; /* Image move up */
+    margin-top: -10px;
   }
 
   .building_image {
     max-width: 100%;
-    margin-top: -10px; /* Fine tune */
   }
 }
 
-/* SMALLER SCREENS */
+/* SMALL MOBILE */
 @media (max-width: 480px) {
   .building-title {
     font-size: 18px;
