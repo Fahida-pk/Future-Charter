@@ -1,11 +1,11 @@
-/* MAIN SECTION – SAME AS SAFETY */
+/* MAIN SECTION – SAME AS SAFETY */ 
 .medical-consumable-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 100px 150px;
+  padding: 90px 120px;          /* EXACT SAFETY VALUE */
   background: #f7faff;
-  gap: 150px;  /* same gap as safety */
+  gap: 150px;
   flex-wrap: wrap;
 }
 
@@ -15,7 +15,7 @@
   max-width: 550px;
 }
 
-/* TITLE – SAME STYLE */
+/* TITLE – SAME STYLE AS SAFETY */
 .medical-consumable-title {
   font-size: 44px;
   font-weight: 700;
@@ -30,11 +30,11 @@
   line-height: 1.9;
   color: #3a3a3a;
   max-width: 900px;
-  margin: 0 0 28px;
+  margin: 0 auto 28px;
   font-family: "Georgia", serif;
-  text-align: justify;
   word-spacing: 1px;
   letter-spacing: 0.3px;
+  text-align: justify;
 }
 
 /* RIGHT IMAGE */
@@ -60,15 +60,18 @@
     padding: 60px 40px;
     gap: 40px;
   }
+
   .medical-consumable-title {
     font-size: 36px;
+    font-family: "Playfair Display", serif;
   }
+
   .medical-consumable-image {
     max-width: 380px;
   }
 }
 
-/* MOBILE – EXACT SAFETY MODEL */
+/* MOBILE – EXACT SAFETY STYLE */
 @media (max-width: 768px) {
   .medical-consumable-section {
     flex-direction: column;
@@ -96,7 +99,7 @@
   }
 }
 
-/* SMALL MOBILE */
+/* SMALL MOBILE – SAME AS SAFETY */
 @media (max-width: 480px) {
   .medical-consumable-section {
     padding: 30px 20px;
