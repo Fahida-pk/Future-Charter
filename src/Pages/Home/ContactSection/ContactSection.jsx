@@ -12,25 +12,34 @@ export default function ContactSection() {
 
     const phoneValue = form.current.phone.value;
 
-    // 10 digit validation
+    // --- PHONE VALIDATION (10 digits only) ---
     if (!/^[0-9]{10}$/.test(phoneValue)) {
       setMsgColor("error");
       setStatusMessage("Please enter a valid 10-digit phone number!");
-      return; // ❗ no auto hide
+      return;
     }
+const emailValue = form.current.email.value;
 
+// Email validation
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
+  setMsgColor("error");
+  setStatusMessage("Please enter a valid email address!");
+  return;
+}
+
+    // --- EMAILJS SEND ---
     emailjs
       .sendForm(
-        "service_cx55wqk",
-        "template_ku08t6d",
+        "service_cx55wqk",      // ⭐ Your EmailJS Service ID
+        "template_ku08t6d",     // ⭐ Your Template ID
         form.current,
-        "i5dWSfgCJ9Cv1ejPs"
+        "e4gCmQY44CTS_vD9E"     // ⭐ Public API Key
       )
       .then(() => {
         setMsgColor("success");
         setStatusMessage("Thank you for contacting us. We will reach you soon!");
 
-        form.current.reset();
+        form.current.reset(); // Reset form
       })
       .catch((error) => {
         setMsgColor("error");
@@ -58,9 +67,17 @@ export default function ContactSection() {
             <button type="submit">SEND MESSAGE</button>
           </form>
 
-          {statusMessage && (
-            <p className={`form-popup-msg ${msgColor}`}>{statusMessage}</p>
-          )}
+        {statusMessage && (
+  <p style={{ 
+    marginTop: "10px",
+    fontSize: "15px",
+    color: msgColor === "success" ? "blue" : "red",
+    textAlign: "center"
+  }}>
+    {statusMessage}
+  </p>
+)}
+
         </div>
       </div>
     </section>
