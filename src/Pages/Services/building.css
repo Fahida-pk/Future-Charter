@@ -57,13 +57,14 @@ font-size: 18px;
 }
 /* Clean Paragraph */
 .std-paragraph {
-  font-size: 18px;
+ font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
+  max-width: 900px;
   margin: 0 auto 28px;
   font-family: "Georgia", serif;
   word-spacing: 1px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
   text-align: justify;
 }
 
