@@ -66,7 +66,6 @@
     text-align: center;
   }
 
-  /* TEXT FIRST */
   .building-right {
     order: 1;
     max-width: 100%;
@@ -75,16 +74,17 @@
   }
 
   .building-title {
-   font-size: 18px;
+    font-size: 18px;
     font-family: "Playfair Display", serif;
   }
 
   .std-paragraph {
-    font-size: 9px;
-   
+    font-size: 12px; /* better size */
+    line-height: 1.4; /* FIX: normal spacing */
+    letter-spacing: 0px; /* FIX: remove wide spacing */
+    word-spacing: 0px;   /* FIX: stop extra gap between words */
   }
 
-  /* IMAGE LAST (FULL WIDTH) */
   .building-left {
     order: 2;
     width: 100%;
@@ -106,8 +106,9 @@
   }
 
   .std-paragraph {
-    font-size: 9px;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    word-spacing: 0px;
   }
-
- 
 }
