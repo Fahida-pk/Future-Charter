@@ -45,18 +45,6 @@
 }
 .building-description
 {
-font-size: 18px;
-  line-height: 1.9;
-  color: #3a3a3a;
-  max-width: 900px;
-  margin: 0 auto 28px;
-  font-family: "Georgia", serif;
-  word-spacing: 1px;
-  letter-spacing: 0.3px;
-  text-align: justify;
-}
-/* Clean Paragraph */
-.std-paragraph {
  font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
@@ -67,6 +55,7 @@ font-size: 18px;
   letter-spacing: 0.3px;
   text-align: justify;
 }
+
 
 /* MOBILE SAME MODEL AS MANPOWER */
 @media (max-width: 768px) {
@@ -110,6 +99,10 @@ font-size: 18px;
   .building-title {
     font-size: 18px;
   }
-
+.building-description
+{
+    font-size: 12px;
+ 
+}
   
 }

@@ -42,10 +42,11 @@
 }
 
 /* Clean Paragraph */
-.std-paragraph {
+.cosmetics-description {
   font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
+  max-width: 900px;
   margin: 0 auto 28px;
   font-family: "Georgia", serif;
   word-spacing: 1px;
