@@ -56,57 +56,61 @@
   text-align: justify;
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
-  .building-section {
-    padding: 60px 40px;
-    gap: 40px;
-  }
-
-  .building-right {
-    margin-left: 0; /* remove negative margin for tablet */
-  }
-
-  .building-title {
-    font-size: 32px;
-    text-align: center;
-  }
-}
-
+/* MOBILE SAME MODEL AS MANPOWER */
 @media (max-width: 768px) {
+
   .building-section {
     flex-direction: column;
-    padding: 40px 25px;
+    padding: 35px 20px;
+    gap: 20px;
     text-align: center;
   }
 
-  .building-left,
+  /* TEXT FIRST */
   .building-right {
+    order: 1;
     max-width: 100%;
-    margin-left: 0 !important; /* force fix for mobile */
+    text-align: center;
+    margin-left: 0 !important;
   }
 
   .building-title {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .std-paragraph {
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .building-section {
-    padding: 30px 20px;
-  }
-
-  .building-title {
-    font-size: 22px;
-    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
   }
 
   .std-paragraph {
     font-size: 14px;
+    text-align: justify;
+  }
+
+  /* IMAGE LAST (FULL WIDTH) */
+  .building-left {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .building_image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 480px) {
+
+  .building-title {
+    font-size: 22px;
+  }
+
+  .std-paragraph {
+    font-size: 12px;
+  }
+
+  .building_image {
+    border-radius: 15px;
   }
 }
