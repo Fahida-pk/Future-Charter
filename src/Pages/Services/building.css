@@ -63,12 +63,13 @@
     gap: 40px;
   }
 
-  .building-title {
-    font-size: 36px;
+  .building-right {
+    margin-left: 0; /* remove negative margin for tablet */
   }
 
-  .building_image {
-    max-width: 380px;
+  .building-title {
+    font-size: 32px;
+    text-align: center;
   }
 }
 
@@ -79,16 +80,19 @@
     text-align: center;
   }
 
-  .building-left {
-    order: 1;
-  }
-
+  .building-left,
   .building-right {
-    order: 2;
+    max-width: 100%;
+    margin-left: 0 !important; /* force fix for mobile */
   }
 
   .building-title {
     font-size: 28px;
+    text-align: center;
+  }
+
+  .std-paragraph {
+    text-align: center;
   }
 }
 
@@ -99,6 +103,7 @@
 
   .building-title {
     font-size: 22px;
+    text-align: center;
   }
 
   .std-paragraph {
