@@ -61,7 +61,7 @@
 
   .building-section {
     flex-direction: column;
-    padding: 35px 20px;
+    padding: 40px 25px;
     gap: 20px;
     text-align: center;
   }
@@ -75,12 +75,12 @@
   }
 
   .building-title {
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
   }
 
   .std-paragraph {
-    font-size: 14px;
+    font-size: 10px;
     text-align: justify;
   }
 
