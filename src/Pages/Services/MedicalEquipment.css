@@ -1,11 +1,11 @@
-/* MAIN SECTION */
+/* MAIN SECTION – SAME AS SAFETY */
 .medical-equipment-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 90px 120px;
   background: #f7faff;
-  gap: 100px;
+  gap: 150px; /* same gap as safety */
   flex-wrap: wrap;
 }
 
@@ -29,7 +29,7 @@
 .medical-equipment-right {
   flex: 1;
   max-width: 550px;
-  margin-left: -200px;
+  margin-left: 0;  /* 🔥 negative margin removed */
 }
 
 .medical-equipment-title {
@@ -39,26 +39,18 @@
   margin-bottom: 10px;
   font-family: "MyRoboto";
 }
-.medical-equipment-description 
-{
+
+/* PARAGRAPH – SAME AS SAFETY */
+.medical-equipment-description {
   font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
   max-width: 900px;
-  margin: 0 auto 28px;
+  margin: 0 0 28px;
   font-family: "Georgia", serif;
+  text-align: justify;
   word-spacing: 1px;
   letter-spacing: 0.3px;
-  text-align: justify;
-}
-/* Clean Paragraph */
-.std-paragraph{
-  font-size: 18px;
-  line-height: 1.9;
-  color: #3a3a3a;
-  margin: 0 auto 28px;
-  font-family: "Georgia", serif;
-  text-align: justify;
 }
 
 /* ============================= */
@@ -84,9 +76,9 @@
 /* ============================= */
 @media (max-width: 768px) {
   .medical-equipment-section {
-     flex-direction: column;
-padding: 20px 25px;
-    gap: 10px;
+    flex-direction: column;
+    padding: 40px 25px;
+    gap: 20px;
     text-align: center;
   }
 
@@ -103,14 +95,15 @@ padding: 20px 25px;
     text-align: center;
     margin-left: 0 !important;
   }
-.medical-equipment-image {
-   max-width: 100%;
-}
+
   .medical-equipment-title {
     font-size: 18px;
     font-family: "Playfair Display", serif;
   }
-  
+
+  .medical-equipment-image {
+    max-width: 100%;
+  }
 }
 
 /* ============================= */
@@ -122,10 +115,10 @@ padding: 20px 25px;
   }
 
   .medical-equipment-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
-  .std-paragraph {
-    font-size: 14px;
+  .medical-equipment-description {
+    font-size: 12px;
   }
 }
