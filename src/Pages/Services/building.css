@@ -75,13 +75,13 @@
   }
 
   .building-title {
-    font-size: 15px;
+   font-size: 18px;
     font-family: "Playfair Display", serif;
   }
 
   .std-paragraph {
     font-size: 10px;
-    text-align: justify;
+   
   }
 
   /* IMAGE LAST (FULL WIDTH) */
@@ -109,7 +109,5 @@
     font-size: 10px;
   }
 
-  .building_image {
-    border-radius: 15px;
-  }
+ 
 }
