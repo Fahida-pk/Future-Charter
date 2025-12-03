@@ -116,7 +116,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 22px;
+ padding: 20px 22px;
   position: fixed;
   top: 0;
   left: 0;
@@ -129,14 +129,14 @@ body {
 
 /* 🌟 Header Logo + Button */
 .mobile-menu-header img {
-  width: 110px;
+  width: 140px;
   height: auto;
   order: 2;
 }
 
 .mobile-hamburger {
   order: 1;
-  font-size: 32px;
+font-size: 40px;
   color: #005d99; /* 🔹 blue tone for icon */
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
