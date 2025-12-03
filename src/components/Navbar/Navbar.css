@@ -140,7 +140,14 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
+.nav-logo {
+  height: 100px;
 
+  width: auto;
+  object-fit: contain;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+}
 .mobile-hamburger:hover {
   transform: scale(1.1);
   color: #007acc;
