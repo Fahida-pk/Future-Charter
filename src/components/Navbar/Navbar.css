@@ -112,6 +112,7 @@ body {
 /* 🌟 Mobile Header (top row) */
 .mobile-menu-header {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,11 +142,11 @@ body {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 .nav-logo {
-  height: 100px;
+  height: 110px;
 
   width: auto;
   object-fit: contain;
-  margin-left: 20px;
+  margin-left: 15px;
   transition: transform 0.3s ease;
 }
 .mobile-hamburger:hover {
