@@ -26,11 +26,11 @@ const Navbar = () => {
           show ? "nav-show" : "nav-hide"
         }`}
       >
-        <div className="container">
+        <div className="container logo-container">
           {/* ✅ Logo */}
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <img
-              src="/image/log_hd.png"
+              src="/image/generated.png"
               alt="Future Charter Trading Co. Ltd"
               className="me-2 nav-logo"
             />
@@ -84,7 +84,7 @@ const Navbar = () => {
           </div>
 
           <Link to="/" onClick={() => setMenuOpen(false)}>
-            <img src="/image/log.png" alt="Future Charter Trading Co. Ltd" />
+            <img src="/image/generated.png" alt="Future Charter Trading Co. Ltd" />
           </Link>
         </div>
 
