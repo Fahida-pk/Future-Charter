@@ -218,17 +218,24 @@
     font-family: "cursive", sans-serif;
   }
 
-  .get-in-touch-bg { padding: 40px 15px; }
+  /* 🔥 Reduce top & bottom padding — fixes big gap */
+  .get-in-touch-bg { 
+    padding: 20px 12px 25px !important;
+  }
 
   .get-in-touch-title {
     font-size: 28px !important;
     letter-spacing: 1px;
+    margin-bottom: 0 !important;   /* 🔥 Remove unwanted gap */
   }
 
-  .touch-highlight { font-size: 35px !important; }
+  .touch-highlight { 
+    font-size: 35px !important;
+    margin-left: 4px;
+  }
 
   .contact-intro-text {
-   margin-top: 8px !important;  /* reduce gap below heading */
+    margin-top: 6px !important;    /* 🔥 Tight & clean */
     max-width: 95%;
     padding: 0 8px;
     font-size: 13px;
@@ -236,14 +243,19 @@
     font-weight: 300;
     text-align: justify;
     font-family: "Playfair Display", serif;
-}
-
+  }
 
   .location-box,
   .contact-form-side {
     width: 100% !important;
     height: auto !important;
     min-height: 450px;
+  }
+
+  /* 🔥 Reduce map/form gap */
+  .contact-layout {
+    padding: 25px 10px !important;
+    gap: 15px !important;
   }
 
   :root { --contact-box-height: auto; }
