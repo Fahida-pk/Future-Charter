@@ -144,8 +144,8 @@
   }
 
  .hero-content p {
-    font-size: .7rem !important;     /* bigger → clean readability */
-    line-height: 1.25 !important;    /* correct spacing → uniform lines */
+    font-size: .9rem !important;     /* bigger → clean readability */
+    line-height: 1.45 !important;    /* correct spacing → uniform lines */
     max-width: 88% !important;       /* ⭐ uniform width → sides equal */
     text-align: left !important;     /* clean alignment */
     margin-top: 10px !important;
