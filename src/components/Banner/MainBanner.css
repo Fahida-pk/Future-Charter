@@ -146,18 +146,9 @@
   }
 
   .hero-content p {
-    font-size: .9rem !important;
-    line-height: 1.45 !important;
-
-    /* ⭐ MOST IMPORTANT SETTINGS */
-    max-width: 600px !important;    /* desktop pole uniform width */
-    width: 90% !important;          /* nice left-right balance */
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    /* alignment */
-    text-align: left !important;
-}
+    font-size: .7rem !important;
+    line-height: .10 !important;
+  }
 
   .btn-light {
     padding: 12px 30px !important;
