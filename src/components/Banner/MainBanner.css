@@ -125,32 +125,34 @@
   }
 
   .hero-content {
-    margin-left: 5% !important;
-    max-width: 88% !important;   /* ⭐ uniform width for both heading + paragraph */
+    margin-left: 4% !important;
+    max-width: 90% !important;     /* FIX 3: uniform readable width */
     padding: 1.2rem !important;
   }
 
+  /* Heading */
   .hero-content h1 {
-    font-size: 1.7rem !important;
+    font-size: 1.8rem !important;
     line-height: 1.25 !important;
-    max-width: 88% !important;   /* ⭐ heading same width as paragraph */
   }
 
   .cursive-text {
-    font-size: 2.1rem !important;
+    font-size: 2.2rem !important;
   }
 
+  /* Paragraph */
   .hero-content p {
-    font-size: .9rem !important;
-    line-height: 1.45 !important;
-    max-width: 88% !important;   /* ⭐ paragraph width perfect */
-    text-align: left !important;
+    font-size: .9rem !important;    /* FIX 4: readable */
+    line-height: 1.45 !important;   /* FIX 5: uniform spacing */
+    max-width: 92% !important;      /* FIX 6: prevent random line breaks */
     margin-top: 10px !important;
+    text-align: left !important;
   }
 
+  /* Button */
   .btn-light {
+    padding: 10px 22px !important;
     font-size: .8rem !important;
-    padding: 10px 24px !important;
-    margin-top: 12px !important;
+    margin-top: 10px !important;
   }
 }
