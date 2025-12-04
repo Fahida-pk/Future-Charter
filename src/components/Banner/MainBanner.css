@@ -75,9 +75,6 @@
   margin-top: 15px;
   text-align: left;
 }
-.hero-content .btn-light {
-  margin-top: 25px;
-}
 
 /* 🎨 Button - matches logo blue */
 .btn-light {
@@ -129,7 +126,12 @@
     justify-content: flex-start;
   }
 
-  
+  .hero-content {
+    margin-left: 5%;
+    padding: 1.5rem 1.5rem;
+    max-width: 650px;
+  }
+
   /* ✅ same as desktop */
   .hero-content h1 {
     font-size: 1.5rem !important;
@@ -140,23 +142,9 @@
     font-size: .2rem !important;
   }
 
-  .hero-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* paragraph centre column */
-  }
-
   .hero-content p {
-    font-size: 0.9rem !important;
-    line-height: 1.45 !important;
-
-    /* ⭐ MAIN UNIFORMITY FIX */
-    max-width: 320px !important;   /* mobile pole correct paragraph width */
-    width: 90% !important;
-    margin: 0 auto !important;     /* center + equal left-right spacing */
-
-    text-align: left !important;   /* style same as desktop */
+    font-size: .7rem !important;
+    line-height: 1.1 !important;
   }
 
   .btn-light {
