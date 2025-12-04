@@ -143,10 +143,14 @@
     font-size: .2rem !important;
   }
 
-  .hero-content p {
-    font-size: .7rem !important;
-    line-height: 1.1 !important;
-  }
+ .hero-content p {
+    font-size: .7rem !important;     /* bigger → clean readability */
+    line-height: 1.25 !important;    /* correct spacing → uniform lines */
+    max-width: 88% !important;       /* ⭐ uniform width → sides equal */
+    text-align: left !important;     /* clean alignment */
+    margin-top: 10px !important;
+}
+
 
   .btn-light {
     padding: 12px 30px !important;
