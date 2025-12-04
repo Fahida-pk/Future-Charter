@@ -39,6 +39,18 @@ medical devices and tools designed to meet
 the highest healthcare standards.`,
       animation: "fade-right",
     },
+    
+    {
+      title: "DERMACEUTICAL & COSMETIC INNOVATIONS",
+      image: "/image/skin.png",
+      description: `Offering a specialized range of products 
+and equipment tailored for dermatology 
+clinics and professionals. Distributing 
+premium cosmetic and skincare solutions 
+that combine innovation, safety, and 
+effectiveness.`,
+      animation: "fade-left",
+    },
     {
       title: "VEHICLE & EQUIPMENT RENTAL",
       image: "/image/eguipments.jpeg",
@@ -62,18 +74,7 @@ companies, institutions, and events.
 We source high-quality food products for 
 freshness, nutrition, and affordability.`,
       animation: "fade-right",
-    },
-    {
-      title: "DERMACEUTICAL & COSMETIC INNOVATIONS",
-      image: "/image/skin.png",
-      description: `Offering a specialized range of products 
-and equipment tailored for dermatology 
-clinics and professionals. Distributing 
-premium cosmetic and skincare solutions 
-that combine innovation, safety, and 
-effectiveness.`,
-      animation: "fade-left",
-    },
+    }
   ];
 
   return (
