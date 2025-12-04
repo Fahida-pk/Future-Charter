@@ -75,7 +75,9 @@
   margin-top: 15px;
   text-align: left;
 }
-
+.hero-content .btn-light {
+  margin-top: 25px;
+}
 
 /* 🎨 Button - matches logo blue */
 .btn-light {
@@ -143,14 +145,19 @@
     font-size: .2rem !important;
   }
 
- .hero-content p {
-    font-size: .9rem !important;     /* bigger → clean readability */
-    line-height: 1.45 !important;    /* correct spacing → uniform lines */
-    max-width: 88% !important;       /* ⭐ uniform width → sides equal */
-    text-align: left !important;     /* clean alignment */
-    margin-top: 10px !important;
-}
+  .hero-content p {
+    font-size: .9rem !important;
+    line-height: 1.45 !important;
 
+    /* ⭐ MOST IMPORTANT SETTINGS */
+    max-width: 600px !important;    /* desktop pole uniform width */
+    width: 90% !important;          /* nice left-right balance */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    /* alignment */
+    text-align: left !important;
+}
 
   .btn-light {
     padding: 12px 30px !important;
