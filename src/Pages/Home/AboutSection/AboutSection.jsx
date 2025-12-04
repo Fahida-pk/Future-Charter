@@ -59,13 +59,13 @@ export default function AboutSection() {
               <p>
                 Our expertise spans{" "}
                 <strong>
-                  manpower supply, equipment rentals, foodstuff distribution,
+                  Uniforms & Safety Solutions, Building Materials, Medical Consumables and Equipment, 
+    Dermatology Products & Equipment, Cosmetic and Skincare Solutions, Manpower Supply, 
+    Equipment Rentals, and Food Supplies,
                 </strong>{" "}
-                and <strong>safety solutions</strong>, empowering organizations
-                to operate efficiently and sustainably. Through innovative
-                approaches and a commitment to excellence, we continue to build
-                long-term partnerships founded on trust, reliability, and
-                customer satisfaction.
+                empowering organizations to operate efficiently and sustainably. Through innovative
+  approaches and a commitment to excellence, we continue to build long-term partnerships
+  founded on trust, reliability, and customer satisfaction.
               </p>
 
               <p>

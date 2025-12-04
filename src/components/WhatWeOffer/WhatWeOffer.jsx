@@ -44,31 +44,10 @@ const WhatWeOffer = () => {
 
         <div className="offer-container left">
           <div className="offer-content">
-            <h3>Manpower Supply</h3>
+           <h3>Uniforms & Safety Solutions</h3>
             <p>
-              Providing skilled, semi-skilled, and unskilled workforce solutions
-              for various industries — ensuring quality, reliability, and
-              efficiency.
-            </p>
-          </div>
-        </div>
-
-        <div className="offer-container right">
-          <div className="offer-content">
-            <h3>Equipment Rentals</h3>
-            <p>
-              Supplying a wide range of well-maintained machinery and tools to
-              support construction and industrial operations.
-            </p>
-          </div>
-        </div>
-
-        <div className="offer-container left">
-          <div className="offer-content">
-            <h3>Food Supplies</h3>
-            <p>
-              Delivering fresh, high-quality food products and catering
-              essentials to organizations and institutions.
+              Supplying customized uniforms, PPE, and safety equipment that
+              ensure protection and compliance.
             </p>
           </div>
         </div>
@@ -80,22 +59,13 @@ const WhatWeOffer = () => {
               Offering durable and cost-effective materials for commercial and
               industrial construction projects.
             </p>
+           
           </div>
         </div>
 
         <div className="offer-container left">
           <div className="offer-content">
-            <h3>Uniforms & Safety Solutions</h3>
-            <p>
-              Supplying customized uniforms, PPE, and safety equipment that
-              ensure protection and compliance.
-            </p>
-          </div>
-        </div>
-
-        <div className="offer-container right">
-          <div className="offer-content">
-            <h3>Medical Consumables</h3>
+             <h3>Medical Consumables</h3>
             <p>
               Providing reliable and high-standard consumable items for clinics,
               hospitals, and healthcare centers.
@@ -103,19 +73,21 @@ const WhatWeOffer = () => {
           </div>
         </div>
 
-        <div className="offer-container left">
+        <div className="offer-container right">
           <div className="offer-content">
-            <h3>Medical Equipment</h3>
+              <h3>Medical Equipment</h3>
             <p>
               Supplying advanced medical devices and tools designed to meet the
               highest healthcare standards.
             </p>
+          
           </div>
         </div>
-
-        <div className="offer-container right">
+ 
+        <div className="offer-container left">
           <div className="offer-content">
-            <h3>Dermatology Products & Equipment</h3>
+            
+          <h3>Dermatology Products & Equipment</h3>
             <p>
               Offering a specialized range of products and equipment tailored
               for dermatology clinics and professionals.
@@ -123,13 +95,47 @@ const WhatWeOffer = () => {
           </div>
         </div>
 
-        <div className="offer-container left">
+        <div className="offer-container right">
           <div className="offer-content">
-            <h3>Cosmetic & Skincare Products</h3>
+           <h3>Cosmetic & Skincare Products</h3>
             <p>
               Distributing premium cosmetic and skincare solutions that combine
               innovation, safety, and effectiveness.
             </p>
+          </div>
+        </div>
+
+        <div className="offer-container left">
+          <div className="offer-content">
+            <h3>Equipment Rentals</h3>
+            <p>
+              Supplying a wide range of well-maintained machinery and tools to
+              support construction and industrial operations.
+            </p>
+            
+          </div>
+        </div>
+
+        <div className="offer-container right">
+          <div className="offer-content">
+             <h3>Manpower Supply</h3>
+            <p>
+              Providing skilled, semi-skilled, and unskilled workforce solutions
+              for various industries — ensuring quality, reliability, and
+              efficiency.
+            </p>
+            
+          </div>
+        </div>
+
+        <div className="offer-container left">
+          <div className="offer-content">
+              <h3>Food Supplies</h3>
+            <p>
+              Delivering fresh, high-quality food products and catering
+              essentials to organizations and institutions.
+            </p>
+            
           </div>
         </div>
       </div>
