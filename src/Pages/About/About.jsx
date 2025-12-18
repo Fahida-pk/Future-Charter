@@ -43,7 +43,7 @@ const About = () => {
             </p>
             <p className="about-description">
               Aligned with Saudi Vision 2030, our services and products support
-              the Kingdom’s economic and social growth. We specialize in Uniforms & Safety Solutions,Building Materials,Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions,Manpower Supply, Equipment Rentals, food supplies.
+              the Kingdom’s economic and social growth. We specialize in Safety Solutions & Uniforms,Building Materials,Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions,Manpower Supply, Equipment Rentals, food supplies.
             </p>
             <p className="about-description">
               Driven by customer satisfaction, reliability, and innovation, Afdal
@@ -69,7 +69,7 @@ const About = () => {
           </p>
           <p className="about-description">
            Aligned with Saudi Vision 2030, our services and products support
-              the Kingdom’s economic and social growth. We specialize in Uniforms & Safety Solutions,Building Materials,Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions,Manpower Supply, Equipment Rentals, food supplies.
+              the Kingdom’s economic and social growth. We specialize in Safety Solutions & Uniforms, Building Materials, Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions, Manpower Supply, Equipment Rentals, food supplies.
           </p>
           <p className="about-description">
             Driven by customer satisfaction, reliability, and innovation, Afdal

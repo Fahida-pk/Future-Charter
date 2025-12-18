@@ -20,7 +20,7 @@ const Safety = () => {
         viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="safety-title">Uniforms & Safety Solutions</h2>
+        <h2 className="safety-title">Safety Solutions & Uniforms</h2>
 
         <p className="safety-description standard-paragraph">
           Supplying customized uniforms, PPE, and safety equipment that ensure protection and compliance.

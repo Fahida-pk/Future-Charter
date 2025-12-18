@@ -31,7 +31,7 @@ const MainBanner = () => {
             transition={{ delay: 0.4, duration: 1 }}
             viewport={{ once: false }}
           >
-            Empowering Saudi Arabia’s growth with reliable Uniforms & Safety Solutions,Building Materials,Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions,Manpower Supply, Equipment Rentals, food supplies.<br></br>  Proudly aligned with
+            Empowering Saudi Arabia’s growth with reliable Safety Solutions & Uniforms, Building Materials, Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions, Manpower Supply, Equipment Rentals, food supplies.<br></br>  Proudly aligned with
             Vision 2030.
           </motion.p>
 

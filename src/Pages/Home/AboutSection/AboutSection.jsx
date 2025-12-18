@@ -59,7 +59,7 @@ export default function AboutSection() {
               <p>
                 Our expertise spans{" "}
                 <strong>
-                  Uniforms & Safety Solutions, Building Materials, Medical Consumables and Equipment, 
+                  Safety Solutions & Uniforms, Building Materials, Medical Consumables and Equipment, 
     Dermatology Products & Equipment, Cosmetic and Skincare Solutions, Manpower Supply, 
     Equipment Rentals, and Food Supplies,
                 </strong>{" "}

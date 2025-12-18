@@ -44,7 +44,7 @@ const WhatWeOffer = () => {
 
         <div className="offer-container left">
           <div className="offer-content">
-           <h3>Uniforms & Safety Solutions</h3>
+           <h3>Safety Solutions & Uniforms</h3>
             <p>
               Supplying customized uniforms, PPE, and safety equipment that
               ensure protection and compliance.
