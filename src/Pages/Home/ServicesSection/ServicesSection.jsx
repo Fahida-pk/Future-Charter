@@ -21,9 +21,9 @@ export default function ServicesSection() {
       animation: "fade-right",
     },
     {
-      title: "SAFETY EQUIPMENT & GENERAL TRADING",
+      title: "SAFETY SOLUTIONS & UNIFORMS",
       image: "/image/saftey.jpeg",
-      description: `Our safety equipment division offers a 
+      description: `Our safety solutions division offers a 
 comprehensive selection of PPE, safety 
 gear, and trading items that meet 
 international safety standards.`,

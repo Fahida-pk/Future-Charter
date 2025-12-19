@@ -20,7 +20,7 @@ const MainBanner = () => {
             }}
             viewport={{ once: false, amount: 0.4 }}
           >
-            Welcome To  Company  <br />Afdal Itqan Wujudah
+           <b>Welcome To  Company </b>  <br /><b>Afdal Itqan Wujudah</b>
           </motion.h1>
 
           {/* 📝 Animated Subtext */}
