@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { isValidPhoneNumber } from "libphonenumber-js";
 import "./ContactSection.css";
 
 export default function ContactSection() {
@@ -13,25 +14,25 @@ export default function ContactSection() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // 🌍 INTERNATIONAL PHONE VALIDATION (10–15 digits)
-    if (!/^[0-9]{10,15}$/.test(phone)) {
+    /* ✅ COUNTRY-WISE PHONE VALIDATION */
+    if (!isValidPhoneNumber("+" + phone)) {
       setMsgColor("error");
       setStatusMessage(
-        "Please enter a valid phone number with country code"
+        "Please enter a valid phone number for the selected country"
       );
       return;
     }
 
     const emailValue = form.current.email.value;
 
-    // Email validation
+    /* ✅ EMAIL VALIDATION */
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
       setMsgColor("error");
       setStatusMessage("Please enter a valid email address!");
       return;
     }
 
-    // --- EMAILJS SEND ---
+    /* ✅ EMAILJS SEND */
     emailjs
       .sendForm(
         "service_cx55wqk",
@@ -44,13 +45,12 @@ export default function ContactSection() {
         setStatusMessage(
           "Thank you for contacting us. We will reach you soon!"
         );
-
         form.current.reset();
         setPhone("");
       })
-      .catch((error) => {
+      .catch(() => {
         setMsgColor("error");
-        setStatusMessage("Failed to send: " + error.text);
+        setStatusMessage("Failed to send message. Try again later.");
       });
   };
 
@@ -81,20 +81,19 @@ export default function ContactSection() {
               required
             />
 
-            {/* 🌍 PHONE INPUT WITH COUNTRY CODE */}
+            {/* 🌍 PHONE INPUT (Saudi default, all countries allowed) */}
             <PhoneInput
-  country={"sa"}          // 🇸🇦 Saudi Arabia default
-  value={phone}
-  onChange={(value) => setPhone(value)}
-  inputClass="phone-input"
-  buttonClass="phone-flag-dropdown"
-  dropdownClass="phone-dropdown"
-  inputProps={{
-    name: "phone",
-    required: true,
-  }}
-/>
-
+              country={"sa"}           // 🇸🇦 Saudi default
+              value={phone}
+              onChange={(value) => setPhone(value)}
+              inputClass="phone-input"
+              buttonClass="phone-flag-dropdown"
+              dropdownClass="phone-dropdown"
+              inputProps={{
+                name: "phone",
+                required: true,
+              }}
+            />
 
             <textarea
               name="message"
