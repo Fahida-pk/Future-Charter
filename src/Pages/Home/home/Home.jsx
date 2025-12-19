@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Future Charter Trading Co. Ltd | Saudi Arabia</title>
+        <title>Afdal Itqan KSA</title>
       </Helmet>
 
       {/* ✅ Hero Banner Section */}
