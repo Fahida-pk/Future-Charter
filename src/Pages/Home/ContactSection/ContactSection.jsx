@@ -83,17 +83,18 @@ export default function ContactSection() {
 
             {/* 🌍 PHONE INPUT WITH COUNTRY CODE */}
             <PhoneInput
-              country={"in"}
-              value={phone}
-              onChange={(value) => setPhone(value)}
-              inputClass="phone-input"
-              buttonClass="phone-flag-dropdown"
-              dropdownClass="phone-dropdown"
-              inputProps={{
-                name: "phone",
-                required: true,
-              }}
-            />
+  country={"sa"}          // 🇸🇦 Saudi Arabia default
+  value={phone}
+  onChange={(value) => setPhone(value)}
+  inputClass="phone-input"
+  buttonClass="phone-flag-dropdown"
+  dropdownClass="phone-dropdown"
+  inputProps={{
+    name: "phone",
+    required: true,
+  }}
+/>
+
 
             <textarea
               name="message"
