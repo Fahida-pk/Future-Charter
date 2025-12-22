@@ -1,0 +1,164 @@
+/* =========================
+   SECTION BACKGROUND
+========================= */
+.brand-wrapper {
+  position: relative;
+  padding: 90px 0;
+  margin-bottom: 50px;
+  background: linear-gradient(
+    120deg,
+    #a2d5ff,
+    #ffffff,
+    #d0d8de,
+    #a2d5ff
+  );
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 🌟 Heading – SAME AS SERVICES */
+.brand-heading {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-bottom: 55px;
+}
+
+/* underline */
+.brand-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, #160eaf, #00bfff, #2714f8);
+  border-radius: 10px;
+}
+
+/* floating animation */
+@keyframes floatHeading {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* marquee viewport */
+.brand-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* moving track */
+.brand-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: marquee 22s linear infinite;
+}
+
+/* pause on hover */
+.brand-marquee:hover .brand-track {
+  animation-play-state: paused;
+}
+
+/* logo holder */
+.brand-item {
+  width: 180px;
+  height: 80px;
+  margin: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* logo image */
+.brand-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brand-item img:hover {
+  transform: scale(1.08);
+}
+
+/* animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ❌ Remove blur/fade */
+.brand-wrapper::before,
+.brand-wrapper::after {
+  display: none;
+}
+
+/* =========================
+   📱 RESPONSIVE FIX
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .brand-item {
+    width: 150px;
+    height: 70px;
+    margin: 0 25px;
+  }
+
+  .brand-track {
+    animation-duration: 28s;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .brand-wrapper {
+    padding: 70px 0;
+  }
+
+  .brand-heading {
+    font-size: 1.8rem;
+  }
+
+  .brand-item {
+    width: 130px;
+    height: 60px;
+    margin: 0 20px;
+  }
+
+  .brand-track {
+    animation-duration: 32s;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .brand-heading {
+    font-size: 1.6rem;
+  }
+
+  .brand-item {
+    width: 110px;
+    height: 55px;
+    margin: 0 16px;
+  }
+
+  .brand-track {
+    animation-duration: 36s;
+  }
+}

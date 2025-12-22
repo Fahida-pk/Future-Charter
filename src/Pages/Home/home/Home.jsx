@@ -9,7 +9,7 @@ import VisionSection from "../VisionSection/VisionSection.jsx";
 import ContactSection from "../ContactSection/ContactSection.jsx";
 import  VisionMissionSection from "../Mission/mission.jsx";
 import WhatsAppButton from "../../../components/WhatsAppButton/WhatsAppButton.jsx";
-
+import Brand from "../brand/brand.jsx";
 export default function Home() {
   return (
     <>
@@ -23,11 +23,13 @@ export default function Home() {
       {/* ✅ Other Homepage Sections */}
       <AboutSection />
       <ServicesSection />
+       <Brand />
       <VisionSection />
       <VisionMissionSection/>
       <ContactSection />
-      <WhatsAppButton/>
-       
+     
+      <WhatsAppButton />
+
     </>
   );
 }

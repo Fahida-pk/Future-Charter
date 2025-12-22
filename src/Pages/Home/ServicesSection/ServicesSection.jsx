@@ -68,12 +68,12 @@ the highest healthcare standards.`,
     {
       title: "Dermatology Products & Equipments",
       image: "/image/skin.jpeg",
-      description: `Offering a specialized range of products 
-and equipment tailored for dermatology 
-clinics and professionals. Distributing 
-premium cosmetic and skincare solutions 
-that combine innovation, safety, and 
-effectiveness.`,
+      description: `Offering a specialized range of dermatology 
+products and equipment tailored for clinics 
+and medical professionals, ensuring safety, 
+quality, and effective skin treatment 
+solutions.
+`,
       animation: "fade-left",
     },
     {
