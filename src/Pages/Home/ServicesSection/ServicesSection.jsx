@@ -30,6 +30,31 @@ international safety standards.`,
       animation: "fade-left",
     },
     {
+      title: "Hand & Power Tools ",
+      image: "/image/hand&powertool.jpg",
+      description: `Durable, high-performance tools designed for precision, efficiency, and reliability across construction, maintenance, and industrial applications.`,
+      animation: "fade-right",
+    },
+     {
+      title: "Electrical & Plumbing Materials ",
+      image: "/image/electrical.jpeg",
+      description: `Certified electrical and plumbing solutions ensuring safe installations, efficient performance, and long-term durability for residential, commercial, and industrial projects.`,
+      animation: "fade-right",
+    },
+     {
+      title: "Cleaning Supplies ",
+      image: "/image/cleaning.jpeg",
+      description: `Professional-grade cleaning materials that deliver effective hygiene, safety, and cleanliness for workplaces, facilities, and healthcare environments.`,
+      animation: "fade-right",
+    },
+     {
+      title: "Office Stationery ",
+      image: "/image/office.jpeg",
+      description: `High-quality office stationery supplies that support daily operations, organization, and productivity across corporate, commercial, and institutional environments.`,
+      animation: "fade-right",
+    },
+     
+    {
       title: "MEDICAL CONSUMABLES & EQUIPMENT",
       image: "/image/medical.png",
       description: `Providing reliable and high-standard 
@@ -41,14 +66,20 @@ the highest healthcare standards.`,
     },
     
     {
-      title: "DERMACEUTICAL & COSMETIC INNOVATIONS",
-      image: "/image/skin.png",
+      title: "Dermatology Products & Equipments",
+      image: "/image/skin.jpeg",
       description: `Offering a specialized range of products 
 and equipment tailored for dermatology 
 clinics and professionals. Distributing 
 premium cosmetic and skincare solutions 
 that combine innovation, safety, and 
 effectiveness.`,
+      animation: "fade-left",
+    },
+    {
+      title: " Cosmetic & Skincare Products",
+      image: "/image/cosmetics.jpeg",
+      description: `Delivering premium cosmetic and skincare solutions crafted with advanced science, safe ingredients, and exceptional performance, ensuring visible results and complete skin confidence.`,
       animation: "fade-left",
     },
     {
@@ -74,6 +105,12 @@ companies, institutions, and events.
 We source high-quality food products for 
 freshness, nutrition, and affordability.`,
       animation: "fade-right",
+    },
+    {
+      title: "Manpower Supply",
+      image: "/image/man.png",
+      description: `We are a trusted provider of manpower supply services, specializing in the recruitment and placement of skilled and unskilled labor for various industries. Our extensive database and rigorous screening process ensure that we connect businesses with the right talent to meet their operational needs.`,
+      animation: "fade-right",
     }
   ];
 
@@ -84,26 +121,28 @@ freshness, nutrition, and affordability.`,
           OUR SERVICES
         </h2>
 
-        <div className="row justify-content-center g-4">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="col-12 col-sm-10 col-md-6 col-lg-4" // 👈 now 3x3 layout
-              data-aos={service.animation}
-            >
-              <div className="service-card">
-                <div
-                  className="service-image"
-                  style={{ backgroundImage: `url(${service.image})` }}
-                ></div>
-                <div className="service-content">
-                  <h5>{service.title}</h5>
-                  <p>{service.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+<div className="row justify-content-center g-4">
+  {services.map((service, index) => (
+    <div
+      key={index}
+      className="col-12 col-sm-6 col-md-3 col-lg-4"
+      data-aos={service.animation}
+    >
+      <div className="service-card">
+        <div
+          className="service-image"
+          style={{ backgroundImage: `url(${service.image})` }}
+        ></div>
+        <div className="service-content">
+          <h5>{service.title}</h5>
+          <p>{service.description}</p>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+
       </div>
     </section>
   );

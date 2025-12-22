@@ -49,23 +49,14 @@ export default function AboutSection() {
           >
             <div>
               <p>
-                <strong>Afdal Itqan Wujudah</strong> is a dynamic and
-                diversified enterprise based in Jeddah & Riyadh, Saudi Arabia.
-                Since our inception, we have been committed to providing
-                high-quality, tailored solutions across various sectors to
-                support the diverse needs of our clients.
+                <strong>Afdal Itqan Wujudah</strong> is a dynamic and diversified enterprise based in Jeddah, Riyadh, Dammam, and Najran, Saudi Arabia . Since our inception, we have been committed to providing high-quality, tailored solutions across various sectors to support the diverse needs of our clients.
               </p>
 
               <p>
                 Our expertise spans{" "}
                 <strong>
-                  Safety Solutions & Uniforms, Building Materials, Medical Consumables and Equipment, 
-    Dermatology Products & Equipment, Cosmetic and Skincare Solutions, Manpower Supply, 
-    Equipment Rentals, and Food Supplies,
-                </strong>{" "}
-                empowering organizations to operate efficiently and sustainably. Through innovative
-  approaches and a commitment to excellence, we continue to build long-term partnerships
-  founded on trust, reliability, and customer satisfaction.
+Safety Solutions & Uniforms, Building Materials, Hand & Power Tools, Electrical & Plumbing Materials, Cleaning Materials, Office Stationeries, Medical Consumables and Equipment, Dermatology Products & Equipment, Cosmetic and Skincare Solutions, Manpower Supply, Equipment Rentals, and Food Supplies, empowering organizations to operate efficiently and sustainably.            </strong>{" "}
+               Through innovative approaches and a commitment to excellence, we continue to build long-term partnerships founded on trust, reliability, and customer satisfaction.
               </p>
 
               <p>
