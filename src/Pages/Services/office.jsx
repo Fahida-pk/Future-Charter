@@ -42,7 +42,7 @@ const Office = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src="/image/officeitems.png"
+          src="/image/officeitems..png"
           alt="Office Stationery Supplies"
           className="office-image"
         />

@@ -43,7 +43,7 @@
   max-width: 500px;
   border-radius: 30px;
   object-fit: cover;
-  background: #eaeaea;
+  background: #f0dada;
   padding: 6px;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
@@ -79,12 +79,12 @@
   }
 
   .office-title {
-    font-size: 18px;         /* 🔥 heading readable */
+    font-size: 20px;         /* 🔥 heading readable */
     line-height: 1;
   }
 
   .office-description {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.7;
     text-align: left;       /* 🔥 justify removed */
   }
