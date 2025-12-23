@@ -1,0 +1,72 @@
+/* MAIN SECTION */
+.office-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 90px 120px;
+  background: #f7faff;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.office-left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.office-title {
+  font-size: 38px;
+  font-weight: 700;
+      font-family: "Playfair Display", serif;
+
+  color: #222;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.office-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+/* RIGHT IMAGE */
+.office-right {
+  flex: 1;
+  max-width: 550px;
+}
+
+.office-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+  background: #eaeaea;
+  padding: 6px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .office-section {
+    padding: 70px 40px;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .office-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .office-description {
+    text-align: left;
+  }
+
+  .office-image {
+    margin: auto;
+  }
+}

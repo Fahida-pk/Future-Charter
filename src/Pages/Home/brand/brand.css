@@ -4,7 +4,7 @@
 .brand-wrapper {
   position: relative;
   padding: 90px 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   background: linear-gradient(
     120deg,
     #a2d5ff,
@@ -47,7 +47,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
   }
 }
 
@@ -62,12 +62,13 @@
   display: flex;
   width: max-content;
   align-items: center;
-  animation: marquee 22s linear infinite;
+  animation: marquee 35s linear infinite;
 }
 
 /* pause on hover */
 .brand-marquee:hover .brand-track {
   animation-play-state: paused;
+  cursor :grab;
 }
 
 /* logo holder */
@@ -94,13 +95,15 @@
 
 /* animation */
 @keyframes marquee {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }
+
+
 
 /* ❌ Remove blur/fade */
 .brand-wrapper::before,

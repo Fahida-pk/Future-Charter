@@ -1,0 +1,96 @@
+/* MAIN SECTION */
+.electrical-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 90px 120px;
+  background: #f7faff;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.electrical-left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.electrical-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  font-family: "MyRoboto";
+}
+
+/* Paragraph */
+.electrical-description {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  max-width: 900px;
+  margin: 0 auto 28px;
+  font-family: "Georgia", serif;
+  word-spacing: 1px;
+  letter-spacing: 0.3px;
+  text-align: justify;
+}
+
+/* RIGHT IMAGE */
+.electrical-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.electrical-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+  background: rgb(186, 186, 186);
+  padding: 5px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .electrical-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .electrical-title {
+    font-size: 36px;
+  }
+
+  .electrical-image {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .electrical-section {
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .electrical-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .electrical-section {
+    padding: 30px 20px;
+  }
+
+  .electrical-title {
+    font-size: 18px;
+  }
+
+  .electrical-description {
+    font-size: 12px;
+  }
+}

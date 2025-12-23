@@ -4,6 +4,10 @@ import "aos/dist/aos.css";
 
 import Manpower from "./Manpower.jsx";
 import Building from "./building.jsx";
+import Hand from "./hand.jsx";
+import Electrical from "./electrical.jsx"
+import Cleaning from "./Cleaning.jsx"
+import Office from "./office.jsx"
 import Safety from "./saftey.jsx";
 import Equipment from "./equipment.jsx";
 import MedicalConsumable from "./medicalconsumable.jsx";
@@ -32,6 +36,10 @@ const Services = () => {
 
       <div data-aos="fade-up"><Building /></div>
       <div data-aos="fade-up"><Safety /></div>
+      <div data-aos="fade-up"><Hand /></div>
+      <div data-aos="fade-up"><Electrical /></div>
+      <div data-aos="fade-up"><Cleaning /></div>
+      <div data-aos="fade-up"><Office /></div>
       <div data-aos="fade-up"><Equipment /></div>
       <div data-aos="fade-up"><MedicalConsumable /></div>
       <div data-aos="fade-up"><MedicalEquipment /></div>

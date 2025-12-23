@@ -55,15 +55,24 @@ international safety standards.`,
     },
      
     {
-      title: "MEDICAL CONSUMABLES & EQUIPMENT",
-      image: "/image/medical.png",
-      description: `Providing reliable and high-standard 
-consumable items for clinics, hospitals, and 
-healthcare centers. Supplying advanced 
-medical devices and tools designed to meet 
-the highest healthcare standards.`,
-      animation: "fade-right",
-    },
+  title: "MEDICAL CONSUMABLES",
+  image: "/image/medical-consumables.jpeg",
+  description: `Providing high-quality and reliable 
+medical consumables for hospitals, clinics, 
+and healthcare centers to ensure daily 
+operational safety and hygiene.`,
+  animation: "fade-right",
+},
+{
+  title: "MEDICAL EQUIPMENT",
+  image: "/image/medical-equipment.jpeg",
+  description: `Supplying advanced medical equipment 
+and healthcare devices designed to deliver 
+accuracy, efficiency, and compliance with 
+international healthcare standards.`,
+  animation: "fade-left",
+},
+
     
     {
       title: "Dermatology Products & Equipments",
@@ -80,6 +89,12 @@ solutions.
       title: " Cosmetic & Skincare Products",
       image: "/image/cosmetics.jpeg",
       description: `Delivering premium cosmetic and skincare solutions crafted with advanced science, safe ingredients, and exceptional performance, ensuring visible results and complete skin confidence.`,
+      animation: "fade-left",
+    },
+    {
+      title: " Electrical Testing Devices",
+      image: "/image/electricaltesting.jpeg",
+      description: `Supplying accurate and reliable electrical testing devices designed to ensure safety, compliance, and efficient diagnostics across industrial, commercial, and maintenance applications.`,
       animation: "fade-left",
     },
     {

@@ -19,6 +19,19 @@
   position: relative;
   overflow: hidden;
 }
+.contact-intro-wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-intro-text {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
+  font-size: 0.3rem;
+  color: #111;
+}
 
 .contact-top-banner img {
   width: 100%;

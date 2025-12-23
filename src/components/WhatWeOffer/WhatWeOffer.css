@@ -161,16 +161,18 @@
 }
 
 .offer-content h3 {
-  font-size: 24px;
-  color: #0a0a23;
-  font-weight: 600;
+  font-size: 28px;
+  color: #010121;
+  font-weight: 500;
   margin-bottom: 10px;
+    font-family: "MyRoboto";
+
 }
 
 .offer-content p {
-  color: #555;
-  line-height: 1.7;
-  font-size: 16px;
+  color: #2b2a2a;
+  line-height: 1.5;
+  font-size: 16.5px;
 }
 
 @media (max-width: 768px) {

@@ -16,7 +16,6 @@
   display: inline-block;
   letter-spacing: 1px;
   transition: transform 0.6s ease;
-  animation: floatHeading 5s ease-in-out infinite;
 }
 
 .section-heading::after {
@@ -126,11 +125,13 @@
 
 /* 🧭 Text inside card */
 .service-content h5 {
-  font-weight: 800;
+  font-weight: 750;
   margin-bottom: 12px;
   font-size: 1.1rem;
   text-transform: uppercase;
   color: #000;
+font-family: 'Montserrat', sans-serif;
+
 }
 
 .service-content p {
