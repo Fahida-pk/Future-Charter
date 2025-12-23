@@ -79,12 +79,12 @@
   }
 
   .office-title {
-    font-size: 23px;         /* 🔥 heading readable */
+    font-size: 18px;         /* 🔥 heading readable */
     line-height: 1;
   }
 
   .office-description {
-    font-size: 0.95rem;     /* 🔥 mobile text size */
+    font-size: 12px;
     line-height: 1.7;
     text-align: left;       /* 🔥 justify removed */
   }
