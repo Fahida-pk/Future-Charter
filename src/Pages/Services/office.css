@@ -43,7 +43,12 @@
   max-width: 500px;
   border-radius: 30px;
   object-fit: cover;
-  background: #f0dada;
+background: linear-gradient(
+    145deg,
+    #b3cfeb,
+     #f2d4c4,
+    #f2d4c4
+  );
   padding: 6px;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }

@@ -21,7 +21,10 @@
   max-width: 500px;
   border-radius: 30px;
   object-fit: cover;
-  background: rgb(122, 119, 119);
+background: linear-gradient(145deg,  #b3cfeb,#c1c1c1, #d5cdcb,rgb(156, 119, 102)
+);
+
+
   padding: 5px;
   box-shadow: 0 5px 5px rgba(0,0,0,0.12);
 }
