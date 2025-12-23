@@ -49,7 +49,7 @@ export default function AboutSection() {
           >
             <div>
               <p>
-                <strong>Afdal Itqan Wujudah</strong> is a dynamic and diversified enterprise based in Jeddah, Riyadh, Dammam, and Najran, Saudi Arabia . Since our inception, we have been committed to providing high-quality, tailored solutions across various sectors to support the diverse needs of our clients.
+                <strong>Afdal Itqan Wujudah</strong> is a dynamic and diversified enterprise based in <strong>Jeddah, Riyadh, Dammam, and Najran, Saudi Arabia.</strong> Since our inception, we have been committed to providing high-quality, tailored solutions across various sectors to support the diverse needs of our clients.
               </p>
 
               <p>
