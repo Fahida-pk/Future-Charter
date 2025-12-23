@@ -34,7 +34,10 @@ const About = () => {
 
           <div className="about-text">
             <h2 className="about-heading">
-              <h1 style={{color:"red", fontSize:"40px"}}>VERCEL TEST CHANGE</h1>
+              <div style={{position:"fixed",bottom:10,right:10,color:"red",zIndex:9999}}>
+  VERCEL NEW BUILD
+</div>
+
 
               We Are Ready To Make Your Dream & Grow Up Your Business.
             </h2>
