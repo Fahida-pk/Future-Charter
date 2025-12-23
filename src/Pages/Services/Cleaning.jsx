@@ -32,7 +32,7 @@ const Cleaning = () => {
         <h2 className="cleaning-title">Cleaning Solutions</h2>
 
         <p className="cleaning-description std-paragraph">
-          e provide professional-grade cleaning materials designed to ensure effective hygiene, safety, and long-lasting cleanliness across workplaces, commercial facilities, and healthcare environments. Our products are carefully selected for performance, reliability, and ease of use, helping you maintain spotless spaces while meeting the highest standards of cleanliness and health.
+           provide professional-grade cleaning materials designed to ensure effective hygiene, safety, and long-lasting cleanliness across workplaces, commercial facilities, and healthcare environments. Our products are carefully selected for performance, reliability, and ease of use, helping you maintain spotless spaces while meeting the highest standards of cleanliness and health.
         </p>
       </motion.div>
 
