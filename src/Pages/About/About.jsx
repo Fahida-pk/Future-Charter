@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import WhatWeOffer from "../../components/WhatWeOffer/WhatWeOffer";
 import VisionMissionModel from "../../components/vission/VisionMissionModel";
+import WhatsAppButton from "../../components/WhatsAppButton/WhatsAppButton"
 
 import "./About.css";
 
@@ -81,6 +82,7 @@ const About = () => {
 
       <WhatWeOffer />
       <VisionMissionModel />
+      <WhatsAppButton />
 
     </>
   );
