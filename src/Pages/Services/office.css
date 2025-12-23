@@ -48,25 +48,49 @@
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE – TABLET
+========================= */
 @media (max-width: 992px) {
   .office-section {
-    padding: 70px 40px;
-    gap: 80px;
+    padding: 60px 40px;
+    gap: 60px;
+  }
+
+  .office-title {
+    font-size: 32px;
   }
 }
 
+/* =========================
+   RESPONSIVE – MOBILE
+========================= */
 @media (max-width: 768px) {
   .office-section {
     flex-direction: column;
+    padding: 40px 20px;      /* 🔥 mobile padding fix */
+    gap: 40px;
     text-align: center;
   }
 
+  .office-left,
+  .office-right {
+    max-width: 100%;
+  }
+
+  .office-title {
+    font-size: 28px;         /* 🔥 heading readable */
+    line-height: 1.3;
+  }
+
   .office-description {
-    text-align: left;
+    font-size: 0.95rem;     /* 🔥 mobile text size */
+    line-height: 1.7;
+    text-align: left;       /* 🔥 justify removed */
   }
 
   .office-image {
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }

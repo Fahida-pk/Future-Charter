@@ -15,6 +15,8 @@ import MedicalEquipment from "./MedicalEquipment.jsx";
 import Dermatology from "./Dermatology.jsx";
 import Cosmetics from "./cosmetic.jsx";
 import Food from "./food.jsx";
+import WhatsAppButton from "../../components/WhatsAppButton/WhatsAppButton"
+
 import "./Services.css";
 
 const Services = () => {
@@ -47,7 +49,10 @@ const Services = () => {
        <div data-aos="fade-up"><Cosmetics /></div>
       <div data-aos="fade-up"><Manpower /></div>
        <div data-aos="fade-up"><Food /></div>
+                 <WhatsAppButton />
+
     </>
+
   );
 };
 
