@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./cleaning.css";
-
+import "./Cleaning.css";
 const Cleaning = () => {
   return (
     <div className="cleaning-section">
