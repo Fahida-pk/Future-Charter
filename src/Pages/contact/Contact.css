@@ -247,12 +247,15 @@
     margin-left: 4px;
   }
 
-    .contact-intro-text {
-    padding: 0 16px;
-    font-size: 14px;
-    line-height: 1.65;
-    letter-spacing: 0.4px;
-    text-align: left;
+  .contact-intro-text {
+    margin-top: 6px !important;    /* 🔥 Tight & clean */
+    max-width: 100%;
+    padding: 0 8px;
+    font-size: 10px;
+    line-height: 1.55;
+    font-weight: 300;
+    text-align: justify;
+    font-family: "Playfair Display", serif;
   }
 
   .location-box,
