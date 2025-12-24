@@ -55,7 +55,7 @@ export default function AboutSection() {
               <p>
                 Our expertise spans{" "}
                 <strong>
-Safety Solutions & Uniforms, Building Materials, Hand & Power Tools, Electrical & Plumbing Materials, Cleaning Materials, Office Stationeries, Medical Consumables and Equipment, Dermatology Products & Equipment, Cosmetic and Skincare Solutions, Manpower Supply, Equipment Rentals, and Food Supplies, empowering organizations to operate efficiently and sustainably.            </strong>{" "}
+Safety Solutions & Uniforms, Building Materials, Hand & Power Tools, Electrical & Plumbing Materials, Cleaning Materials, Office Stationeries, Electrical Testing Devices, Medical Consumables and Equipment, Dermatology Products & Equipment, Cosmetic and Skincare Solutions, Manpower Supply, Equipment Rentals, and Food Supplies, empowering organizations to operate efficiently and sustainably.            </strong>{" "}
                Through innovative approaches and a commitment to excellence, we continue to build long-term partnerships founded on trust, reliability, and customer satisfaction.
               </p>
 

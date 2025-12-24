@@ -38,7 +38,7 @@ const WhatWeOffer = () => {
       <div className="offer-timeline" ref={timelineRef}>
         <div
           className="offer-line-fill"
-          style={{ height: `${(activeIndex / 13) * 100}%` }}
+          style={{ height: `${(activeIndex / 14) * 100}%` }}
         />
 
         <div className="offer-container left">
@@ -93,8 +93,15 @@ Offering professional-grade cleaning materials that support hygiene, safety, and
             <p>
 Supplying a comprehensive range of office stationery products that enhance organization, productivity, and smooth day-to-day business operations.</p>          </div>
         </div>
+<div className="offer-container left">
+          <div className="offer-content">
+            <h3>Electrical Testing Devices</h3>
+            <p>
+Supplying advanced electrical testing equipment designed for accurate fault detection, safety standards compliance, and reliable performance across industrial and commercial applications.</p>
+          </div>
+        </div>
 
-        <div className="offer-container left">
+        <div className="offer-container right">
           <div className="offer-content">
             <h3>Medical Consumables</h3>
             <p>
@@ -102,7 +109,7 @@ Providing reliable and high-standard consumable items for clinics, hospitals, an
           </div>
         </div>
 
-        <div className="offer-container right">
+        <div className="offer-container left">
           <div className="offer-content">
             <h3>Medical Equipment</h3>
             <p>
@@ -111,7 +118,7 @@ Supplying advanced medical devices and tools designed to meet the highest health
           </div>
         </div>
 
-        <div className="offer-container left">
+        <div className="offer-container right">
           <div className="offer-content">
             <h3>Dermatology Products & Equipment</h3>
             <p>
@@ -119,7 +126,7 @@ Offering a specialized range of products and equipment tailored for dermatology 
           </div>
         </div>
 
-        <div className="offer-container right">
+        <div className="offer-container left">
           <div className="offer-content">
             <h3>Cosmetic & Skincare Products</h3>
             <p>
@@ -128,7 +135,7 @@ Distributing premium cosmetic and skincare solutions that combine innovation, sa
           </div>
         </div>
 
-        <div className="offer-container left">
+        <div className="offer-container right">
           <div className="offer-content">
             <h3>Equipment Rentals</h3>
             <p>
@@ -136,7 +143,7 @@ Supplying a wide range of well-maintained machinery and tools to support constru
           </div>
         </div>
 
-        <div className="offer-container right">
+        <div className="offer-container left">
           <div className="offer-content">
             <h3>Manpower Supply</h3>
             <p>
@@ -145,7 +152,7 @@ Providing skilled, semi-skilled, and unskilled workforce solutions for various i
           </div>
         </div>
 
-        <div className="offer-container left">
+        <div className="offer-container right">
           <div className="offer-content">
             <h3>Food Supplies</h3>
             <p>

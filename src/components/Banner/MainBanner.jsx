@@ -32,7 +32,7 @@ const MainBanner = () => {
             viewport={{ once: false }}
           >
             Empowering Saudi Arabia’s growth with reliable Safety Solutions & Uniforms, Building Materials,Hand Tools & Power Tools, Electrical & Plumbing Materials, Cleaning Materials, Office Stationeries
-,Medical Consumables and Equipment, Dermatology Products & Equipment, Cosmetic and Skincare solutions, Manpower Supply, Equipment Rentals, Food supplies and much more customized to your specific requirements and proudly aligned with Vision 2030.
+,Electrical Testing Devices,Medical Consumables and Equipment, Dermatology Products & Equipment, Cosmetic and Skincare solutions, Manpower Supply, Equipment Rentals, Food supplies and much more customized to your specific requirements and proudly aligned with Vision 2030.
           </motion.p>
 
           {/* 📩 Animated Button */}

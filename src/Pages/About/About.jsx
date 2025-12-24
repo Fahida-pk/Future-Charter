@@ -45,7 +45,7 @@ const About = () => {
               needs of our clients across multiple sectors.
             </p>
             <p className="about-description">
-             Aligned with Saudi Vision 2030, our services and products support the Kingdom’s economic and social growth. We specialize in Safety Solutions & Uniforms, Building Materials, Hand & Power Tools, Electrical & Plumbing materials, Cleaning materials, Office Stationeries, Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions, Manpower Supply, Equipment Rentals, food supplies.
+             Aligned with Saudi Vision 2030, our services and products support the Kingdom’s economic and social growth. We specialize in Safety Solutions & Uniforms, Building Materials, Hand & Power Tools, Electrical & Plumbing materials, Cleaning materials, Office Stationeries, Electrical Testing Devices, Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions, Manpower Supply, Equipment Rentals, food supplies.
             </p>
             <p className="about-description">
               Driven by customer satisfaction, reliability, and innovation, Afdal
@@ -70,8 +70,8 @@ const About = () => {
               needs of our clients across multiple sectors.
           </p>
           <p className="about-description">
-           Aligned with Saudi Vision 2030, our services and products support
-              the Kingdom’s economic and social growth. We specialize in Safety Solutions & Uniforms, Building Materials, Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions, Manpower Supply, Equipment Rentals, food supplies.
+                       Aligned with Saudi Vision 2030, our services and products support the Kingdom’s economic and social growth. We specialize in Safety Solutions & Uniforms, Building Materials, Hand & Power Tools, Electrical & Plumbing materials, Cleaning materials, Office Stationeries, Electrical Testing Devices, Medical Consumables and Equipment, Dermatology Products & Equipment, cosmetic and skincare solutions, Manpower Supply, Equipment Rentals, food supplies.
+
           </p>
           <p className="about-description">
             Driven by customer satisfaction, reliability, and innovation, Afdal

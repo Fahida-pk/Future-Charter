@@ -1,133 +1,86 @@
-/* MAIN SECTION */
+/* =========================
+   MAIN SECTION
+========================= */
 .equipment-section {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   padding: 90px 120px;
   background: #f7faff;
-  gap: 100px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
 /* LEFT IMAGE */
 .equipment-left {
   flex: 1;
-    max-width: 550px;
-
+  max-width: 550px;
 }
 
 .equipment_image {
-   width: 100%;
+  width: 100%;
   max-width: 500px;
   border-radius: 30px;
   object-fit: cover;
-background: linear-gradient(145deg,  #b3cfeb,#c1c1c1, #d5cdcb,rgb(156, 119, 102)
-);
-
-
+  background: linear-gradient(
+    145deg,
+    #b3cfeb,
+    #c1c1c1,
+    #d5cdcb,
+    rgb(156, 119, 102)
+  );
   padding: 5px;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.12);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12);
 }
 
-/* RIGHT CONTENT */
 .equipment-right {
-flex: 1;
-  max-width: 550px;
-  margin-left: -200px; /* Strong left move */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+/* TITLE */
 .equipment-title {
   font-size: 44px;
   font-weight: 700;
   color: #222;
   margin-bottom: 10px;
   font-family: "MyRoboto";
-  src: url("https://qafuae.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-fb5169d9.woff2") format("woff2");
 }
 
-/* Clean Paragraph */
+/* PARAGRAPH */
 .equipment-description {
- font-size: 18px;
+  font-size: 18px;
   line-height: 1.9;
   color: #3a3a3a;
-  max-width: 900px;
-  margin: 0 0 28px;
   font-family: "Georgia", serif;
   text-align: justify;
-  word-spacing: 1px;
-  letter-spacing: 0.3px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
   .equipment-section {
-   padding: 30px 20px;
-    gap: 20px;
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .equipment-left {
+    order: 1;
+  }
+
+  .equipment-right {
+    order: 2;
   }
 
   .equipment-title {
-    font-size: 36px;
-    font-family: "Playfair Display", serif;
+    font-size: 24px;
   }
 
-  .equipment_image {
-    max-width: 380px;
+  .equipment-description {
+    font-size: 14px;
   }
-}
-
-@media (max-width: 768px) {
-  .equipment-section {
-   flex-direction: column;
-    padding: 40px 25px;
-    gap: 20px;
-    text-align: center;
-  }
-.equipment-right {
-order: 1;
-    max-width: 100%;
-    margin-left: 0 !important;
-}
-.equipment-title {
-    font-size: 24px !important;    /* 🔥 perfect mobile size */
-    line-height: 1.3;
-    margin-bottom: 12px;
-        font-family: "Playfair Display", serif;
-
-  }
-  
-  /* LEFT IMAGE */
-.equipment-left {
-  order: 2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-.equipment-description {
- font-size: 14px !important;
-    line-height: 1.9 !important;
-    font-family: "Georgia", serif;
-    text-align: justify !important;   /* SAME AS SAFETY */
-    word-spacing: 1px !important;     /* SAME AS SAFETY */
-    letter-spacing: 0.3px !important; /* SAME AS SAFETY */
-    margin: 0 auto 28px !important;   /* SAME AS SAFETY */
-    max-width: 900px !important;
-}
-
-.equipment_image {
-     max-width: 100%;
-}
-
-}
-
-@media (max-width: 480px) {
-  .equipment-section {
-    padding: 30px 20px;
-  }
-
- .equipment-title {
-    font-size: 18px;
-    font-family: "Playfair Display", serif;
-  }
-  
 }
