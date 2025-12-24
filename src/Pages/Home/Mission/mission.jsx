@@ -42,7 +42,7 @@ export default function VisionMissionSection() {
               <p>
                 We aim to support the operational success of our clients through
                 unparalleled service quality, timely delivery, and exceptional
-                customer support. Future Charter Trading Company is dedicated to
+                customer support. Afdal Itqan Wujudah Company is dedicated to
                 developing long-term partnerships with clients by offering efficient,
                 innovative, and adaptable solutions that enhance productivity,
                 safety, and sustainability in every sector we serve.
